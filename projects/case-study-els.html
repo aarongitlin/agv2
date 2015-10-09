@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="ie6 no-js"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie7 no-js"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8 no-js"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>Clinical Pharmacology</title>
+    <meta content='' name='description'>
+    <meta content='' name='author'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
+    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+    <link href='favicon.png' rel='shortcut icon'>
+    <link href='favicon.ico' rel='icon' type='image/ico'>
+    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="../stylesheets/all.css" rel="stylesheet" />
+    <script src="//use.typekit.net/hst4kim.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head>
+  <body class='page'>
+    <header>
+      <div class='main-nav'>
+        <div class='wrapper'>
+          <nav>
+            <ul class='main-nav-list'>
+              <li>Home</li>
+              <li>About</li>
+              <li>Process</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id='main' role='main'>
+      <p>Elsevier is a name not well known among us common people, but likely known by anyone who went to Medical or Pharmaceutical school. They publish vast amounts of information around the world, and are a trusted and ubiquitous name in the professional medical community.</p>
+    
+      <h2 id="discover">Discover</h2>
+    
+      <p>They approached us with a fairly defined problem: their Clinical Pharmacology [link] product is widely used on desktop computers, but they want to make it available for use on mobile and tablet devices. Offline use was a technical requirement, and increasing the company’s app-store presence was an initiative from the marketing department.</p>
+    
+      <p><strong>Technical</strong><br />
+      Based on these requirements we knew we needed native applications. Our Technical Lead began working with the client's Database Manager, and soon they were able to work out the basic structure and how we could integrate.</p>
+    
+      <p><strong>User</strong><br />
+      Workshops, surveys and interviews helped us understand the features offered by the client's current services and the key features for most users. We created a handful of personas to help frame the experience, and decided on some core features for an initial launch: <em>Search</em>, <em>Monographs</em>, and <em>Interactions</em>.</p>
+    
+      <div class="image-wrapper image-thirds">
+      	<img src="{{ site.baseurl }}/img/ELS/persona-1.png" />
+      	<img src="{{ site.baseurl }}/img/ELS/persona-2.png" />
+      	<img src="{{ site.baseurl }}/img/ELS/persona-3.png" />
+      </div>
+    
+      <h2 id="define">Define</h2>
+    
+      <p>With the requirements that came out of Discovery we were able to start defining the overall approach for the project. We concluded that we needed to focus not on gimmicky graphics or creating a ‘branded experience’, but instead on providing a functional tool for medical professionals. We therefore agreed that UI &amp; UX patterns defined by Apple and Android in their well-documented guides should form the foundation of the experience. Where necessary we could branch out, but our hypothesis was that starting with these guides would help make the complex appliation as easy to learn as possible.</p>
+    
+      <p>Branding was of course still a part of the process, so we made sure to create a visual direction that the marketing team was happy with. As always in this phase we deliver a style tile to help establish design direction for the product.</p>
+    
+      <p>[image of style tile]</p>
+    
+      <h2 id="create">Create</h2>
+    
+      <p><strong>Design</strong><br />
+      Our core team was made up of a superstar Project Manager, a Tech lead, my trusty design-partner Jess[link-to-jess], and myself. We worked in two week design sprints, quickly researching, sketching, and prototyping ideas to validate with the relevant professionals on the client’s side.</p>
+    
+      <p>[picture of sketches]<br />
+      [embed prototype? &lt;iframe width="396" height="858" src="//invis.io/GZ4F6AXN5" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;] <br />
+      [link to prototype? \https://invis.io/SKMR82F4]</p>
+    
+      <p>The problems were complex, working with datasets that came from multiple sources, and often with lengthy text. Depending on the source of the data, we were not always able to format or organize the text in the way we wanted, but we still did all we could to keep information well labeled and clear.</p>
+    
+      <p>[iphone framed pictures]</p>
+    
+      <p><strong>Test</strong><br />
+      We were lucky enough to get in some formal user testing during the design process. We brought in about 10 participants with professional relevancy and ran through a series of tasks using a number of inVision prototypes.</p>
+    
+      <p>We were happy to find that most participants completed the tasks with relevant ease, and for the most part had positive feedback. Less happily, but valuably, we also found a small number of key design decisions that proved to hindrances in the experience. If I learned nothing from this whole project, at least I’ll know to be more careful with this pattern:</p>
+    
+      <p>[image of hidden dropdown options, exposed tabs]</p>
+    
+      <p><strong>Document</strong></p>
+    
+      <p>The development team required specs, every designer’s favorite part of the job. I sat down with both iOS and Android guys to find out what information was most useful for them, and I tried to think of a way to make all of our jobs a bit easier. In my previous life I had done a fair amount of front-end development, and wanted to repeat some of the principles I worked with such as DRY[link]. Though I didn’t have the time to put together the documents as well as I would have liked, I did create what the team referred to as a “dictionary”, with a summary of tags and descriptions that I used throughout my spec document. I believed that this could work in a way similar to how SASS allows developers to use mixins to create a library of components that can be pulled in and modified as necessary.</p>
+    
+      <p>[spec pic]</p>
+    
+      <h2 id="evaluate">Evaluate</h2>
+      <p>The application was developed within a few more months, and underwent a QA process before getting a soft launch to a small group of pharmacists. A second round of QA followed and the app was released to a larger group. The app is currently available on both iOS and Android, with largely favorable reviews and positive feedback from the client.</p>
+    
+      <p>Basic analytics and surveys have revealed that a few more core features probably need to be included, and a few designs tweaked. Access across even more devices will also be critical for future success, and tablet versions are already being planned.</p>
+    
+      <p>[link to ios app store \https://itunes.apple.com/us/app/elsevier-clinical-pharmacology/id923081157?mt=8]<br />
+      [link on google play - \https://play.google.com/store/apps/details?id=com.elsevier.elseviercp&amp;hl=en]</p>
+    </div>
+  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="../javascripts/application.js"></script>
+  </body>
+</html>
