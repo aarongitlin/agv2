@@ -7,7 +7,9 @@
     = partial 'partials/header'
 
     #main(role="main")
-      = yield
+      .wrapper
+        %h1= current_page.title
+        = yield
 
     =# partial 'partials/footer'
     = partial 'partials/scripts'

@@ -1,5 +1,5 @@
 ---
-title: "Wave"
+title: Wave
 
 role: "Lead UI Design"
 year: "2015"
@@ -7,12 +7,6 @@ date: 10/5/2015
 client: "DTV"
 project_type: "Retainer"
 ---
-#Wave
-
-My Role: Lead Design  
-Year: 2015  
-Client: DIRECTV  
-Project Type: Retainer  
 
 DIRECTV has been working with Tigerspike for years. We have been providing consulting work and production support across a mind-boggling array of devices and platforms. DTV is a big player in the media distribution world, and wants their content available wherever there is a screen. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent. 
 

@@ -63,8 +63,9 @@ activate :blog do |blog|
   blog.name = "projects"
   blog.prefix = "/projects"
   blog.layout = "project_layout"
-  blog.permalink = "{title}.html"
+  blog.permalink = "/{title}.html"
   blog.sources = "/{title}.html"
+  blog.default_extension = ".md"
 end
 
 # Build-specific configuration
