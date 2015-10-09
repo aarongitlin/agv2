@@ -49,27 +49,6 @@ body {
   }
 }
 
-.intent-toggle {
-  @include span-columns(3);
-  li {
-    float: left;
-    color: $off-white;
-    padding-left: 1.5em;
-  }
-  li.inactive {
-    opacity: 0.4;
-  }
-}
-
-.secondary-controls {
-  @include span-columns(4);
-  float: right;
-  li {
-    float: right;
-    color: $off-white;
-    padding-left: 2em;
-    }
-}
 
 // White bar-main nav
 
@@ -96,24 +75,4 @@ body {
   li:first-child {
     margin-left: -1.6em;
   }
-}
-
-.search-header {
-  @include span-columns(3.3);
-  float: right;
-  padding-top: 0.4em;
-  input {
-    border-radius: 4em;
-    background-color: $light-gray;
-    border: none;
-  }
-}
-
-.category {
-  padding-top: 4em;
-}
-.box-medium {
-  @include span-columns (4);
-  height: 12em;
-  background-color: darken($light-gray, 2%);
 }

@@ -1,12 +1,10 @@
 ---
-title: DTV Watch
+title: Aaron Gitlin
 ---
 
-- 6.times do |ntime|
-  .wrapper
-    .row
-      %section.category
-        %h2 Section Title
-        .box-medium
-        .box-medium
-        .box-medium
+= blog('projects').articles.each do |article|
+  %article
+    %h1
+      = link_to article.title, article.url
+
+    = article.summary

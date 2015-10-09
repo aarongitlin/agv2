@@ -58,6 +58,15 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :blog do |blog|
+  # set options on blog
+  blog.name = "projects"
+  blog.prefix = "/projects"
+  blog.layout = "project_layout"
+  blog.permalink = "{title}.html"
+  blog.sources = "/{title}.html"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
