@@ -2,7 +2,8 @@
 @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
-@import 'project_detail';
+
+@import '_project_detail';
 
 html {
   overflow-y: scroll;
