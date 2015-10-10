@@ -20,9 +20,9 @@ Based on these requirements we knew we needed native applications. Our Technical
 Workshops, surveys and interviews helped us understand the features offered by the client's current services and the key features for most users. We created a handful of personas to help frame the experience, and decided on some core features for an initial launch: *Search*, *Monographs*, and *Interactions*. 
 
 <div class="image-wrapper large image-three-across">
-	<img src="/images/ELS/persona-1.png" />
-	<img src="/images/ELS/persona-2.png" />
-	<img src="/images/ELS/persona-3.png" />
+	<img src="../images/ELS/persona-1.png" />
+	<img src="../images/ELS/persona-2.png" />
+	<img src="../images/ELS/persona-3.png" />
 </div>
 
 ##Define
@@ -32,7 +32,7 @@ With the requirements that came out of Discovery we were able to start defining 
 Branding was of course still a part of the process, so we made sure to create a visual direction that the marketing team was happy with. As always in this phase we deliver a style tile to help establish design direction for the product. 
 
 <div class="image-wrapper large image-full">
-	<img src="/images/ELS/style_tile_logo_blur.png" />
+	<img src="../images/ELS/style_tile_logo_blur.png" />
 </div>
 
 ##Create
@@ -41,8 +41,8 @@ Branding was of course still a part of the process, so we made sure to create a 
 Our core team was made up of a superstar Project Manager, a Tech lead, my trusty design-partner Jess[link-to-jess], and myself. We worked in two week design sprints, quickly researching, sketching, and prototyping ideas to validate with the relevant professionals on the client’s side.
  
 <div class="image-wrapper large image-two-across">
-	<img src="/images/ELS/sketch-1.jpg" />
-	<img src="/images/ELS/sketch-3.jpg" />
+	<img src="../images/ELS/sketch-1.jpg" />
+	<img src="../images/ELS/sketch-3.jpg" />
 </div>
 
 <div class="prototype-wrapper mobile">
@@ -55,11 +55,11 @@ Our core team was made up of a superstar Project Manager, a Tech lead, my trusty
 The problems were complex, working with datasets that came from multiple sources, and often with lengthy text. Depending on the source of the data, we were not always able to format or organize the text in the way we wanted, but we still did all we could to keep information well labeled and clear.
 
 <div class="image-wrapper large image-five-across">
-	<img src="/images/ELS/framed-1.png" />
-	<img src="/images/ELS/framed-2.png" />
-	<img src="/images/ELS/framed-3.png" />
-	<img src="/images/ELS/framed-4.png" />
-	<img src="/images/ELS/framed-5.png" />
+	<img src="../images/ELS/framed-1.png" />
+	<img src="../images/ELS/framed-2.png" />
+	<img src="../images/ELS/framed-3.png" />
+	<img src="../images/ELS/framed-4.png" />
+	<img src="../images/ELS/framed-5.png" />
 </div>
 
 
@@ -69,8 +69,8 @@ We were lucky enough to get in some formal user testing during the design proces
 We were happy to find that most participants completed the tasks with relevant ease, and for the most part had positive feedback. Less happily, but valuably, we also found a small number of key design decisions that proved to hindrances in the experience. If I learned nothing from this whole project, at least I’ll know to be more careful with this pattern:
 
 <div class="image-wrapper small image-two-across">
-	<img src="/images/ELS/dropdown-closed.png" />
-	<img src="/images/ELS/dropdown-open.png" />
+	<img src="../images/ELS/dropdown-closed.png" />
+	<img src="../images/ELS/dropdown-open.png" />
 </div>
 
 **Document**  
@@ -78,7 +78,7 @@ We were happy to find that most participants completed the tasks with relevant e
 The development team required specs, every designer’s favorite part of the job. I sat down with both iOS and Android guys to find out what information was most useful for them, and I tried to think of a way to make all of our jobs a bit easier. In my previous life I had done a fair amount of front-end development, and wanted to repeat some of the principles I worked with such as DRY[link]. Though I didn’t have the time to put together the documents as well as I would have liked, I did create what the team referred to as a “dictionary”, with a summary of tags and descriptions that I used throughout my spec document. I believed that this could work in a way similar to how SASS allows developers to use mixins to create a library of components that can be pulled in and modified as necessary.
 
 <div class="image-wrapper large image-full">
-	<img src="/images/ELS/design-system.jpg" />
+	<img src="../images/ELS/design-system.jpg" />
 </div>
 
 ##Evaluate  
