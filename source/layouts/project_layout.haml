@@ -8,8 +8,14 @@
 
     #main(role="main")
       .wrapper
-        %h1= current_page.title
-        = yield
+        %h1.project-heading= current_article.title
+        .text-wrap
+          %secion.meta-list
+            %p.meta-item= "Client: #{current_article.metadata[:page]['client']}"
+            %p.meta-item= "Year: #{current_article.metadata[:page]['year']}"
+            %p.meta-item= "Role: #{current_article.metadata[:page]['role']}"
+            %p.meta-item= "Project Type: #{current_article.metadata[:page]['project_type']}"
+          = yield
 
     =# partial 'partials/footer'
     = partial 'partials/scripts'

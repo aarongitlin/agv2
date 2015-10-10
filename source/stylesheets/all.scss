@@ -2,14 +2,7 @@
 @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
-
-//WTF
-
-
-$off-white: #f5f5f5;
-$light-gray: #e5e9ec;
-
-$dark-blue: #444857;
+@import 'project_detail';
 
 html {
   overflow-y: scroll;
@@ -21,7 +14,7 @@ body {
 
 .wrapper {
   @include outer-container;
-  @include padding(1em);
+  @include padding(0 1rem);
   @include media($large-screen-up) {
     @include padding(0em);
   }
@@ -33,49 +26,46 @@ body {
 
 ////// Header
 
-// Top Bar
-.top-bar {
-  height: 1.8em;
-  background-color: $dark-blue;
-}
-
-.logo {
-  @include span-columns(2);
-  margin-right: 0;
-  padding-top: 0.4em;
-  padding-bottom: 0.2em;
-  color: $off-white;
-  h4 {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-  }
-}
-
-
-// White bar-main nav
-
 .main-nav {
   background-color: white;
   border-bottom: 1px solid $light-gray;
-  height: 3em;
+  height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .main-nav-list {
-  @include span-columns(9);
+  @include span-columns(12);
   li {
-    float: left;
-    padding: 0.6em 1.6em;
-    font-weight: 200;
-    list-style: none;
-    &.activated {
-      background-color: red;
-      a {
-        color: dark-red;
+    @include span-columns(1 of 3);
+    padding-top: 0.6rem;
+    text-align: center;
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(9 of 12);
+    padding-left: 1rem;
+    li {
+      @include span-columns(2 of 12);
+      font-weight: 200;
+      list-style: none;
+      text-align: left;
+      &.activated {
+        background-color: red;
+        a {
+          color: dark-red;
+        }
       }
     }
   }
-  li:first-child {
-    margin-left: -1.6em;
-  }
+}
+
+//index page
+.list-item {
+  @include row();
+  margin-bottom: 2rem;
+}
+.list-item-image-wrapper {
+  @include span-columns(2);
+}
+.list-item-text-wrapper {
+  @include span-columns(6);
 }

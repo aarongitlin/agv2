@@ -1,6 +1,6 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: $georgia;
+$heading-font-family: $helvetica;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -11,7 +11,7 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-spacing: $base-line-height * 1rem;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
@@ -20,6 +20,10 @@ $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$off-white: #f5f5f5;
+$light-gray: #e5e9ec;
+$dark-blue: #444857;
+
 
 // Font Colors
 $base-background-color: #fff;
