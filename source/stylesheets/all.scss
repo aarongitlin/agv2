@@ -3,14 +3,12 @@
 @import 'base/base';
 @import 'neat/neat';
 
-@import '_project_detail';
-
 html {
   overflow-y: scroll;
 }
 
 body {
-  background: $off-white;
+  background: $base-background-color;
 }
 
 .wrapper {
@@ -28,8 +26,7 @@ body {
 ////// Header
 
 .main-nav {
-  background-color: white;
-  border-bottom: 1px solid $light-gray;
+  background-color: $gray-6;
   height: 3rem;
   margin-bottom: 2rem;
 }
@@ -37,6 +34,9 @@ body {
 .main-nav-list {
   @include span-columns(12);
   li {
+    font-family: $heading-font-family;
+    font-size: 1.2rem;
+    color: $off-white;
     @include span-columns(1 of 3);
     padding-top: 0.6rem;
     text-align: center;

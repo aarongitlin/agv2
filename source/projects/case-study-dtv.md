@@ -16,8 +16,12 @@ Parallel to their regular output and updates, DTV began a separate project in la
 
 The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name. 
 
-[diagram from discovery, attribute to team]
-  
+<div class="image-wrapper large image-three-across">
+	<img src="../images/DTV/diagram-9am.png" />
+	<img src="../images/DTV/diagram-1pm.png" />
+	<img src="../images/DTV/diagram-7pm.png" />
+</div>
+
 As you can imagine, DIRECTV is a large organization that defines the direction of their own products, even when 3rd party agencies like TS are integrated into their teams. Months passed between the end of Discovery, and our reengagement with their team, who was ready for some heavy lifting work to be done. They came back with an initial direction for a product that borrowed heavily from our original concept, but with more of their specific business considerations applied. Functionality that previously was undefined was more concrete now. We now knew we needed:
 - Streaming on-demand content
 - Live TV streams and guides
@@ -46,33 +50,71 @@ We've since adapted this general process to other projects that work in a retain
 **Show Detail**  
 For the purposes of this case study, I’ll pick one series of iterations we did when exploring the Browse experience (as opposed to Watch or Discover).  
 
-1. Define the problem
+1. *Define the problem*  
 A Show has three layers: show, season, and episode, and actions can be taken across all three levels. The design must be adaptable to different sizes, and be as ‘immersive’ as possible.
 
-2. Background Research  
+2. *Background Research*  
 We looked at their existing product as well as other products that have tried to solve similar problems.
-[Netflix][spotify][DTV current][TWC]
 
-3. User Flows
+	<div class="image-wrapper large image-two-across">
+	  <img src="../images/DTV/bg-research-1.png" />
+	  <img src="../images/DTV/bg-research-2.png" />
+	</div>
+
+3. *User Flows*  
 At this early stage of development the client wanted to focus on the *happy flows*: straightforward paths utilizing the product’s primary functionality.
-[happy flow picture]
 
-4. Initial ideas
-[Do i have whiteboard sketches from this time? doodles?] We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.
+	<div class="image-wrapper image-full">
+		<img src="../images/DTV/flows-1.png" />
+	</div>
 
-5. Low Fi Prototype
+4. *Initial ideas*  
+We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.
+
+	<div class="image-wrapper large image-three-across">
+		<img src="../images/DTV/initial-ideas-1.jpg" />
+		<img src="../images/DTV/initial-ideas-2.jpg" />
+		<img src="../images/DTV/initial-ideas-3.jpg" />
+	</div>
+
+5. *Low Fi Prototype*  
 We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details  
-[embedded invision - \<iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>]  
-[link to prototype - \https://invis.io/S92WG32RT]
 
-6. High Fidelity Screens 
-[gallery of screens]
+	<div class="prototype-wrapper tablet">
+		<div class="row">
+			<iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<a class="button tertiary" href="https://invis.io/S92WG32RT">View in InVision</a>
+	</div>
 
-7. High fidelity prototype
-[\<iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>]
-[\https://invis.io/SU33P2HYM]
+6. *High Fidelity Screens*  
 
-8. Documentation
+	<div class="image-wrapper large image-three-across">
+		<img src="../images/DTV/hifi-tablet-1.jpg" />
+		<img src="../images/DTV/hifi-tablet-2.jpg" />
+		<img src="../images/DTV/hifi-tablet-3.jpg" />
+	</div>
+
+	<div class="image-wrapper centered image-two-across">
+		<img src="../images/DTV/hifi-tablet-4.jpg" />
+		<img src="../images/DTV/hifi-tablet-5.jpg" />
+	</div>
+
+	<div class="image-wrapper small centered image-two-across">
+		<img src="../images/DTV/hifi-mobile-1.jpg" />
+		<img src="../images/DTV/hifi-mobile-2.jpg" />
+	</div>
+
+7. *High fidelity prototype*  
+
+	<div class="prototype-wrapper tablet">
+		<div class="row">
+			<iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<a class="button tertiary" href="https://invis.io/SU33P2HYM">View in InVision</a>
+	</div>
+
+8. *Documentation*  
 We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
 
 ——

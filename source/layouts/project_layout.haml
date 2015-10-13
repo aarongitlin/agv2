@@ -2,6 +2,7 @@
 - ie_html :lang => 'en', :class => 'no-js' do
   %head
     = partial "partials/document_head"
+    = stylesheet_link_tag "project_detail"
 
   %body{:class => current_page.data.body_class || 'page'}
     = partial 'partials/header'
@@ -11,10 +12,18 @@
         %h1.project-heading= current_article.title
         .text-wrap
           %secion.meta-list
-            %p.meta-item= "Client: #{current_article.metadata[:page]['client']}"
-            %p.meta-item= "Year: #{current_article.metadata[:page]['year']}"
-            %p.meta-item= "Role: #{current_article.metadata[:page]['role']}"
-            %p.meta-item= "Project Type: #{current_article.metadata[:page]['project_type']}"
+            .meta-item
+              %label Client
+              .value= current_article.metadata[:page]['client']
+            .meta-item
+              %label Role
+              .value= current_article.metadata[:page]['role']
+            .meta-item
+              %label Process
+              .value= current_article.metadata[:page]['project_type']
+            .meta-item
+              %label Year
+              .value= current_article.metadata[:page]['year']
           = yield
 
     =# partial 'partials/footer'
