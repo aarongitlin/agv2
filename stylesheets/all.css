@@ -172,8 +172,8 @@ th {
 
 @font-face {
   font-family: 'pixl_demoregular';
-  src: url("/fonts/pixl_demo-webfont.eot");
-  src: url("/fonts/pixl_demo-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/pixl_demo-webfont.woff2") format("woff2"), url("/fonts/pixl_demo-webfont.woff") format("woff"), url("/fonts/pixl_demo-webfont.ttf") format("truetype"), url("/fonts/pixl_demo-webfont.svg#pixl_demoregular") format("svg");
+  src: url("../fonts/pixl_demo-webfont.eot");
+  src: url("../fonts/pixl_demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pixl_demo-webfont.woff2") format("woff2"), url("../fonts/pixl_demo-webfont.woff") format("woff"), url("../fonts/pixl_demo-webfont.ttf") format("truetype"), url("../fonts/pixl_demo-webfont.svg#pixl_demoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 14, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/base/_typography.scss */
