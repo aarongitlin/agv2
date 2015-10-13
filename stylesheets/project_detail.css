@@ -375,3 +375,187 @@ body {
   /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
   .list-item-text-wrapper:last-child {
     margin-right: 0; }
+
+/* line 7, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.project-heading {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+/* line 12, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.text-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+  .text-wrap:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 60em) {
+    /* line 12, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .text-wrap {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+      .text-wrap:last-child {
+        margin-right: 0; } }
+
+/* line 20, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.meta-list {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #E7EAE8;
+  padding: 1rem 0 0 1rem;
+  margin-bottom: 2rem; }
+  /* line 20, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .meta-list::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 60em) {
+    /* line 20, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-list {
+      padding: 1rem 0 1rem 1rem;
+      margin-left: 8.5298%;
+      margin-right: 8.5298%; } }
+
+/* line 33, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.meta-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+  .meta-item:last-child {
+    margin-right: 0; }
+  /* line 35, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .meta-item label {
+    font-size: 0.85rem;
+    color: #CCD4CF;
+    text-transform: uppercase;
+    font-weight: 600; }
+  /* line 41, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .meta-item .value {
+    margin-top: 0.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #7F8380;
+    font-size: 1.0rem; }
+  @media screen and (max-width: 60em) {
+    /* line 49, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-item:nth-child(2n) {
+      margin-right: 0; } }
+
+@media screen and (min-width: 60em) {
+  /* line 55, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .meta-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    border-right: 1px solid #E7EAE8; }
+    /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+    .meta-item:last-child {
+      margin-right: 0; }
+    /* line 59, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-item:last-child {
+      margin-right: 0;
+      border: none; }
+    /* line 63, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-item:first-child {
+      margin-left: 0; }
+    /* line 66, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-item label {
+      margin-bottom: 0; }
+    /* line 69, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .meta-item .value {
+      margin-bottom: 0; } }
+
+/* line 75, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+h2 {
+  margin-top: 2.4rem;
+  text-transform: uppercase; }
+
+/* line 81, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.image-wrapper {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  /* line 20, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .image-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 60em) {
+    /* line 85, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .image-wrapper.large {
+      margin-left: -17.05961%;
+      margin-right: -17.09402%; } }
+  @media screen and (min-width: 60em) {
+    /* line 91, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .image-wrapper.small {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%; } }
+
+@media screen and (min-width: 60em) {
+  /* line 100, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .image-two-across img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+    .image-two-across img:last-child {
+      margin-right: 0; }
+    /* line 103, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .image-two-across img:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 60em) {
+  /* line 109, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .image-three-across img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+    .image-three-across img:last-child {
+      margin-right: 0; }
+    /* line 112, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .image-three-across img:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 60em) {
+  /* line 118, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+  .image-five-across img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%; }
+    /* line 89, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
+    .image-five-across img:last-child {
+      margin-right: 0; }
+    /* line 121, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .image-five-across img:last-child {
+      margin-right: 0; } }
+
+/* line 127, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.prototype-wrapper {
+  text-align: center;
+  margin-bottom: 2rem; }
+  @media screen and (max-width: 40em) {
+    /* line 130, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .prototype-wrapper iframe {
+      display: none; } }
+
+/* line 137, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+.prototype-wrapper.tablet {
+  margin-left: -17.05961%;
+  margin-right: -17.09402%; }
+  @media screen and (max-width: 60em) {
+    /* line 140, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/project_detail.scss */
+    .prototype-wrapper.tablet iframe {
+      display: none; } }

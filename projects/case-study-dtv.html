@@ -24,6 +24,7 @@
     <script>
       try{Typekit.load();}catch(e){}
     </script>
+    <link href="../stylesheets/project_detail.css" rel="stylesheet" />
   </head>
   <body class='page'>
     <header>
@@ -44,10 +45,22 @@
         <h1 class='project-heading'>Wave</h1>
         <div class='text-wrap'>
           <secion class='meta-list'>
-            <p class='meta-item'>Client: DTV</p>
-            <p class='meta-item'>Year: 2015</p>
-            <p class='meta-item'>Role: Lead UI Design</p>
-            <p class='meta-item'>Project Type: Retainer</p>
+            <div class='meta-item'>
+              <label>Client</label>
+              <div class='value'>DTV</div>
+            </div>
+            <div class='meta-item'>
+              <label>Role</label>
+              <div class='value'>Lead UI Design</div>
+            </div>
+            <div class='meta-item'>
+              <label>Process</label>
+              <div class='value'>Retainer</div>
+            </div>
+            <div class='meta-item'>
+              <label>Year</label>
+              <div class='value'>2015</div>
+            </div>
           </secion>
           <p>DIRECTV has been working with Tigerspike for years. We have been providing consulting work and production support across a mind-boggling array of devices and platforms. DTV is a big player in the media distribution world, and wants their content available wherever there is a screen. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent.</p>
         
@@ -57,7 +70,11 @@
         
           <p>The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: <em>the Wave</em>. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name.</p>
         
-          <p>[diagram from discovery, attribute to team]</p>
+          <div class="image-wrapper large image-three-across">
+          	<img src="../images/DTV/diagram-9am.png" />
+          	<img src="../images/DTV/diagram-1pm.png" />
+          	<img src="../images/DTV/diagram-7pm.png" />
+          </div>
         
           <p>As you can imagine, DIRECTV is a large organization that defines the direction of their own products, even when 3rd party agencies like TS are integrated into their teams. Months passed between the end of Discovery, and our reengagement with their team, who was ready for some heavy lifting work to be done. They came back with an initial direction for a product that borrowed heavily from our original concept, but with more of their specific business considerations applied. Functionality that previously was undefined was more concrete now. We now knew we needed:
           - Streaming on-demand content
@@ -90,40 +107,78 @@
         
           <ol>
             <li>
-              <p>Define the problem
+              <p><em>Define the problem</em><br />
           A Show has three layers: show, season, and episode, and actions can be taken across all three levels. The design must be adaptable to different sizes, and be as ‘immersive’ as possible.</p>
             </li>
             <li>
-              <p>Background Research<br />
-          We looked at their existing product as well as other products that have tried to solve similar problems.
-          [Netflix][spotify][DTV current][TWC]</p>
+              <p><em>Background Research</em><br />
+          We looked at their existing product as well as other products that have tried to solve similar problems.</p>
+        
+              <div class="image-wrapper large image-two-across">
+             <img src="../images/DTV/bg-research-1.png" />
+             <img src="../images/DTV/bg-research-2.png" />
+           </div>
             </li>
             <li>
-              <p>User Flows
-          At this early stage of development the client wanted to focus on the <em>happy flows</em>: straightforward paths utilizing the product’s primary functionality.
-          [happy flow picture]</p>
+              <p><em>User Flows</em><br />
+          At this early stage of development the client wanted to focus on the <em>happy flows</em>: straightforward paths utilizing the product’s primary functionality.</p>
+        
+              <div class="image-wrapper image-full">
+               <img src="../images/DTV/flows-1.png" />
+           </div>
             </li>
             <li>
-              <p>Initial ideas
-          [Do i have whiteboard sketches from this time? doodles?] We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.</p>
+              <p><em>Initial ideas</em><br />
+          We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.</p>
+        
+              <div class="image-wrapper large image-three-across">
+               <img src="../images/DTV/initial-ideas-1.jpg" />
+               <img src="../images/DTV/initial-ideas-2.jpg" />
+               <img src="../images/DTV/initial-ideas-3.jpg" />
+           </div>
             </li>
             <li>
-              <p>Low Fi Prototype
-          We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details<br />
-          [embedded invision - &lt;iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;]<br />
-          [link to prototype - \https://invis.io/S92WG32RT]</p>
+              <p><em>Low Fi Prototype</em><br />
+          We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details</p>
+        
+              <div class="prototype-wrapper tablet">
+               <div class="row">
+                   <iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen=""></iframe>
+               </div>
+               <a class="button tertiary" href="https://invis.io/S92WG32RT">View in InVision</a>
+           </div>
             </li>
             <li>
-              <p>High Fidelity Screens 
-          [gallery of screens]</p>
+              <p><em>High Fidelity Screens</em></p>
+        
+              <div class="image-wrapper large image-three-across">
+               <img src="../images/DTV/hifi-tablet-1.jpg" />
+               <img src="../images/DTV/hifi-tablet-2.jpg" />
+               <img src="../images/DTV/hifi-tablet-3.jpg" />
+           </div>
+        
+              <div class="image-wrapper centered image-two-across">
+               <img src="../images/DTV/hifi-tablet-4.jpg" />
+               <img src="../images/DTV/hifi-tablet-5.jpg" />
+           </div>
+        
+              <div class="image-wrapper small centered image-two-across">
+               <img src="../images/DTV/hifi-mobile-1.jpg" />
+               <img src="../images/DTV/hifi-mobile-2.jpg" />
+           </div>
             </li>
             <li>
-              <p>High fidelity prototype
-          [&lt;iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;]
-          [\https://invis.io/SU33P2HYM]</p>
+              <p><em>High fidelity prototype</em></p>
+        
+              <div class="prototype-wrapper tablet">
+               <div class="row">
+                   <iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen=""></iframe>
+               </div>
+               <a class="button tertiary" href="https://invis.io/SU33P2HYM">View in InVision</a>
+           </div>
             </li>
             <li>
-              <p>Documentation
+              <p><em>Documentation</em><br />
           We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.</p>
             </li>
           </ol>
