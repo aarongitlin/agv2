@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'pixl_demoregular';
+    src: url('/fonts/pixl_demo-webfont.eot');
+    src: url('/fonts/pixl_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/pixl_demo-webfont.woff2') format('woff2'),
+         url('/fonts/pixl_demo-webfont.woff') format('woff'),
+         url('/fonts/pixl_demo-webfont.ttf') format('truetype'),
+         url('/fonts/pixl_demo-webfont.svg#pixl_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
@@ -23,7 +36,11 @@ h1 {
   font-size: 3.0rem;
 }
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  font-family: 'pixl_demoregular';
+  font-weight: 400;
+  letter-spacing: -0.10rem;
 }
 
 p {
@@ -38,7 +55,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    color: lighten($action-color, 15%);
   }
 
   &:active,
@@ -59,4 +76,8 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+ol {
+  list-style: decimal;
 }
