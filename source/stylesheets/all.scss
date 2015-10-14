@@ -35,7 +35,7 @@ body {
   @include span-columns(12);
   li {
     font-family: $heading-font-family;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: $off-white;
     @include span-columns(1 of 3);
     padding-top: 0.6rem;
@@ -63,10 +63,34 @@ body {
 .list-item {
   @include row();
   margin-bottom: 2rem;
+  @include media($large-screen-up) {
+    @include shift(2);   
+  }
+
+}
+.list-item-title {
+  padding-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.10rem;
 }
 .list-item-image-wrapper {
   @include span-columns(2);
+  max-width: 4rem;
+  @include media($large-screen-up) {
+    @include span-columns(2);
+    max-width: none;
+  }
 }
-.list-item-text-wrapper {
-  @include span-columns(6);
+.list-item-title {
+  @include span-columns(9);
+  @include omega();
+  @include media($large-screen-up) {
+    @include span-columns(6);
+  }
+}
+.list-item-intro {
+  @include span-columns(12);
+  @include media($large-screen-up) {
+    @include span-columns(6);
+  }
 }

@@ -6,6 +6,8 @@ year: "2014"
 date: 10/5/2015
 client: "Elsevier"
 project_type: "Waterfall"
+image_path: "../images/ELS/pixel_pill.png"
+intro: "One of the biggest names in Medical Data and Publishing came to us to help take their products into the mobile era"
 ---
 
 Elsevier is a name not well known among us common people, but likely known by anyone who went to Medical or Pharmaceutical school. They publish vast amounts of information around the world, and are a trusted and ubiquitous name in the professional medical community.
