@@ -9,7 +9,9 @@
 
     #main(role="main")
       .wrapper
-        %h1.project-heading= current_article.title
+        %h1.project-heading
+          = image_tag current_article.metadata[:page]['image_path']
+          = current_article.title
         .text-wrap
           %secion.meta-list
             .meta-item

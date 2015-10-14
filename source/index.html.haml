@@ -6,7 +6,6 @@ title: Aaron Gitlin
   - blog('projects').articles.each do |article|
     %article.project.list-item
       .list-item-image-wrapper
-        = image_tag lorem.image('360x280')
-      .list-item-text-wrapper
-        %h2= link_to article.title, article.url
-        = article.summary
+        = image_tag article.metadata[:page]['image_path']
+      %h2.list-item-title= link_to article.title, article.url
+      %h4.list-item-intro= article.metadata[:page]['intro']
