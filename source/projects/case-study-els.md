@@ -1,12 +1,11 @@
 ---
-title: Clinical Pharmacology
-
-role: "Lead UI Design"
-year: "2014"
-date: 10/5/2015
-client: "Elsevier"
-project_type: "Waterfall"
-image_path: "../images/ELS/pixel_pill.png"
+title: Clinical Pharmacology  
+role: "Lead UI Design"  
+year: "2014"  
+date: 10/5/2015  
+client: "Elsevier"  
+project_type: "Waterfall"  
+image_path: "../images/ELS/pixel_pill.png"   
 intro: "One of the biggest names in Medical Data and Publishing came to us to help take their products into the mobile era"
 ---
 
