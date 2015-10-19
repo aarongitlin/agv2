@@ -1,5 +1,5 @@
 ---
-title: Wave
+title: DTV Concept Design
 
 role: "Lead UI Design"
 year: "2015"

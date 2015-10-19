@@ -3,6 +3,8 @@
 @import 'base/base';
 @import 'neat/neat';
 
+@import 'project_detail';
+
 html {
   overflow-y: scroll;
 }
@@ -62,9 +64,13 @@ body {
 //index page
 .list-item {
   @include row();
+  @include omega();
   margin-bottom: 2rem;
+  border-bottom: 1px solid $gray-2;
+  padding-bottom: 1rem;
   @include media($large-screen-up) {
-    @include shift(2);   
+    @include shift(2);
+    @include span-columns(8);
   }
 
 }
@@ -76,21 +82,49 @@ body {
 .list-item-image-wrapper {
   @include span-columns(2);
   max-width: 4rem;
+  img {
+    padding-top: 0.25rem;
+  }
   @include media($large-screen-up) {
-    @include span-columns(2);
+    @include span-columns(1.5 of 8);
     max-width: none;
+    min-height: 7rem;
+    img {
+      max-width: 85%;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
   }
 }
 .list-item-title {
   @include span-columns(9);
   @include omega();
+  margin-top: 0;
   @include media($large-screen-up) {
-    @include span-columns(6);
+    @include span-columns(6 of 8);
   }
 }
 .list-item-intro {
   @include span-columns(12);
   @include media($large-screen-up) {
-    @include span-columns(6);
+    @include span-columns(6 of 8);
   }
+}
+
+.profile-image {
+  @include span-columns(10 of 12);
+  @include shift(1);
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+    @include shift(4);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(2);
+    @include shift(5);
+  }
+
+}
+
+.profile-header {
+  text-align: center;
 }
