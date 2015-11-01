@@ -18,7 +18,7 @@ Parallel to their regular output and updates, DTV began a separate project in la
 
 The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name. 
 
-<div class="image-wrapper large image-three-across">
+<div class="image-wrapper extra-large image-three-across">
 	<img src="../images/DTV/diagram-9am.png" />
 	<img src="../images/DTV/diagram-1pm.png" />
 	<img src="../images/DTV/diagram-7pm.png" />
@@ -58,7 +58,7 @@ A Show has three layers: show, season, and episode, and actions can be taken acr
 2. *Background Research*  
 We looked at their existing product as well as other products that have tried to solve similar problems.
 
-	<div class="image-wrapper large image-two-across">
+	<div class="image-wrapper extra-large image-two-across">
 	  <img src="../images/DTV/bg-research-1.png" />
 	  <img src="../images/DTV/bg-research-2.png" />
 	</div>
@@ -73,7 +73,7 @@ At this early stage of development the client wanted to focus on the *happy flow
 4. *Initial ideas*  
 We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.
 
-	<div class="image-wrapper large image-three-across">
+	<div class="image-wrapper extra-large image-three-across">
 		<img src="../images/DTV/initial-ideas-1.jpg" />
 		<img src="../images/DTV/initial-ideas-2.jpg" />
 		<img src="../images/DTV/initial-ideas-3.jpg" />
@@ -86,12 +86,12 @@ We put a few basic approaches into inVision to validate that we were moving in t
 		<div class="row">
 			<iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<a class="button tertiary" href="https://invis.io/S92WG32RT">View in InVision</a>
+		<a class="button tertiary" href="https://invis.io/S92WG32RT">Tablet Prototype in Invision</a>
 	</div>
 
 6. *High Fidelity Screens*  
 
-	<div class="image-wrapper large image-three-across">
+	<div class="image-wrapper extra-large image-three-across">
 		<img src="../images/DTV/hifi-tablet-1.jpg" />
 		<img src="../images/DTV/hifi-tablet-2.jpg" />
 		<img src="../images/DTV/hifi-tablet-3.jpg" />
@@ -113,7 +113,7 @@ We put a few basic approaches into inVision to validate that we were moving in t
 		<div class="row">
 			<iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<a class="button tertiary" href="https://invis.io/SU33P2HYM">View in InVision</a>
+		<a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
 	</div>
 
 8. *Documentation*  

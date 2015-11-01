@@ -35,13 +35,16 @@ body {
 
 .main-nav-list {
   @include span-columns(12);
-  li {
+  li a {
     font-family: $heading-font-family;
     font-size: 1.0rem;
-    color: $off-white;
+    color: $gray-3;
     @include span-columns(1 of 3);
     padding-top: 0.6rem;
     text-align: center;
+    &:hover {
+      color: $off-white;
+    }
   }
   @include media($medium-screen-up) {
     @include span-columns(9 of 12);
@@ -62,17 +65,27 @@ body {
 }
 
 //index page
+.personal-info {
+  @include span-columns(3);
+}
+
+.logo {
+  @include row();
+  img {
+    @include span-columns(1 of 3);
+  }
+}
+
+.article-list {
+  @include span-columns(8);
+}
+
 .list-item {
   @include row();
   @include omega();
   margin-bottom: 2rem;
   border-bottom: 1px solid $gray-2;
   padding-bottom: 1rem;
-  @include media($large-screen-up) {
-    @include shift(2);
-    @include span-columns(8);
-  }
-
 }
 .list-item-title {
   padding-top: 0.75rem;
