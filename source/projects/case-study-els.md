@@ -50,12 +50,12 @@ Our core team was made up of a superstar Project Manager, a Tech lead, my trusty
 	<div class="row">
 		<iframe width="396" height="818" src="//invis.io/GZ4F6AXN5" frameborder="0" allowfullscreen></iframe>
 	</div>
-	<a class="button tertiary" href="https://invis.io/SKMR82F4">View in InVision</a>
+	<a class="button tertiary" href="https://invis.io/SKMR82F4">Mobile Prototype on InVision</a>
 </div>
 
 The problems were complex, working with datasets that came from multiple sources, and often with lengthy text. Depending on the source of the data, we were not always able to format or organize the text in the way we wanted, but we still did all we could to keep information well labeled and clear.
 
-<div class="image-wrapper large image-five-across">
+<div class="image-wrapper extra-large image-five-across">
 	<img src="../images/ELS/framed-1.png" />
 	<img src="../images/ELS/framed-2.png" />
 	<img src="../images/ELS/framed-3.png" />
@@ -78,8 +78,8 @@ We were happy to find that most participants completed the tasks with relevant e
   
 The development team required specs, every designer’s favorite part of the job. I sat down with both iOS and Android guys to find out what information was most useful for them, and I tried to think of a way to make all of our jobs a bit easier. In my previous life I had done a fair amount of front-end development, and wanted to repeat some of the principles I worked with such as DRY[link]. Though I didn’t have the time to put together the documents as well as I would have liked, I did create what the team referred to as a “dictionary”, with a summary of tags and descriptions that I used throughout my spec document. I believed that this could work in a way similar to how SASS allows developers to use mixins to create a library of components that can be pulled in and modified as necessary.
 
-<div class="image-wrapper large image-full">
-	<img src="../images/ELS/design-system.jpg" />
+<div class="image-wrapper extra-large image-full">
+	<img src="../images/ELS/els-components.png" />
 </div>
 
 ##Evaluate  

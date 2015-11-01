@@ -2,6 +2,7 @@
 $one-col: 8.5298%;
 $two-col: 17.09402%;
 $three-col: 25.58941%;
+$four-col: 34.11922%;
 
 .project-heading {
 	text-align: center;
@@ -46,12 +47,7 @@ $three-col: 25.58941%;
 //default-mobile meta
 .meta-item {
 	@include span-columns(6 of 12);
-	label {
-		font-size: 0.85rem;
-		color: $gray-3;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
+
 	.value {
 		margin-top: 0.25rem;
 		font-weight: 400;
@@ -96,6 +92,10 @@ h2 {
 	@include row();
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	&.extra-large {
+		@include shift(-4);
+		margin-right: (-$four-col);
+	}
 	&.large {
 		@include media($large-screen-up) {
 			@include shift(-2); //break images out of grid
@@ -161,6 +161,5 @@ h2 {
 }
 
 .prototype-wrapper .button {
-	display: block;
-	margin: auto;
+	margin: 1rem auto 0 auto
 }

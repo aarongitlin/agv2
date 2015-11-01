@@ -37,11 +37,11 @@ We created an initial site-map based on our understanding of CM&F's needs as wel
 
 We also produced a few style tiles for them that would give them the freedom to help choose the visual direction or their site. I had my own thoughts on which direction might work best for them, but wanted to make sure the decision was there's. When they chose, we had a very basic visual foundation in which to build the components of the final product. 
 
-<div class="image-wrapper large image-full">
+<div class="image-wrapper extra-large image-full">
 	<img src="../images/CMF/site-map.png" />
 </div>
 
-<div class="image-wrapper large image-three-across">
+<div class="image-wrapper extra-large image-three-across">
 	<img src="../images/CMF/style-tile-1.jpg" />
 	<img src="../images/CMF/style-tile-2.jpg" />
 	<img src="../images/CMF/style-tile-3.jpg" />
@@ -66,16 +66,16 @@ This pivot didn't throw off the whole design system or flow, but definitely chan
 	<div class="row">
 		<iframe width="438" height="930" src="//invis.io/HS2TZP5A5" frameborder="0" allowfullscreen></iframe>
 	</div>
-	<a class="button tertiary" href="https://invis.io/RC2TZP4Y3">View in InVision</a>
-	<a class="button tertiary" href="https://invis.io/4M2U01RWD">View Desktop Design</a>
+	<a class="button tertiary" href="https://invis.io/RC2TZP4Y3">Mobile Prototype in InVision</a>
+	<a class="button tertiary" href="https://invis.io/4M2U01RWD">Desktop Prototype in InVision</a>
 </div>
 
 <div class="prototype-wrapper mobile">
 	<div class="row">
 		<iframe width="438" height="930" src="//invis.io/GB3C1WMNZ" frameborder="0" allowfullscreen></iframe>
 	</div>
-	<a class="button tertiary" href="https://invis.io/PM3C1WLRQ">View in InVision</a>
-	<a class="button tertiary" href="https://invis.io/F83C1WBWZ">View Desktop Design</a>
+	<a class="button tertiary" href="https://invis.io/PM3C1WLRQ">Mobile Prototype in InVision</a>
+	<a class="button tertiary" href="https://invis.io/F83C1WBWZ">Desktop Prototype in InVision</a>
 </div>
 
 

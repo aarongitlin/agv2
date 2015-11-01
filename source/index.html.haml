@@ -3,9 +3,17 @@ title: Aaron Gitlin
 ---
 
 .wrapper
-  - blog('projects').articles.each do |article|
-    %article.project.list-item
-      .list-item-image-wrapper
-        = image_tag article.metadata[:page]['image_path']
-      %h2.list-item-title= link_to article.title, article.url
-      %h4.list-item-intro= article.metadata[:page]['intro']
+  %section.personal-info
+    .logo=image_tag "../images/home/logo.svg"
+    %h3.personal-info-name Aaron Gitlin
+    %label Experience Designer
+    .personal-info-intro
+    = link_to 'Profile', "#{base_url}" + "profile.html"
+
+  %section.article-list
+    - blog('projects').articles.each do |article|
+      %article.project.list-item
+        .list-item-image-wrapper
+          = image_tag article.metadata[:page]['image_path']
+        %h2.list-item-title= link_to article.title, article.url
+        %h4.list-item-intro= article.metadata[:page]['intro']
