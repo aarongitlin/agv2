@@ -1,3 +1,15 @@
+@mixin top-page-margin {
+  padding-top: 6rem; //3 for header 3 for fun
+}
+
+@mixin small-description-text {
+  font-size: 0.95rem;
+  font-family: $sans-serif;
+  line-height: 1.4;
+  color: $gray-5;
+}
+
+
 @import 'normalize.css';
 @import 'bourbon/bourbon';
 @import 'base/base';
@@ -5,22 +17,38 @@
 
 @import 'project_detail';
 
+
+* {
+  margin: 0;
+}
+
 html {
   overflow-y: scroll;
+  height: 100%;
 }
 
 body {
   background: $base-background-color;
+  height: 100%;
 }
 
+//Some tricky stuff for sticky footer
 #main {
-  padding-bottom: 4rem;
+  min-height: 100%;
+  margin-bottom: -4rem;
+  margin-top: -3rem;
+  &:after {
+  content: "";
+  display: block;
+  }
 }
 .wrapper {
   @include outer-container;
-  @include padding(0 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
   @include media(min-width em(1170)) {
-    @include padding(0em);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -36,12 +64,15 @@ body {
 }
 
 .main-nav-list {
-  @include span-columns(12);
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
   li a {
     font-family: $heading-font-family;
-    font-size: 1.0rem;
+    font-size: 0.80rem;
+    letter-spacing: -0.05rem;
     color: $gray-3;
-    @include span-columns(6 of 12);
+    float:left;
+    width: 33.3%;
     padding-top: 0.8rem;
     text-align: center;
     &:hover {
@@ -53,7 +84,16 @@ body {
     @include span-columns(9 of 12);
     padding-left: 1rem;
     li {
-      @include span-columns(3 of 12);
+      margin-left: 4rem;
+      float: left;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    li a {
+      font-size: 1.0rem;
+      width: auto;
       font-weight: 200;
       list-style: none;
       text-align: left;
@@ -74,7 +114,15 @@ body {
   color: $off-white;
 }
 
+.blog-page .main-nav-list li:nth-child(3n) a {
+  color: $off-white;
+}
+
 //// Index page
+
+.index-page-wrapper {
+  @include top-page-margin();
+}
 
 // Personal Info
 .personal-info-wrapper {
@@ -87,9 +135,10 @@ body {
     text-align: center;
     padding-right: 0;
     padding-left: 0;
+    margin-top: -3rem;
   }
   @include media($medium-screen-up) {
-    display: inline-block;
+    display: table;
     text-align: left;
   }
   @include media($large-screen-up) {
@@ -100,6 +149,7 @@ body {
     border: none;
     @include span-columns(3);
     background: none;
+    margin-top: 0;
   }
 
 }
@@ -111,7 +161,6 @@ body {
   }
   @include media($large-screen-up) {
     @include span-columns(3 of 3);
-    margin-top: 3rem;
 
   }
 }
@@ -159,10 +208,7 @@ body {
 
 .personal-info-intro {
   margin-top: 0.5rem;
-  font-size: 0.95rem;
-  font-family: $sans-serif;
-  line-height: 1.4;
-  color: $gray-5;
+  @include small-description-text();
   display: none;
   @include media($medium-screen-up) {
     display: block;
@@ -181,7 +227,7 @@ body {
   margin-top: 0.5rem;
   font-family: $sans-serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 600;
   &::after {
     content: "»";
@@ -197,19 +243,25 @@ body {
 
 //Article List
 .article-list {
-  margin-top: 3rem;
+  margin-top: 1rem;
   @include media($medium-screen-up) {
     @include span-columns(10);
   }
   @include media($large-screen-up) {
     @include span-columns(8);
+    margin-top: 0;
   }
+}
+
+.case-studies-heading {
+  border-bottom: 1px solid $gray-3;
+  padding-bottom: 0.2rem;
 }
 
 .list-item {
   @include row();
   @include omega();
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   border-bottom: 1px solid $gray-2;
   padding-bottom: 1rem;
 }
@@ -260,8 +312,11 @@ body {
   }
 }
 
-//// Profile Page
+//// Bio Page
 
+.bio-page-wrapper {
+  @include top-page-margin();
+}
 .profile-image {
   @include span-columns(10 of 12);
   @include shift(1);
@@ -278,4 +333,19 @@ body {
 
 .profile-header {
   text-align: center;
+}
+
+
+///// Footer
+
+.footer, #main:after {
+  height: 4rem;
+}
+.footer {
+  background-color: $gray-2;
+
+}
+.footer-text {
+  @include small-description-text();
+  padding-top: 0.5rem;
 }
