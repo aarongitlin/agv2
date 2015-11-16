@@ -1,14 +1,18 @@
 ---
 title: Aaron Gitlin
+body_class: index-page
 ---
 
 .wrapper
-  %section.personal-info
-    .logo=image_tag "../images/home/logo.svg"
-    %h3.personal-info-name Aaron Gitlin
-    %label Experience Designer
-    .personal-info-intro
-    = link_to 'Profile', "#{base_url}" + "profile.html"
+  .personal-info-wrapper
+    %section.personal-info
+      .logo=image_tag "../images/home/logo.svg"
+      .personal-info-name
+        %h3 Aaron Gitlin
+      %label.personal-info-position Experience Designer
+      .personal-info-intro
+        New York City based Experience Designer currently working at global digital consultancy Tigerspike. Specializing in creating visual systems for complex projects, passionate about finding function in beauty and the beauty of function.
+        = link_to 'Profile', "#{base_url}" + "profile.html", :class=> "profile-link"
 
   %section.article-list
     - blog('projects').articles.each do |article|

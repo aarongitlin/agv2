@@ -5,6 +5,7 @@ $three-col: 25.58941%;
 $four-col: 34.11922%;
 
 .project-heading {
+	margin-top: 3rem;
 	text-align: center;
 	margin-bottom: 2rem;
 	font-size: 2.0rem;
@@ -16,13 +17,13 @@ $four-col: 34.11922%;
 		margin: auto;
 		margin-bottom: 1rem;
 		height: 2.4rem;
+		vertical-align: middle;
 		@include media($medium-screen-up) {
 			display: inline;
 			margin: auto;
 		}
 	}
 }
-
 
 .text-wrap {
 	@include span-columns(12);
@@ -49,9 +50,9 @@ $four-col: 34.11922%;
 	@include span-columns(6 of 12);
 
 	.value {
-		margin-top: 0.25rem;
 		font-weight: 400;
 		margin-bottom: 1rem;
+		margin-top: 0.2rem;
 		color: $gray-5;
 		font-size: 1.0rem;
 	}
@@ -93,8 +94,10 @@ h2 {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	&.extra-large {
-		@include shift(-4);
-		margin-right: (-$four-col);
+		@include media($large-screen-up) {
+			@include shift(-3);
+			margin-right: (-$three-col);
+		}
 	}
 	&.large {
 		@include media($large-screen-up) {
@@ -149,17 +152,66 @@ h2 {
 }
 
 .prototype-wrapper.tablet {
-	@include shift(-2);
-	margin-right: (-$two-col);
-	@include media($large-screen-down) {
-		margin-left: auto;
-		margin-right: auto;
-		iframe {
+	margin-left: auto;
+	margin-right: auto;
+
+	iframe {
 			display: none;
 		}
+
+	@include media(min-width em(960) and max-width em(1040)) {
+		@include shift(-3);
+		iframe {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@include media(min-width em(1040)) {
+		iframe {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		margin-left: (-$three-col);
+		margin-right: (-$three-col);
 	}
 }
 
 .prototype-wrapper .button {
-	margin: 1rem auto 0 auto
+	margin: 1rem auto 0 auto;
+}
+
+.article-footer {
+	margin-top: 6rem;
+	padding-top: 1rem;
+	border-top: 1px solid $gray-3;
+}
+.article-footer label {
+	margin-top: 0.2rem;
+}
+
+.next-prev-article-links {
+	padding-top: 1rem;
+	font-size: 1rem;
+}
+
+.prev-article-link::before {
+	content: "«";
+	position: relative;
+	top: -1px;
+	padding-right: 2px;
+}
+
+
+.next-article-link {
+	float: right;
+
+	&::after {
+	content: "»";
+	position: relative;
+	top: -1px;
+	padding-left: 2px;
+	}
 }

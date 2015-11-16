@@ -67,6 +67,7 @@ activate :blog do |blog|
   blog.permalink = "/{title}.html"
   blog.sources = "/{title}.html"
   blog.default_extension = ".md"
+  blog.paginate = true
 end
 
 # Build-specific configuration

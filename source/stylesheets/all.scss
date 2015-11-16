@@ -13,10 +13,13 @@ body {
   background: $base-background-color;
 }
 
+#main {
+  padding-bottom: 4rem;
+}
 .wrapper {
   @include outer-container;
   @include padding(0 1rem);
-  @include media($large-screen-up) {
+  @include media(min-width em(1170)) {
     @include padding(0em);
   }
 }
@@ -30,7 +33,6 @@ body {
 .main-nav {
   background-color: $gray-6;
   height: 3rem;
-  margin-bottom: 2rem;
 }
 
 .main-nav-list {
@@ -39,18 +41,19 @@ body {
     font-family: $heading-font-family;
     font-size: 1.0rem;
     color: $gray-3;
-    @include span-columns(1 of 3);
-    padding-top: 0.6rem;
+    @include span-columns(6 of 12);
+    padding-top: 0.8rem;
     text-align: center;
     &:hover {
       color: $off-white;
     }
   }
+
   @include media($medium-screen-up) {
     @include span-columns(9 of 12);
     padding-left: 1rem;
     li {
-      @include span-columns(2 of 12);
+      @include span-columns(3 of 12);
       font-weight: 200;
       list-style: none;
       text-align: left;
@@ -64,20 +67,143 @@ body {
   }
 }
 
-//index page
-.personal-info {
-  @include span-columns(3);
+.index-page .main-nav-list li:first-child a {
+  color: $off-white;
+}
+.profile-page .main-nav-list li:nth-child(2n) a {
+  color: $off-white;
 }
 
-.logo {
-  @include row();
-  img {
-    @include span-columns(1 of 3);
+//// Index page
+
+// Personal Info
+.personal-info-wrapper {
+  @include media($small-screen-up) {
+    padding: 1rem;
+    background-color: white;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-bottom: 1px solid $gray-2;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include media($medium-screen-up) {
+    display: inline-block;
+    text-align: left;
+  }
+  @include media($large-screen-up) {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    padding: 0;
+    border: none;
+    @include span-columns(3);
+    background: none;
+  }
+
+}
+
+.personal-info {
+  width: 100%;
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(3 of 3);
+    margin-top: 3rem;
+
   }
 }
 
+.logo {
+  @include media($small-screen-up) {
+    @include span-columns(12 of 12);
+  }
+  @include media ($medium-screen-up) {
+    @include span-columns(2 of 10);
+  }
+  @include media ($large-screen-up) {
+    @include row();
+    @include span-columns(3 of 3);
+  }
+}
+
+.logo img {
+  @include media($small-screen-up) {
+    width: 20%;
+    margin: auto;
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(10 of 10);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(1.5 of 3);
+  }
+}
+
+.personal-info-name {
+  margin-top: 0.2rem;
+  h3 {
+    margin-bottom: 0;
+  }
+  @include media($large-screen-up) {
+    margin-top: 1rem;
+    @include span-columns(3 of 3);
+  }
+}
+
+.personal-info-position {
+  margin-top: 0.2rem;
+}
+
+.personal-info-intro {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-family: $sans-serif;
+  line-height: 1.4;
+  color: $gray-5;
+  display: none;
+  @include media($medium-screen-up) {
+    display: block;
+    @include span-columns(8 of 10);
+    font-size: 0.90rem;
+  }
+  @include media($large-screen-up) {
+    display: block;
+    margin-top: 1rem;
+    @include span-columns(2.5 of 3);
+  }
+}
+
+.profile-link {
+  @include span-columns(3 of 3);
+  margin-top: 0.5rem;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  &::after {
+    content: "»";
+    position: relative;
+    padding-left: 2px;
+    top: -1px;
+  }
+  @include media($large-screen-up) {
+    font-size: 0.90rem;
+    margin-top: 0.2rem;
+  }
+}
+
+//Article List
 .article-list {
-  @include span-columns(8);
+  margin-top: 3rem;
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(8);
+  }
 }
 
 .list-item {
@@ -87,14 +213,13 @@ body {
   border-bottom: 1px solid $gray-2;
   padding-bottom: 1rem;
 }
-.list-item-title {
-  padding-top: 0.75rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.10rem;
-}
+
 .list-item-image-wrapper {
-  @include span-columns(2);
+  @include span-columns(2 of 12);
   max-width: 4rem;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
   img {
     padding-top: 0.25rem;
   }
@@ -109,20 +234,33 @@ body {
     }
   }
 }
+
 .list-item-title {
-  @include span-columns(9);
+  @include span-columns(9.8 of 12);
   @include omega();
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.10rem;
+  display: inline-block;
+  float: none;
   margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
   @include media($large-screen-up) {
     @include span-columns(6 of 8);
+    padding-top: 0.75rem;
+    margin-bottom: 0.5rem;
   }
-}
+ }
+
 .list-item-intro {
   @include span-columns(12);
   @include media($large-screen-up) {
     @include span-columns(6 of 8);
   }
 }
+
+//// Profile Page
 
 .profile-image {
   @include span-columns(10 of 12);
@@ -132,8 +270,8 @@ body {
     @include shift(4);
   }
   @include media($large-screen-up) {
-    @include span-columns(2);
-    @include shift(5);
+    @include span-columns(1);
+    @include shift(5.5);
   }
 
 }

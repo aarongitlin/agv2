@@ -1,0 +1,7 @@
+Graphic Designers such as Massimo Vignelli and Saul Bass created design systems for extensive signage systems and brand identities in the middle of the last century, and I see my own work as a continuation of the same practice. Vignelli's design system for the New York subway and Bass's
+
+Apple has been publishing it's Human Interface Guidelines for years, providing application designers lsuch as myself with a foundation for creating new products that use patterns and visuls that are familiar to users. Google too has caught up and produces beautiful guidelines of it's own, which have become extremely influential across the industry.
+
+The web is still a little bit of a wild west when it comes to these kinds of systems, which is both exciting and frustrating. Freedom to explore and experiment is important when attempting to find novel solutions, but a multitude of soutions has led to a scattered web. Many organizations have made great strides creating their own internal systems, which have been an inspiration for my projects. The freedom and challenge of designing systems for the web has been the focus in 2015.
+
+If my current challenge as a digital experience designer is in creating usable and systematic interfaces, it is clear that the challenge of the (near) future will be designing for products that are interactive beyond st

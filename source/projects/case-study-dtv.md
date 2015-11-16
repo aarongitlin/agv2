@@ -3,7 +3,7 @@ title: DTV Concept Design
 
 role: "Lead UI Design"
 year: "2015"
-date: 10/5/2015
+date: 1/5/2015
 client: "DTV"
 project_type: "Retainer"
 image_path: "../images/DTV/pixel_wave.png"
@@ -84,7 +84,7 @@ We put a few basic approaches into inVision to validate that we were moving in t
 
 	<div class="prototype-wrapper tablet">
 		<div class="row">
-			<iframe width="972" height="720" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>
+			<iframe width="956" height="682" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<a class="button tertiary" href="https://invis.io/S92WG32RT">Tablet Prototype in Invision</a>
 	</div>
@@ -111,7 +111,7 @@ We put a few basic approaches into inVision to validate that we were moving in t
 
 	<div class="prototype-wrapper tablet">
 		<div class="row">
-			<iframe width="972" height="720" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
+			<iframe width="956" height="682" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
 	</div>

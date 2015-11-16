@@ -1,8 +1,12 @@
 ---
 title: Profile of Aaron Gitlin
+body_class: profile-page
 ---
 
 .wrapper
-	.image-wrapper.small
-		= image_tag "../images/profile/pixel_beard.png", :class => "profile-image"
-	%h1.profile-header Aaron Gitlin
+	%h1.project-heading
+		= image_tag "../images/profile/pixel_beard.png"
+		Aaron Gitlin
+
+	.text-wrap
+		= partial 'partials/bio'
