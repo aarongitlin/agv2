@@ -18,9 +18,7 @@ Parallel to their regular output and updates, DTV began a separate project in la
 
 The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name. 
 
-<div class="image-wrapper extra-large image-three-across">
-	<img src="../images/DTV/diagram-9am.png" />
-	<img src="../images/DTV/diagram-1pm.png" />
+<div class="image-wrapper image-full">
 	<img src="../images/DTV/diagram-7pm.png" />
 </div>
 
@@ -58,20 +56,33 @@ A Show has three layers: show, season, and episode, and actions can be taken acr
 2. *Background Research*  
 We looked at their existing product as well as other products that have tried to solve similar problems.
 
+3. *User Flows*  
+At this early stage of development the client wanted to focus on the *happy flows*: straightforward paths utilizing the product’s primary functionality.
+
+4. *Initial ideas*  
+We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.
+
+5. *Low Fi Prototype*  
+We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details  
+
+6. *High Fidelity Screens*  
+
+7. *High fidelity prototype*  
+
+8. *Documentation*  
+We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
+
+
 	<div class="image-wrapper extra-large image-two-across">
 	  <img src="../images/DTV/bg-research-1.png" />
 	  <img src="../images/DTV/bg-research-2.png" />
 	</div>
 
-3. *User Flows*  
-At this early stage of development the client wanted to focus on the *happy flows*: straightforward paths utilizing the product’s primary functionality.
-
+	
 	<div class="image-wrapper image-full">
 		<img src="../images/DTV/flows-1.png" />
 	</div>
 
-4. *Initial ideas*  
-We sketched out some basic ideas and explored different patterns that would let the user move between content types without getting overwhelmed.
 
 	<div class="image-wrapper extra-large image-three-across">
 		<img src="../images/DTV/initial-ideas-1.jpg" />
@@ -79,8 +90,6 @@ We sketched out some basic ideas and explored different patterns that would let 
 		<img src="../images/DTV/initial-ideas-3.jpg" />
 	</div>
 
-5. *Low Fi Prototype*  
-We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details  
 
 	<div class="prototype-wrapper tablet">
 		<div class="row">
@@ -89,25 +98,24 @@ We put a few basic approaches into inVision to validate that we were moving in t
 		<a class="button tertiary" href="https://invis.io/S92WG32RT">Tablet Prototype in Invision</a>
 	</div>
 
-6. *High Fidelity Screens*  
 
-	<div class="image-wrapper extra-large image-three-across">
-		<img src="../images/DTV/hifi-tablet-1.jpg" />
+	<div class="image-wrapper large image-two-across">
 		<img src="../images/DTV/hifi-tablet-2.jpg" />
 		<img src="../images/DTV/hifi-tablet-3.jpg" />
 	</div>
 
-	<div class="image-wrapper centered image-two-across">
+
+	<div class="image-wrapper large centered image-two-across">
 		<img src="../images/DTV/hifi-tablet-4.jpg" />
 		<img src="../images/DTV/hifi-tablet-5.jpg" />
 	</div>
+
 
 	<div class="image-wrapper small centered image-two-across">
 		<img src="../images/DTV/hifi-mobile-1.jpg" />
 		<img src="../images/DTV/hifi-mobile-2.jpg" />
 	</div>
 
-7. *High fidelity prototype*  
 
 	<div class="prototype-wrapper tablet">
 		<div class="row">
@@ -115,9 +123,6 @@ We put a few basic approaches into inVision to validate that we were moving in t
 		</div>
 		<a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
 	</div>
-
-8. *Documentation*  
-We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
 
 ——
 

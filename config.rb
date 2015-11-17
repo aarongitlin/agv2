@@ -70,6 +70,17 @@ activate :blog do |blog|
   blog.paginate = true
 end
 
+activate :blog do |blog|
+  # set options on blog
+  blog.name = "writings"
+  blog.prefix = "/writings"
+  blog.layout = "writing_layout"
+  blog.permalink = "/{title}.html"
+  blog.sources = "/{title}.html"
+  blog.default_extension = ".md"
+  blog.paginate = true
+end
+
 # Build-specific configuration
 configure :build do
   #set baseurl for githubpages subdirectory deployment

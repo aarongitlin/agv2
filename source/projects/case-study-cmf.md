@@ -23,7 +23,7 @@ The decision to make the site responsive was an easy one, but our technical lead
 **User**  
 From interviews and workshops we knew of two major user groups: Brokers and Group Buyers, though we also needed to cater to invidual buyers. A small but also important user was the actual staff as well, who would also use this site to find forms for clients, and direct them to the relevant URLs for documents and information.
 
-<div class="image-wrapper large image-three-across">
+<div class="image-wrapper medium image-three-across">
 	<img src="../images/CMF/persona-1.jpg" />
 	<img src="../images/CMF/persona-2.jpg" />
 	<img src="../images/CMF/persona-3.jpg" />
@@ -37,7 +37,7 @@ We created an initial site-map based on our understanding of CM&F's needs as wel
 
 We also produced a few style tiles for them that would give them the freedom to help choose the visual direction or their site. I had my own thoughts on which direction might work best for them, but wanted to make sure the decision was there's. When they chose, we had a very basic visual foundation in which to build the components of the final product. 
 
-<div class="image-wrapper extra-large image-full">
+<div class="image-wrapper large image-full">
 	<img src="../images/CMF/site-map.png" />
 </div>
 
@@ -58,7 +58,7 @@ We slowly built up the fidelity of the designs, using inVision prototypes to pre
 
 This pivot didn't throw off the whole design system or flow, but definitely changed the home page and imagery being used. We now had to get rid of the medical visuals, and keep things a bit more conceptual. In the end we stuck a bright simple sky, a few feathery clouds floating above. It kept in line with some of the brand colors, and provided a warm, if unspecific feeling. 
  
-<div class="image-wrapper large image-full">
+<div class="image-wrapper medium image-full">
 	<img src="../images/CMF/lowfi.jpg" />
 </div>
 
@@ -79,9 +79,7 @@ This pivot didn't throw off the whole design system or flow, but definitely chan
 </div>
 
 
-
 **Document**  
-  
 In the past few years I have become obstinate about designing systems, not pages or sites. So rather than designing all the pages and then speccing them out, we simultaneously designed components and pages, and updated the library as we went. While this can be onerous at times during the middle of the design process, it keeps us disciplined, and makes the final task of delivering documented designs much easier. 
 
 We had even more ambitious plans to create an online living pattern library, but unfortuantely this relatively quick and budget conscious project did not allow us the time or resources. You can see the skeleton of the idea though, which we would love to update if we continue working together.

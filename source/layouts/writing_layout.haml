@@ -1,0 +1,29 @@
+!!! 5
+- ie_html :lang => 'en', :class => 'no-js' do
+  %head
+    = partial "partials/document_head"
+
+  %body{:class => current_page.data.body_class || 'page'}
+    = partial 'partials/header'
+
+    #main(role="main")
+      .article-detail-content.wrapper
+        %h1.project-heading
+          - if current_article.metadata[:page]['image_path']
+            = image_tag current_article.metadata[:page]['image_path']
+          = current_article.title
+        .text-wrap
+          = yield
+
+      - if current_article.previous_article || current_article.next_article
+        .article-footer.wrapper
+          %label Explore other case studies
+          .next-prev-article-links
+            - if current_article.previous_article
+              = link_to current_article.previous_article.title, current_article.previous_article.url, :class => 'prev-article-link'
+
+            - if current_article.next_article
+              = link_to current_article.next_article.title, current_article.next_article.url, :class => 'next-article-link'
+
+    = partial 'partials/footer'
+    = partial 'partials/scripts'
