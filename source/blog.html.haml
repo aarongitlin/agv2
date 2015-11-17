@@ -4,5 +4,16 @@ body_class: blog-page
 ---
 
 -# In case I ever want to put my tumblr on this site
-	.wrapper
-			= javascript_include_tag "http://aarongitlin.tumblr.com/js"
+  .wrapper
+    = javascript_include_tag "http://aarongitlin.tumblr.com/js"
+
+.blog-index-wrapper.wrapper
+  %section.blog-list
+    %label.case-studies-heading Writings
+    - blog('writings').articles.each do |blog|
+      %article.blog-list-item
+        -# if blog.metadata[:page]['image_path']
+          .blog-list-item-image-wrapper
+            = image_tag blog.metadata[:page]['image_path']
+        %h2.list-item-title= link_to blog.title, blog.url
+        %h4.list-item-intro= blog.metadata[:page]['intro']

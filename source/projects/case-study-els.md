@@ -87,8 +87,8 @@ The application was developed within a few more months, and underwent a QA proce
 
 Basic analytics and surveys have revealed that a few more core features probably need to be included, and a few designs tweaked. Access across even more devices will also be critical for future success, and tablet versions are already being planned.
 
-[View on App Store](https://itunes.apple.com/us/app/elsevier-clinical-pharmacology/id923081157?mt=8)  
-[View on google play](https://play.google.com/store/apps/details?id=com.elsevier.elseviercp&hl=en])
+<a class="button tertiary" href="https://itunes.apple.com/us/app/elsevier-clinical-pharmacology/id923081157?mt=8">View on App Store</a>
+<a class="button tertiary" href="https://play.google.com/store/apps/details?id=com.elsevier.elseviercp&hl=en]">View on Google Play</a>
 
 
  

@@ -1,19 +1,41 @@
-@mixin top-page-margin {
-  padding-top: 6rem; //3 for header 3 for fun
-}
-
-@mixin small-description-text {
-  font-size: 0.95rem;
-  font-family: $sans-serif;
-  line-height: 1.4;
-  color: $gray-5;
-}
 
 
 @import 'normalize.css';
 @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
+
+
+@mixin top-page-margin {
+  padding-top: 6rem; //3 for header 3 for fun
+}
+
+@mixin small-description-text {
+  font-size: 0.925rem;
+  font-family: $sans-serif;
+  line-height: 1.4;
+  color: $gray-5;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $action-color;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
 
 @import 'project_detail';
 
@@ -35,7 +57,7 @@ body {
 //Some tricky stuff for sticky footer
 #main {
   min-height: 100%;
-  margin-bottom: -4rem;
+  margin-bottom: -6rem; //Size of footer
   margin-top: -3rem;
   &:after {
   content: "";
@@ -339,13 +361,66 @@ body {
 ///// Footer
 
 .footer, #main:after {
-  height: 4rem;
+  height: 6rem;
+  @include media($medium-screen-down) {
+    height: 12.4rem;
+  }
 }
 .footer {
   background-color: $gray-2;
+  padding-bottom: 1rem;
+  @include small-description-text();
 
 }
 .footer-text {
-  @include small-description-text();
   padding-top: 0.5rem;
+  @include media($large-screen-up) {
+    padding-top: 1rem;
+  }
+}
+
+.footer-links {
+  padding-top: 0.875rem;
+}
+
+.footer-link {
+  margin-left: 1rem;
+  &:first-child {
+    margin-left: 0;
+  }
+  @include media($medium-screen-down) {
+    @include row();
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+}
+
+.footer-link .svg-icon {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.footer-link .svg-icon path {
+  fill: $action-color;
+  transition: fill 0.1s linear;
+}
+.footer-link:hover .svg-icon path {
+  fill: lighten($action-color, 10%);
+}
+
+
+//// Blog Index Page
+
+.blog-index-wrapper {
+  @include top-page-margin();
+}
+.blog-list-item {
+  margin-top: 0.875rem;
 }

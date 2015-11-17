@@ -38,8 +38,8 @@ $four-col: 34.11922%;
 
 .meta-list {
 	@include row();
-	background-color: $white;
-	border: 1px solid $gray-2;
+	background-color: $off-white;
+	//border: 1px solid $gray-2;
 	padding: 1rem 0 0 1rem;
 	margin-bottom: 2rem;
 	@include media($large-screen-up) {
