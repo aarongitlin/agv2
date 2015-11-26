@@ -10,20 +10,23 @@ $four-col: 34.11922%;
 
 .project-heading {
 	text-align: center;
-	margin-bottom: 2rem;
-	font-size: 2.0rem;
-	@include media($medium-screen-up) {
-		font-size: 2.4rem;
+	h1 {
+		font-size: 2.0rem;
+		@include media($medium-screen-up) {
+			font-size: 3.6rem;
+			display: inline;
+			vertical-align: middle;
+			padding-left: 0.50rem;
+		}
 	}
 	img {
 		display: block;
 		margin: auto;
 		margin-bottom: 1rem;
-		height: 2.4rem;
+		height: 3.6rem;
 		vertical-align: middle;
 		@include media($medium-screen-up) {
 			display: inline;
-			margin: auto;
 		}
 	}
 }
@@ -42,10 +45,9 @@ $four-col: 34.11922%;
 	//border: 1px solid $gray-2;
 	padding: 1rem 0 0 1rem;
 	margin-bottom: 2rem;
+	margin-top: 2rem;
 	@include media($large-screen-up) {
 		padding: 1rem 0 1rem 1rem;
-		@include shift(1);
-		margin-right: $one-col;
 	}
 }
 //default-mobile meta
@@ -91,11 +93,30 @@ h2 {
 	text-transform: uppercase;
 }
 
+.article-intro {
+	font-size: 1.4rem;
+	font-style: italic;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.article-content {
+	ol {
+		margin-bottom: 1rem;
+	}
+}
 
 .image-wrapper {
 	@include row();
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	&.gray-bg {
+		background-color: $gray-1;
+		padding: 2rem 1rem;
+	}
+	&.box-shadow img {
+		box-shadow: $gray-2 0 0 1.6rem;
+	}
 	&.extra-large {
 		@include media($large-screen-up) {
 			@include shift(-3);
@@ -117,11 +138,13 @@ h2 {
 	}
 }
 
-.image-two-across img {
-	@include media($large-screen-up) {
-		@include span-columns(6);
-		&:last-child {
-			@include omega();
+.image-two-across {
+	img {
+		@include media($large-screen-up) {
+			@include span-columns(6);
+			&:nth-child(2) {
+				@include omega();
+			}
 		}
 	}
 }
@@ -184,6 +207,10 @@ h2 {
 
 .prototype-wrapper .button {
 	margin: 1rem auto 0 auto;
+}
+
+.caption {
+	@include span-columns(8);
 }
 
 .article-footer {
