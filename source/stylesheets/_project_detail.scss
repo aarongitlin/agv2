@@ -97,7 +97,8 @@ h2 {
 	font-size: 1.4rem;
 	font-style: italic;
 	margin-bottom: 4rem;
-	text-align: center;
+	@include shift(-1);
+	margin-right: (-$one-col);
 }
 
 .article-content {

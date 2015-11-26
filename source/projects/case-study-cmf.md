@@ -6,11 +6,10 @@ date: 1/8/2015
 client: "CM&F"  
 project_type: "Waterfall"  
 image_path: "../images/CMF/pixel_cloud.png"   
-intro: "A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs"
+dash_intro: "A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs"
+article_intro: "CM&F is not such a big name compared to some of the other clients I worked with at Tigerspike, but they still had some complex challenges to solve. As a family business, they have a trusted client base and positive reputation, but pretty old school systems. A lot of phone calls, paper forms, and yes, even faxes."
 
 ---
-
-CM&F is not such a big name compared to some of the other clients I worked with at Tigerspike, but they still had some complex challenges to solve. As a family business, they have a trusted client base and positive reputation, but pretty old school systems. A lot of phone calls, paper forms, and yes, even faxes. 
 
 ##Discover  
 They knew that their current website wasn't working. They received a lot of phone calls from people looking for information that was already on the site, but hard to find. They also had trouble keeping it up to date, because only part of it was behind a Content Management System, and an outdated one at that. 
@@ -23,7 +22,7 @@ The decision to make the site responsive was an easy one, but our technical lead
 **User**  
 From interviews and workshops we knew of two major user groups: Brokers and Group Buyers, though we also needed to cater to invidual buyers. A small but also important user was the actual staff as well, who would also use this site to find forms for clients, and direct them to the relevant URLs for documents and information.
 
-<div class="image-wrapper medium image-three-across">
+<div class="image-wrapper medium image-three-across gray-bg">
 	<img src="../images/CMF/persona-1.jpg" />
 	<img src="../images/CMF/persona-2.jpg" />
 	<img src="../images/CMF/persona-3.jpg" />
@@ -37,11 +36,11 @@ We created an initial site-map based on our understanding of CM&F's needs as wel
 
 We also produced a few style tiles for them that would give them the freedom to help choose the visual direction or their site. I had my own thoughts on which direction might work best for them, but wanted to make sure the decision was there's. When they chose, we had a very basic visual foundation in which to build the components of the final product. 
 
-<div class="image-wrapper large image-full">
+<div class="image-wrapper large image-full gray-bg">
 	<img src="../images/CMF/site-map.png" />
 </div>
 
-<div class="image-wrapper extra-large image-three-across">
+<div class="image-wrapper extra-large image-three-across box-shadow">
 	<img src="../images/CMF/style-tile-1.jpg" />
 	<img src="../images/CMF/style-tile-2.jpg" />
 	<img src="../images/CMF/style-tile-3.jpg" />

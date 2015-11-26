@@ -149,98 +149,40 @@ body {
 // Personal Info
 .personal-info-wrapper {
   @include media($small-screen-up) {
-    padding: 1rem;
     background-color: white;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    border-bottom: 1px solid $gray-2;
     text-align: center;
-    padding-right: 0;
-    padding-left: 0;
-    margin-top: -3rem;
-  }
-  @include media($medium-screen-up) {
-    display: table;
-    text-align: left;
-  }
-  @include media($large-screen-up) {
-    margin-left: 0;
-    margin-right: 0;
-    display: block;
-    padding: 0;
-    border: none;
-    @include span-columns(2.5);
-    background: none;
-    margin-top: 0;
-  }
-
-}
-
-.personal-info {
-  width: 100%;
-  @include media($medium-screen-up) {
-    @include span-columns(10);
-  }
-  @include media($large-screen-up) {
-    @include span-columns(3 of 3);
-
+    margin-top: -2rem; // I want this element closer to top than global default
   }
 }
 
 .logo {
-  @include media($small-screen-up) {
-    @include span-columns(12 of 12);
-  }
-  @include media ($medium-screen-up) {
-    @include span-columns(2 of 10);
-  }
-  @include media ($large-screen-up) {
-    @include row();
-    @include span-columns(3 of 3);
-  }
+  @include span-columns(12);
 }
 
 .logo img {
   @include media($small-screen-up) {
     width: 20%;
     margin: auto;
-  }
-  @include media($medium-screen-up) {
-    @include span-columns(10 of 10);
-  }
-  @include media($large-screen-up) {
-    @include span-columns(1 of 3);
+    max-width: 7rem;
   }
 }
 
 .personal-info-name {
-  margin-top: 0.2rem;
-  h3 {
+  @include span-columns(12);
+  h2 {
     margin-bottom: 0;
+    margin-top: 0.5rem;
   }
-  @include media($large-screen-up) {
-    margin-top: 1rem;
-    @include span-columns(3 of 3);
-  }
-}
-
-.personal-info-position {
-  margin-top: 0.2rem;
 }
 
 .personal-info-intro {
+  @include span-columns(12);
   margin-top: 0.5rem;
-  @include small-description-text();
-  display: none;
-  @include media($medium-screen-up) {
-    display: block;
-    @include span-columns(8 of 10);
-    font-size: 0.90rem;
-  }
-  @include media($large-screen-up) {
-    display: block;
-    margin-top: 1rem;
-    @include span-columns(2.8 of 3);
+  p {
+    text-align: left;
+    @include small-description-text();
+    max-width: 30rem;
+    margin: auto;
   }
 }
 
@@ -264,71 +206,58 @@ body {
 
 //Article List
 .article-list {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
-  @include media($medium-screen-up) {
+  @include span-columns(12);
+    @include media($large-screen-up) {
     @include span-columns(10);
-  }
-  @include media($large-screen-up) {
-    @include span-columns(9);
-    margin-top: 0;
+    @include shift(1);
   }
 }
 
 .case-studies-heading {
   border-bottom: 1px solid $gray-3;
   padding-bottom: 0.2rem;
+  font-size: 1.0rem;
 }
 
 .list-item {
-  @include row();
-  @include omega();
-  padding-top: 2rem;
-  border-bottom: 1px solid $gray-2;
-  padding-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  @include span-columns(12);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   background-color: $white;
-  transition: background-color 0.2s linear;
+  transition: all 0.2s linear;
   &:hover {
-    background-color: rgba($off-white, 0.85);
+      border: 1px solid $gray-2;
 
   }
 }
 
 .list-item-image-wrapper {
   @include span-columns(2 of 12);
-  max-width: 4rem;
-  display: inline-block;
-  float: none;
-  vertical-align: middle;
-  img {
-    padding-top: 0.25rem;
-  }
-  @include media($large-screen-up) {
-    @include span-columns(1.5 of 8);
-    max-width: none;
-    min-height: 7rem;
-    img {
-      max-width: 85%;
-      padding-top: 1rem;
-      padding-left: 1rem;
-    }
+  @include media($medium-screen-up) {
+    @include span-columns(1.6 of 12);
+    padding: 0.5rem;
   }
 }
 
 .list-item-title {
   @include span-columns(9.8 of 12);
   @include omega();
-  letter-spacing: 0.05rem;
-  display: inline-block;
-  float: none;
   margin-top: 0;
   margin-bottom: 0;
-  vertical-align: middle;
   text-transform: uppercase;
+  letter-spacing: -0.065rem;
+  font-weight: normal;
   @include media($large-screen-up) {
     @include span-columns(6 of 8);
     padding-top: 0.75rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 0;
   }
  }
 
@@ -336,9 +265,8 @@ body {
   font-family: $sans-serif;
   color: $gray-5;
   line-height: 1.4;
-  @include span-columns(12);
+  @include span-columns(10);
   @include media($large-screen-up) {
-    @include span-columns(6 of 8);
   }
 }
 
