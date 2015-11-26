@@ -20,5 +20,5 @@ body_class: index-page
       %article.project.list-item
         .list-item-image-wrapper
           = image_tag article.metadata[:page]['image_path']
-        %h2.list-item-title= link_to article.title, article.url
-        %h4.list-item-intro= article.metadata[:page]['intro']
+        %h3.list-item-title= link_to article.title, article.url
+        %p.list-item-intro= article.metadata[:page]['dash_intro']

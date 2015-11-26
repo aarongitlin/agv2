@@ -7,10 +7,9 @@ date: 1/5/2015
 client: "DTV"
 project_type: "Retainer"
 image_path: "../images/DTV/pixel_wave.png"
-intro: "A major media company hired us to create a concept for their new cross-platform digital streaming product"
+dash_intro: "A major media company hired us to create a concept for their new cross-platform digital streaming product"
+article_intro: "DIRECTV has been working with Tigerspike for years. We have been providing consulting work and production support across a mind-boggling array of devices and platforms. DTV is a big player in the media distribution world, and wants their content available wherever there is a screen. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."
 ---
-
-DIRECTV has been working with Tigerspike for years. We have been providing consulting work and production support across a mind-boggling array of devices and platforms. DTV is a big player in the media distribution world, and wants their content available wherever there is a screen. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent. 
 
 ##Discover
 
@@ -18,7 +17,7 @@ Parallel to their regular output and updates, DTV began a separate project in la
 
 The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name. 
 
-<div class="image-wrapper image-full">
+<div class="image-wrapper image-full gray-bg">
 	<img src="../images/DTV/diagram-7pm.png" />
 </div>
 
@@ -27,8 +26,6 @@ As you can imagine, DIRECTV is a large organization that defines the direction o
 - Live TV streams and guides
 - Recording management tools
 - Room for additional CTAs as business requirements grew (purchase, download, etc)
-
-[Whiteboard output, pyramid or similar]
 
 They had a basic foundation established, but still had a lot of work to do. Because of their stakeholder and development team review cycles, we tackled one area at a time. For each of these areas we needed to understand the core requirements, do some research and execute designs in high fidelity. Stakeholder and client reviews were demanding as well, so our work needed to be wrapped in a convincing story.
 
@@ -43,6 +40,7 @@ After a few weeks of working this way, we were able to formalize the delivery fr
 6. High Fidelity Keyscreens
 7. High Fidelity Prototype
 8. Documentation & Presentation
+
 
 We've since adapted this general process to other projects that work in a retainer model.
 
@@ -66,16 +64,19 @@ We sketched out some basic ideas and explored different patterns that would let 
 We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details  
 
 6. *High Fidelity Screens*  
+Now a designer creates a small number of key screens put together in high fidelity to make the idea start to feel real. 
 
 7. *High fidelity prototype*  
+Now we bring it all together into a basic prototype so that the full flow can be visualized in high fidelity, and we can even begin exploring interactino details like hover states and transitions.
 
 8. *Documentation*  
 We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
 
 
-	<div class="image-wrapper extra-large image-two-across">
+	<div class="image-wrapper extra-large image-two-across gray-bg">
 	  <img src="../images/DTV/bg-research-1.png" />
 	  <img src="../images/DTV/bg-research-2.png" />
+	  <span class="caption">Background Research, including existing product and competitors</span>
 	</div>
 
 	
