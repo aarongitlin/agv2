@@ -1,7 +1,8 @@
 todos:
 - fix captions and pictures on dtv case study
-- finish writing Systems post
 - fix bottom spacing on bio
+- finish writing Systems post
+
 - consider mvp plan:
 1. no nav, just actions on top bar
 2. put all case studies and writings on home page
@@ -20,3 +21,6 @@ processes(waterfall, agile, retainer)
 approach to design (circular, not stepped) stepping back, bigger picture, analogy to sketching
 
 should designers code (duh)
+
+creating this site
+
