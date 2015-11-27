@@ -97,8 +97,10 @@ h2 {
 	font-size: 1.4rem;
 	font-style: italic;
 	margin-bottom: 4rem;
-	@include shift(-1);
-	margin-right: (-$one-col);
+	@include media($large-screen-up) {
+		@include shift(-1);
+		margin-right: (-$one-col);
+	}
 }
 
 .article-content {
@@ -111,9 +113,19 @@ h2 {
 	@include row();
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	img {
+		display: block;
+		margin: auto;
+		margin-top: 1rem;
+		@include media($large-screen-up) {
+			margin-top: 0;
+		}
+	}
 	&.gray-bg {
 		background-color: $gray-1;
-		padding: 2rem 1rem;
+		padding: 2rem;
+		margin-left: -1rem;
+		margin-right: -1rem;
 	}
 	&.box-shadow img {
 		box-shadow: $gray-2 0 0 1.6rem;
@@ -139,13 +151,41 @@ h2 {
 	}
 }
 
-.image-two-across {
-	img {
+.gray-bg-wrapper {
+	background-color: $gray-1;
+	padding: 2rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	@include media($large-screen-up) {
+		@include shift(-3);
+		margin-right: (-$three-col);
+		
+	}
+	.image-wrapper.extra-large, .image-wrapper.large, .prototype-wrapper.tablet {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.image-wrapper.medium, .image-wrapper.small {
 		@include media($large-screen-up) {
-			@include span-columns(6);
-			&:nth-child(2) {
-				@include omega();
-			}
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.image-wrapper:nth-child(1) {
+		margin-top: 0;
+	}
+	.image-wrapper img:nth-child(1) {
+		margin-top: 0;
+	}
+}
+
+
+.image-two-across {
+	@include media($large-screen-up) {
+		@include span-columns(6);
+		&:nth-child(2) {
+			@include omega();
 		}
 	}
 }
@@ -153,16 +193,17 @@ h2 {
 .image-three-across img {
 	@include media($large-screen-up) {
 		@include span-columns(4);
-		&:last-child {
+		&:nth-child(3) {
 			@include omega();
 		}
 	}
 }
 
 .image-five-across img {
+
 	@include media($large-screen-up) {
 		@include span-columns(2.4);
-		&:last-child {
+		&:nth-child(5) {
 			@include omega();
 		}
 	}
@@ -176,13 +217,17 @@ h2 {
 			display: none;
 		}
 	}
+	.button {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .prototype-wrapper.tablet {
 	margin-left: auto;
 	margin-right: auto;
 
-	iframe {
+	iframe, .caption {
 			display: none;
 		}
 
@@ -211,7 +256,14 @@ h2 {
 }
 
 .caption {
-	@include span-columns(8);
+	@include small-description-text();
+	font-style: italic;
+	text-align: left;
+	margin-top: 0.25rem;
+	margin-bottom: 0;
+	@include media($large-screen-up) {
+		width: 75%;
+	}
 }
 
 .article-footer {
@@ -226,6 +278,8 @@ h2 {
 .next-prev-article-links {
 	padding-top: 1rem;
 	font-size: 1rem;
+	font-family: $sans-serif;
+	font-weight: 600;
 }
 
 .prev-article-link::before {

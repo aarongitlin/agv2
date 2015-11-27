@@ -57,7 +57,7 @@ We slowly built up the fidelity of the designs, using inVision prototypes to pre
 
 This pivot didn't throw off the whole design system or flow, but definitely changed the home page and imagery being used. We now had to get rid of the medical visuals, and keep things a bit more conceptual. In the end we stuck a bright simple sky, a few feathery clouds floating above. It kept in line with some of the brand colors, and provided a warm, if unspecific feeling. 
  
-<div class="image-wrapper medium image-full">
+<div class="image-wrapper medium image-full box-shadow">
 	<img src="../images/CMF/lowfi.jpg" />
 </div>
 

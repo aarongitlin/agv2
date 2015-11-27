@@ -72,16 +72,18 @@ Now we bring it all together into a basic prototype so that the full flow can be
 8. *Documentation*  
 We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
 
+<div class="gray-bg-wrapper">
 
-	<div class="image-wrapper extra-large image-two-across gray-bg">
+	<div class="image-wrapper extra-large image-two-across">
 	  <img src="../images/DTV/bg-research-1.png" />
 	  <img src="../images/DTV/bg-research-2.png" />
-	  <span class="caption">Background Research, including existing product and competitors</span>
+	  <p class="caption">Background Research, including existing product and competitors</p>
 	</div>
 
 	
 	<div class="image-wrapper image-full">
 		<img src="../images/DTV/flows-1.png" />
+    <p class="caption">User flows for one of our primary 'happy paths'</p>
 	</div>
 
 
@@ -89,6 +91,7 @@ We wrap everything up in a presentation for the client, and walk  them through o
 		<img src="../images/DTV/initial-ideas-1.jpg" />
 		<img src="../images/DTV/initial-ideas-2.jpg" />
 		<img src="../images/DTV/initial-ideas-3.jpg" />
+    <p class="caption">A few iniital ideas based on the user flows above</p>
 	</div>
 
 
@@ -96,7 +99,10 @@ We wrap everything up in a presentation for the client, and walk  them through o
 		<div class="row">
 			<iframe width="956" height="682" src="//invis.io/BQ2WG33XY" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<a class="button tertiary" href="https://invis.io/S92WG32RT">Tablet Prototype in Invision</a>
+    <p class="caption">A low fidelity prototype</p>
+    <div class="row">
+		  <a class="button tertiary" href="https://invis.io/S92WG32RT">Tablet Prototype in Invision</a>
+    </div>
 	</div>
 
 
@@ -115,6 +121,7 @@ We wrap everything up in a presentation for the client, and walk  them through o
 	<div class="image-wrapper small centered image-two-across">
 		<img src="../images/DTV/hifi-mobile-1.jpg" />
 		<img src="../images/DTV/hifi-mobile-2.jpg" />
+    <p class="caption">Our first round of high fidelity screens across tablet and mobile</p>
 	</div>
 
 
@@ -122,8 +129,13 @@ We wrap everything up in a presentation for the client, and walk  them through o
 		<div class="row">
 			<iframe width="956" height="682" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
+    <p class="caption">Based on feedback from the mockups we could begin putting a polished prototype together based on the orignal user story</p>
+    <div class="row">
+		  <a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
+    </div>
 	</div>
+
+</div> <!-- end gray-bg-wrapper -->
 
 ——
 
