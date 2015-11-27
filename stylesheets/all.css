@@ -421,15 +421,18 @@ h2 {
 .article-intro {
   font-size: 1.4rem;
   font-style: italic;
-  margin-bottom: 4rem;
-  margin-left: -8.5298%;
-  margin-right: -8.5298%; }
+  margin-bottom: 4rem; }
+  @media screen and (min-width: 64rem) {
+    /* line 96, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .article-intro {
+      margin-left: -8.5298%;
+      margin-right: -8.5298%; } }
 
-/* line 105, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 107, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .article-content ol {
   margin-bottom: 1rem; }
 
-/* line 110, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 112, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .image-wrapper {
   display: block;
   margin-top: 2rem;
@@ -439,46 +442,85 @@ h2 {
     clear: both;
     content: "";
     display: table; }
-  /* line 114, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 116, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .image-wrapper img {
+    display: block;
+    margin: auto;
+    margin-top: 1rem; }
+    @media screen and (min-width: 64rem) {
+      /* line 116, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+      .image-wrapper img {
+        margin-top: 0; } }
+  /* line 124, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
   .image-wrapper.gray-bg {
     background-color: #F3F4F3;
-    padding: 2rem 1rem; }
-  /* line 118, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    padding: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem; }
+  /* line 130, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
   .image-wrapper.box-shadow img {
     box-shadow: #E7EAE8 0 0 1.6rem; }
   @media screen and (min-width: 64rem) {
-    /* line 121, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 133, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .image-wrapper.extra-large {
       margin-left: -25.58941%;
       margin-right: -25.58941%; } }
   @media screen and (min-width: 64rem) {
-    /* line 127, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 139, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .image-wrapper.large {
       margin-left: -17.05961%;
       margin-right: -17.09402%; } }
   @media screen and (min-width: 64rem) {
-    /* line 133, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 145, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .image-wrapper.small {
       margin-left: auto;
       margin-right: auto;
       width: 75%; } }
 
+/* line 154, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+.gray-bg-wrapper {
+  background-color: #F3F4F3;
+  padding: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+  @media screen and (min-width: 64rem) {
+    /* line 154, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .gray-bg-wrapper {
+      margin-left: -25.58941%;
+      margin-right: -25.58941%; } }
+  /* line 164, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .gray-bg-wrapper .image-wrapper.extra-large, .gray-bg-wrapper .image-wrapper.large, .gray-bg-wrapper .prototype-wrapper.tablet {
+    margin-left: 0;
+    margin-right: 0; }
+  @media screen and (min-width: 64rem) {
+    /* line 168, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .gray-bg-wrapper .image-wrapper.medium, .gray-bg-wrapper .image-wrapper.small {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto; } }
+  /* line 175, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .gray-bg-wrapper .image-wrapper:nth-child(1) {
+    margin-top: 0; }
+  /* line 178, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .gray-bg-wrapper .image-wrapper img:nth-child(1) {
+    margin-top: 0; }
+
 @media screen and (min-width: 64rem) {
-  /* line 143, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-  .image-two-across img {
+  /* line 184, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .image-two-across {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
     /* line 89, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
-    .image-two-across img:last-child {
+    .image-two-across:last-child {
       margin-right: 0; }
-    /* line 146, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-    .image-two-across img:nth-child(2) {
+    /* line 187, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .image-two-across:nth-child(2) {
       margin-right: 0; } }
 
 @media screen and (min-width: 64rem) {
-  /* line 153, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 193, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
   .image-three-across img {
     float: left;
     display: block;
@@ -487,12 +529,12 @@ h2 {
     /* line 89, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
     .image-three-across img:last-child {
       margin-right: 0; }
-    /* line 156, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-    .image-three-across img:last-child {
+    /* line 196, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .image-three-across img:nth-child(3) {
       margin-right: 0; } }
 
 @media screen and (min-width: 64rem) {
-  /* line 162, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 202, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
   .image-five-across img {
     float: left;
     display: block;
@@ -501,86 +543,97 @@ h2 {
     /* line 89, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
     .image-five-across img:last-child {
       margin-right: 0; }
-    /* line 165, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-    .image-five-across img:last-child {
+    /* line 206, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .image-five-across img:nth-child(5) {
       margin-right: 0; } }
 
-/* line 171, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 212, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .prototype-wrapper {
   text-align: center;
   margin-bottom: 2rem; }
   @media screen and (max-width: 40rem) {
-    /* line 174, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 215, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .prototype-wrapper iframe {
       display: none; } }
+  /* line 220, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .prototype-wrapper .button {
+    margin-left: 0;
+    margin-right: 0; }
 
-/* line 181, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 226, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .prototype-wrapper.tablet {
   margin-left: auto;
   margin-right: auto; }
-  /* line 185, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-  .prototype-wrapper.tablet iframe {
+  /* line 230, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  .prototype-wrapper.tablet iframe, .prototype-wrapper.tablet .caption {
     display: none; }
   @media screen and (min-width: max-width) {
-    /* line 181, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 226, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .prototype-wrapper.tablet {
       margin-left: -25.58941%; }
-      /* line 191, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+      /* line 236, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
       .prototype-wrapper.tablet iframe {
         display: block;
         margin-left: auto;
         margin-right: auto; } }
   @media screen and (min-width: 65em) {
-    /* line 181, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    /* line 226, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
     .prototype-wrapper.tablet {
       margin-left: -25.58941%;
       margin-right: -25.58941%; }
-      /* line 199, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+      /* line 244, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
       .prototype-wrapper.tablet iframe {
         display: block;
         margin-left: auto;
         margin-right: auto; } }
 
-/* line 209, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 254, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .prototype-wrapper .button {
   margin: 1rem auto 0 auto; }
 
-/* line 213, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 258, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .caption {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%; }
-  /* line 89, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
-  .caption:last-child {
-    margin-right: 0; }
+  font-size: 0.925rem;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.4;
+  color: #7F8380;
+  font-style: italic;
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-bottom: 0; }
+  @media screen and (min-width: 64rem) {
+    /* line 258, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+    .caption {
+      width: 75%; } }
 
-/* line 217, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 269, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .article-footer {
   margin-top: 6rem;
   margin-bottom: 3rem;
   border-top: 1px solid #CCD4CF; }
 
-/* line 222, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 274, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .article-footer label {
   margin-top: 0.2rem; }
 
-/* line 226, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 278, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .next-prev-article-links {
   padding-top: 1rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 600; }
 
-/* line 231, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 285, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .prev-article-link::before {
   content: "«";
   position: relative;
   top: -1px;
   padding-right: 2px; }
 
-/* line 239, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 293, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
 .next-article-link {
   float: right; }
-  /* line 242, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 296, /Users/aaron.gitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
   .next-article-link::after {
     content: "»";
     position: relative;
