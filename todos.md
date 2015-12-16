@@ -1,5 +1,6 @@
 todos:
 - fix captions and pictures on dtv case study
+	- fix the case study pic/caption messups you made!
 - fix bottom spacing on bio
 - finish writing Systems post
 

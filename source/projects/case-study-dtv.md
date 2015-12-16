@@ -8,7 +8,7 @@ client: "DTV"
 project_type: "Retainer"
 image_path: "../images/DTV/pixel_wave.png"
 dash_intro: "A major media company hired us to create a concept for their new cross-platform digital streaming product"
-article_intro: "DIRECTV has been working with Tigerspike for years. We have been providing consulting work and production support across a mind-boggling array of devices and platforms. DTV is a big player in the media distribution world, and wants their content available wherever there is a screen. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."
+article_intro: "If it has a screen, DIRECTV wants their service to be on it. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."
 ---
 
 ##Discover
@@ -80,7 +80,6 @@ We wrap everything up in a presentation for the client, and walk  them through o
 	  <p class="caption">Background Research, including existing product and competitors</p>
 	</div>
 
-	
 	<div class="image-wrapper image-full">
 		<img src="../images/DTV/flows-1.png" />
     <p class="caption">User flows for one of our primary 'happy paths'</p>
@@ -105,37 +104,38 @@ We wrap everything up in a presentation for the client, and walk  them through o
     </div>
 	</div>
 
-
-	<div class="image-wrapper large image-two-across">
-		<img src="../images/DTV/hifi-tablet-2.jpg" />
-		<img src="../images/DTV/hifi-tablet-3.jpg" />
-	</div>
-
-
-	<div class="image-wrapper large centered image-two-across">
-		<img src="../images/DTV/hifi-tablet-4.jpg" />
-		<img src="../images/DTV/hifi-tablet-5.jpg" />
-	</div>
-
-
-	<div class="image-wrapper small centered image-two-across">
-		<img src="../images/DTV/hifi-mobile-1.jpg" />
-		<img src="../images/DTV/hifi-mobile-2.jpg" />
-    <p class="caption">Our first round of high fidelity screens across tablet and mobile</p>
-	</div>
-
-
-	<div class="prototype-wrapper tablet">
-		<div class="row">
-			<iframe width="956" height="682" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
-		</div>
-    <p class="caption">Based on feedback from the mockups we could begin putting a polished prototype together based on the orignal user story</p>
-    <div class="row">
-		  <a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
-    </div>
-	</div>
-
 </div> <!-- end gray-bg-wrapper -->
+
+<div class="image-wrapper large image-two-across">
+	<img src="../images/DTV/hifi-tablet-2.jpg" />
+	<img src="../images/DTV/hifi-tablet-3.jpg" />
+</div>
+
+
+<div class="image-wrapper large centered image-two-across">
+	<img src="../images/DTV/hifi-tablet-4.jpg" />
+	<img src="../images/DTV/hifi-tablet-5.jpg" />
+</div>
+
+
+<div class="image-wrapper small centered image-two-across">
+	<img src="../images/DTV/hifi-mobile-1.jpg" />
+	<img src="../images/DTV/hifi-mobile-2.jpg" />
+<p class="caption">Our first round of high fidelity screens across tablet and mobile</p>
+</div>
+
+
+<div class="prototype-wrapper tablet">
+	<div class="row">
+		<iframe width="956" height="682" src="//invis.io/9T33P2IQB" frameborder="0" allowfullscreen></iframe>
+	</div>
+<p class="caption">Based on feedback from the mockups we could begin putting a polished prototype together based on the orignal user story</p>
+<div class="row">
+	  <a class="button tertiary" href="https://invis.io/SU33P2HYM">Tablet Prototype in Invision</a>
+</div>
+</div>
+
+
 
 ——
 
