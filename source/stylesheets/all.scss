@@ -10,6 +10,10 @@
   padding-top: 6rem; //3 for header 3 for fun
 }
 
+@mixin bottom-page-margin {
+  padding-bottom: 6rem;
+}
+
 @mixin small-description-text {
   font-size: 0.925rem;
   font-family: $sans-serif;
@@ -274,6 +278,7 @@ body {
 
 .bio-page-wrapper {
   @include top-page-margin();
+  @include bottom-page-margin();
 }
 .profile-image {
   @include span-columns(10 of 12);
