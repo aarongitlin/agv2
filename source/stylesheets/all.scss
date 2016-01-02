@@ -14,6 +14,22 @@
   padding-bottom: 6rem;
 }
 
+@mixin margin-medium-top {
+  margin-top: 3rem;
+}
+
+@mixin margin-medium-bottom {
+  margin-bottom: 3rem;
+}
+
+@mixin margin-small-top {
+  margin-top: 1rem;
+}
+
+@mixin margin-small-bottom {
+  margin-bottom: 1rem;
+}
+
 @mixin small-description-text {
   font-size: 0.925rem;
   font-family: $sans-serif;
@@ -89,60 +105,105 @@ body {
   height: 3rem;
 }
 
-.main-nav-list {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  li a {
+.nav-logo {
+  @include span-columns(2);
+  a {
     font-family: $heading-font-family;
-    font-size: 0.80rem;
+    font-size: 2.0rem;
     letter-spacing: -0.05rem;
     color: $gray-3;
-    float:left;
-    width: 33.3%;
-    padding-top: 0.8rem;
-    text-align: center;
     &:hover {
       color: $off-white;
     }
   }
+}
 
-  @include media($medium-screen-up) {
-    @include span-columns(9 of 12);
-    padding-left: 1rem;
-    li {
-      margin-left: 4rem;
-      float: left;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-
-    li a {
-      font-size: 1.0rem;
-      width: auto;
-      font-weight: 200;
-      list-style: none;
-      text-align: left;
-      &.activated {
-        background-color: red;
-        a {
-          color: dark-red;
-        }
-      }
-    }
+.nav-actions {
+  @include span-columns(6);
+}
+.nav-actions.right {
+  float: right;
+  a {
+    float:right;
+    margin-left: 2rem;
   }
 }
 
-.index-page .main-nav-list li:first-child a {
-  color: $off-white;
+.header-link .svg-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 6px;
+  path {
+    fill: $gray-3;
+    transition: fill 0.1s linear;
+  }
+  &:hover path {
+    fill: $white;
+  }
 }
-.profile-page .main-nav-list li:nth-child(2n) a {
-  color: $off-white;
+.header-link .svg-icon.linkedin-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-top: 8px;
 }
 
-.blog-page .main-nav-list li:nth-child(3n) a {
-  color: $off-white;
-}
+
+// If I want to reintrouduce navigation
+
+// .main-nav-list {
+//   margin-left: -0.75rem;
+//   margin-right: -0.75rem;
+//   li a {
+//     font-family: $heading-font-family;
+//     font-size: 0.80rem;
+//     letter-spacing: -0.05rem;
+//     color: $gray-3;
+//     float:left;
+//     width: 33.3%;
+//     padding-top: 0.8rem;
+//     text-align: center;
+//     &:hover {
+//       color: $off-white;
+//     }
+//   }
+
+//   @include media($medium-screen-up) {
+//     @include span-columns(9 of 12);
+//     padding-left: 1rem;
+//     li {
+//       margin-left: 4rem;
+//       float: left;
+//       &:first-child {
+//         margin-left: 0;
+//       }
+//     }
+
+//     li a {
+//       font-size: 1.0rem;
+//       width: auto;
+//       font-weight: 200;
+//       list-style: none;
+//       text-align: left;
+//       &.activated {
+//         background-color: red;
+//         a {
+//           color: dark-red;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .index-page .main-nav-list li:first-child a {
+//   color: $off-white;
+// }
+// .profile-page .main-nav-list li:nth-child(2n) a {
+//   color: $off-white;
+// }
+
+// .blog-page .main-nav-list li:nth-child(3n) a {
+//   color: $off-white;
+// }
 
 //// Index page
 
@@ -209,7 +270,7 @@ body {
 }
 
 //Article List
-.article-list {
+.project-list, .writing-list {
   margin-top: 2rem;
   margin-bottom: 3rem;
   @include span-columns(12);
@@ -225,13 +286,13 @@ body {
   font-size: 1.0rem;
 }
 
-.list-item {
+.project.list-item {
   box-sizing: border-box;
   border: 1px solid transparent;
   @include span-columns(12);
+  @include margin-small-top();
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  margin-top: 1rem;
   margin-bottom: 0.5rem;
   background-color: $white;
   transition: all 0.2s linear;
@@ -274,6 +335,21 @@ body {
   }
 }
 
+.writing.list-item-title {
+  font-family: $serif;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+ }
+
+.writing.list-item-intro {
+  font-size: 1.0rem;
+  color: $gray-4;
+}
+
+.writing.list-item {
+  @include margin-small-top();
+}
 //// Bio Page
 
 .bio-page-wrapper {
@@ -348,11 +424,11 @@ body {
   vertical-align: middle;
   margin-right: 2px;
 }
-.footer-link .svg-icon path {
+.svg-icon path {
   fill: $action-color;
   transition: fill 0.1s linear;
 }
-.footer-link:hover .svg-icon path {
+.svg-icon path {
   fill: lighten($action-color, 10%);
 }
 

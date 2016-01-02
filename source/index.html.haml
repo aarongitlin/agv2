@@ -11,13 +11,21 @@ body_class: index-page
         %h2 Aaron Gitlin
       .personal-info-intro
         %p New York City based Experience Designer currently working at global digital consultancy Tigerspike. Specializing in creating visual systems for complex projects, passionate about finding functional beauty.
-        = link_to 'View Bio', "#{base_url}" + "profile.html", :class=> "profile-link"
+        = link_to 'View Bio', "#{base_url}" + "bio.html", :class=> "profile-link"
 
-  %section.article-list
+  %section.project-list
     %label.case-studies-heading Case Studies
-    - blog('projects').articles.each do |article|
-      %article.project.list-item
-        .list-item-image-wrapper
-          = image_tag article.metadata[:page]['image_path']
-        %h3.list-item-title= link_to article.title, article.url
-        %p.list-item-intro= article.metadata[:page]['dash_intro']
+    - blog('projects').articles.each do |project|
+      %a{:href=> project.url}
+        %article.project.list-item
+          .project.list-item-image-wrapper
+            = image_tag project.metadata[:page]['image_path']
+          %h3.project.list-item-title=project.title
+          %p.project.list-item-intro= project.metadata[:page]['dash_intro']
+
+  %section.writing-list
+    %label.case-studies-heading Writing
+    - blog('writings').articles.each do |writing|
+      %article.writing.list-item
+        %h3.writing.list-item-title= link_to writing.title, writing.url
+        %p.writing.list-item-intro= writing.metadata[:page]['intro']
