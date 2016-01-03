@@ -84,7 +84,7 @@ end
 # Build-specific configuration
 configure :build do
   #set baseurl for githubpages subdirectory deployment
-  set :base_url, "/agv2/"
+  # set :base_url, "/agv2/"
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
