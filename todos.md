@@ -1,13 +1,13 @@
 todos:
-- fix captions and pictures on dtv case study
-	- fix the case study pic/caption messups you made!
-- fix bottom spacing on bio
+DONE fix captions and pictures on dtv case study
+	DONE fix the case study pic/caption messups you made!
+DONE fix bottom spacing on bio
 - finish writing Systems post
 
 - consider mvp plan:
-1. no nav, just actions on top bar
-2. put all case studies and writings on home page
 3. get rid of footer
+4. find way to turn svg icons into helper variables
+5. images for writing 
 
 - consider future plan, if/when many studies or writings
 1. just a few on home, link to view all
