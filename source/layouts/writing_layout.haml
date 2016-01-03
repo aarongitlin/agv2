@@ -21,7 +21,7 @@
 
       - if current_article.previous_article || current_article.next_article
         .article-footer.wrapper
-          %label Explore other case studies
+          %label Explore more of my writing
           .next-prev-article-links
             - if current_article.previous_article
               = link_to current_article.previous_article.title, current_article.previous_article.url, :class => 'prev-article-link'
