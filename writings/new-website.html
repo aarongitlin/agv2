@@ -63,7 +63,7 @@
           <p>I built my first personal website in 2011-2012 using Wordpress, blood, sweat, and tears. For now I’ll keep it live at <a href="http://lovesyoudesign.com/">www.lovesyoudesign.com</a>, though perhaps I will archive it at some point. The site is called Loves You Design because that was the name I contracted my design services under for a time. I was inspired by a conversation with a friend after I mentioned I loved the design of something. She responded, “Aaron, the design loves you.” I also happen to be obsessed with the Beach Boys, who just happen to have an album titled “Loves You”, with an amazing album cover.</p>
         
           <div class="image-wrapper image-full">
-              <img src="../images/blog/beach-boys-loves-you.jpeg" />
+          		<img src="../images/blog/beach-boys-loves-you.jpeg" />
           </div>
         
           <p>The album cover seems inspired by cross-stitching embroidery patterns, and has a homey and old-fashioned feel to it. The music in the album was actually quite a departure for the band, using synthesizers and embracing Brian Wilson’s by-then terrible voice. I love the contrast of old and new, and wanted to bring that into my own visual identity. As a digital designer I felt the most appropriate analogy was for me to embrace the pixel. Funny enough cross-stitching and pixels look pretty similar, so there is actual visual continuity between my approach and the original inspiration.</p>
@@ -81,13 +81,12 @@
             <li>A new and much simpler look, but with some continuity from the original site.</li>
           </ol>
         
-          <p>I experimented with Github’s <a href="http://jekyllrb.com/">Jekyll</a>, and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to <a href="https://middlemanapp.com/">Middleman</a>, a static site generator that I had already used in the past. I was concerned that it’s blog feature was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.</p>
+          <p>I experimented with Github’s <a href="http://jekyllrb.com/">Jekyll</a>, and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to <a href="https://middlemanapp.com/">Middleman</a>, a static site generator that I had already used in the past. I was concerned that it’s blog was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.</p>
         
           <p>I created two blogs, which only requires a simple set up in your config.rb:</p>
         
-          <pre><code>Source/config.rb:
-          activate :blog do |blog|
-            # set options on blog
+          <pre><code>          activate :blog do |blog|
+            #set options on blog
             blog.name = “projects”
             blog.prefix = “/projects”
             blog.layout = “project_layout”
@@ -96,7 +95,6 @@
             blog.default_extension = “.md”
             blog.paginate = true
           end
-        
         
           activate :blog do |blog|
             # set options on blog
