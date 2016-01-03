@@ -67,10 +67,10 @@ We put a few basic approaches into inVision to validate that we were moving in t
 Now a designer creates a small number of key screens put together in high fidelity to make the idea start to feel real. 
 
 7. *High fidelity prototype*  
-Now we bring it all together into a basic prototype so that the full flow can be visualized in high fidelity, and we can even begin exploring interactino details like hover states and transitions.
+Now we bring it all together into a basic prototype so that the full flow can be visualized in high fidelity, and we can even begin exploring interaction details like hover states and transitions.
 
 8. *Documentation*  
-We wrap everything up in a presentation for the client, and walk  them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
+We wrap everything up in a presentation for the client, and walk them through our progress and how we got there. On occasion they make specific requests for things like specced up comps or annotated wireframes, which we of course provide.
 
 <div class="gray-bg-wrapper">
 
