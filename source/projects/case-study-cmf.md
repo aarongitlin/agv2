@@ -51,7 +51,7 @@ We also produced a few style tiles for them that would give them the freedom to 
 **Design**  
 Starting with the sitemap as a baseline, we began working in two streams: translating the sitemap and user flows into some very low fidelity pages, and identifying the key components that would be needed throughout the site. 
 
-This was the first time that our team officially started and finished a project using Sketch [link], which was really exciting. Having both UX and UI using the same tools was a game-changing experience, and was a big improvement to our workflow. We ended up with some pretty messy files throughout the project, but by the end had a clearer idea of how things could be structured. I even created a base Sketch tempalte to be used across other Responsive Web Design projects in the future, which you can see here [link to github].
+This was the first time that our team officially started and finished a project using [Sketch](https://www.sketchapp.com/), which was really exciting. Having both UX and UI using the same tools was a game-changing experience, and was a big improvement to our workflow. We ended up with some pretty messy files throughout the project, but by the end had a clearer idea of how things could be structured. I even created a base Sketch template to be used across other Responsive Web Design projects in the future, which you can [see here](https://github.com/xd-admin/sketch-templates).
 
 We slowly built up the fidelity of the designs, using inVision prototypes to present to the client twice a week. We hit a few slightly larger than expected bumps along the way, which is to be expected. As the client sees the product come to life, it is natural that they start to realize its potential and begin looking forward to future business plans that had not yet been discussed. It became clear to us that the site could not be as focused as we initially thought. While healthcare related products made up the core of their business, they were looking to expand their other lines much sooner than we had originally thought. 
 
@@ -81,7 +81,7 @@ This pivot didn't throw off the whole design system or flow, but definitely chan
 **Document**  
 In the past few years I have become obstinate about designing systems, not pages or sites. So rather than designing all the pages and then speccing them out, we simultaneously designed components and pages, and updated the library as we went. While this can be onerous at times during the middle of the design process, it keeps us disciplined, and makes the final task of delivering documented designs much easier. 
 
-We had even more ambitious plans to create an online living pattern library, but unfortuantely this relatively quick and budget conscious project did not allow us the time or resources. You can see the skeleton of the idea though, which we would love to update if we continue working together.
+We had even more ambitious plans to create an online living style guide, but unfortunately this relatively quick and budget conscious project did not allow us the time or resources. You can see the skeleton of the idea though, which we would love to update if we continue working together.
 
 <a class="button tertiary" href="http://aarongitlin.github.io/cmf-style-guide/styles.html">View Pattern Library</a>
 

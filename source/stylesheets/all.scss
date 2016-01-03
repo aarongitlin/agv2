@@ -340,6 +340,13 @@ body {
   text-transform: none;
   font-weight: 600;
   font-size: 1.4rem;
+  letter-spacing: 0;
+  a {
+    color: $gray-6;
+    &:hover {
+      color: $gray-5;
+    }
+  }
  }
 
 .writing.list-item-intro {
