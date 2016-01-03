@@ -16,7 +16,7 @@ body_class: index-page
   %section.project-list
     %label.case-studies-heading Case Studies
     - blog('projects').articles.each do |project|
-      %a{:href=> project.url}
+      =link_to project.url do
         %article.project.list-item
           .project.list-item-image-wrapper
             = image_tag project.metadata[:page]['image_path']
