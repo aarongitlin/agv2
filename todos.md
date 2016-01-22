@@ -8,6 +8,7 @@ DONE fix bottom spacing on bio
 3. get rid of footer
 4. find way to turn svg icons into helper variables
 5. images for writing 
+6. https://pooreffort.com/blog/turbolinks-in-middleman/
 
 - consider future plan, if/when many studies or writings
 1. just a few on home, link to view all
@@ -23,5 +24,4 @@ approach to design (circular, not stepped) stepping back, bigger picture, analog
 
 should designers code (duh)
 
-creating this site
 
