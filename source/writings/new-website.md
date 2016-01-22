@@ -1,6 +1,6 @@
 ---
 title: A New Website for a New Year  
-date: 3/1/2015  
+date: 3/1/2016  
 intro: As of January 2016 this site is purposefully bare. I’ve started my own new website for the first time since 2012 and I wanted to start over  
 
 ---
