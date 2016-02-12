@@ -2,7 +2,7 @@
 title: CMF Redesign  
 role: "Lead Design"  
 year: "2015"  
-date: 1/8/2015  
+date: 2015-08-01  
 client: "CM&F"  
 project_type: "Waterfall"  
 image_path: "../images/CMF/pixel_cloud.png"   
