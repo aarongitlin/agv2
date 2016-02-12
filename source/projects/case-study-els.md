@@ -2,7 +2,7 @@
 title: Clinical Pharmacology  
 role: "Lead UI Design"  
 year: "2014"  
-date: 12/5/2014  
+date: 2014-05-08  
 client: "Elsevier"  
 project_type: "Waterfall"  
 image_path: "../images/ELS/pixel_pill.png"   

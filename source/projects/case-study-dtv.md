@@ -3,7 +3,7 @@ title: DTV Concept Design
 
 role: "Lead UI Design"
 year: "2015"
-date: 1/5/2015
+date: 2015-05-01
 client: "DTV"
 project_type: "Retainer"
 image_path: "../images/DTV/pixel_wave.png"
