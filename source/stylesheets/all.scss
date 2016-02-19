@@ -357,6 +357,14 @@ body {
 .writing.list-item {
   @include margin-small-top();
 }
+
+// Writing Detail
+
+.article-detail-content .image-three-across img {
+  @include media($medium-screen-up) {
+    margin-bottom: 1rem;
+  }
+}
 //// Bio Page
 
 .bio-page-wrapper {
