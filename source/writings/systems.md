@@ -1,7 +1,6 @@
 ---
 title: Design Systems in the Real World  
 date: 3/10/2015  
-image_path: "../images/CMF/pixel_cloud.png"   
 intro: Everyone knows we should be designing systems, but are there other considerations before committing to this approach?
 
 ---
