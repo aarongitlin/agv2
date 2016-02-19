@@ -1,6 +1,7 @@
 ---
-title: Colleague Avatars  
-date: 24/2/2016  
+
+title: "Colleague Avatars"  
+date: 2016-02-16  
 intro: I don't think you can call yourself a designer if you don't draw cute little avatars at some point. Right?  
 
 ---
