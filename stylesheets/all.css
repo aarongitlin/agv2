@@ -544,7 +544,7 @@ h2 {
     .image-two-across img:last-child {
       margin-right: 0; }
     /* line 211, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-    .image-two-across img:nth-child(2) {
+    .image-two-across img:nth-child(2n) {
       margin-right: 0; } }
 
 @media screen and (min-width: 40rem) {
@@ -558,7 +558,7 @@ h2 {
     .image-three-across img:last-child {
       margin-right: 0; }
     /* line 221, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/_project_detail.scss */
-    .image-three-across img:nth-child(3) {
+    .image-three-across img:nth-child(3n) {
       margin-right: 0; } }
 
 @media screen and (min-width: 40rem) {
@@ -1005,12 +1005,17 @@ body {
 .writing.list-item {
   margin-top: 1rem; }
 
-/* line 362, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+@media screen and (min-width: 40rem) {
+  /* line 363, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+  .article-detail-content .image-three-across img {
+    margin-bottom: 1rem; } }
+
+/* line 370, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .bio-page-wrapper {
   padding-top: 6rem;
   padding-bottom: 6rem; }
 
-/* line 366, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 374, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .profile-image {
   float: left;
   display: block;
@@ -1021,7 +1026,7 @@ body {
   .profile-image:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40rem) {
-    /* line 366, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+    /* line 374, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
     .profile-image {
       float: left;
       display: block;
@@ -1032,7 +1037,7 @@ body {
       .profile-image:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 64rem) {
-    /* line 366, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+    /* line 374, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
     .profile-image {
       float: left;
       display: block;
@@ -1043,19 +1048,19 @@ body {
       .profile-image:last-child {
         margin-right: 0; } }
 
-/* line 380, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 388, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .profile-header {
   text-align: center; }
 
-/* line 387, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 395, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer, #main:after {
   height: 6rem; }
   @media screen and (max-width: 40rem) {
-    /* line 387, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+    /* line 395, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
     .footer, #main:after {
       height: 12.4rem; } }
 
-/* line 393, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 401, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer {
   background-color: #E7EAE8;
   padding-bottom: 1rem;
@@ -1064,26 +1069,26 @@ body {
   line-height: 1.4;
   color: #7F8380; }
 
-/* line 399, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 407, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer-text {
   padding-top: 0.5rem; }
   @media screen and (min-width: 64rem) {
-    /* line 399, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+    /* line 407, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
     .footer-text {
       padding-top: 1rem; } }
 
-/* line 406, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 414, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer-links {
   padding-top: 0.875rem; }
 
-/* line 410, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 418, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer-link {
   margin-left: 1rem; }
-  /* line 412, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+  /* line 420, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
   .footer-link:first-child {
     margin-left: 0; }
   @media screen and (max-width: 40rem) {
-    /* line 410, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+    /* line 418, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
     .footer-link {
       display: block;
       margin-left: 0;
@@ -1095,30 +1100,30 @@ body {
         clear: both;
         content: "";
         display: table; }
-      /* line 421, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+      /* line 429, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
       .footer-link:first-child {
         margin-top: 0; } }
 
-/* line 428, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 436, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .footer-link .svg-icon {
   position: relative;
   top: -1px;
   vertical-align: middle;
   margin-right: 2px; }
 
-/* line 434, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 442, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .svg-icon path {
   fill: #289976;
   transition: fill 0.1s linear; }
 
-/* line 438, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 446, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .svg-icon path {
   fill: #33c195; }
 
-/* line 445, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 453, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .blog-index-wrapper {
   padding-top: 6rem; }
 
-/* line 448, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
+/* line 456, /Users/aarongitlin/Dropbox/lovesyou/aarongitlin/agv2/agv2.1/source/stylesheets/all.scss */
 .blog-list-item {
   margin-top: 0.875rem; }
