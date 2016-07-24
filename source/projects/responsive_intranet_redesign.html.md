@@ -9,7 +9,7 @@ project_type: "Agile"
 image_path: "../images/lazone/web_emoji.png"  
 dash_intro: "A long term project to research and design a unified intranet service for a global investment firm"  
 article_intro: "After decades of disconnected intranets and ad-hoc content organization, financial services company 'Freres' commissioned us to begin the process of creating one service to help consolidate employee needs across the world"
-published: false
+published: true
 ---
 
 The client for this project is a large financial institution with major presences in Paris, London, and New York. For this case study I will refer to them as "Freres". It is a made-up name I am using to respect the client's privacy.
