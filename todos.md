@@ -12,7 +12,7 @@ DONE fix bottom spacing on bio
 
 - consider future plan, if/when many studies or writings
 1. just a few on home, link to view all
-2. put nav back in.
+2. put nav back in: Dropdown with Projects, Dropdown with Writings. eventually a view all with dedicated pages.
 3. maybe have intro back on left, content on right. or make intro smaller
 
 consider a doodling style for writings to add consistency/theme
