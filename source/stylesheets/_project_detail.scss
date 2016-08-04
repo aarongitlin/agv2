@@ -226,6 +226,19 @@ h2 {
 	}
 }
 
+.image-two-across--large-small a { //hacky, fix later
+	@include media($medium-screen-up) {
+		&:nth-child(1n) {
+			@include span-columns(9);
+		}
+		&:nth-child(2n) {
+			@include span-columns(3);
+			@include omega();
+		}
+		
+	}
+}
+
 .image-three-across img {
 
 	@include media($medium-screen-up) {
