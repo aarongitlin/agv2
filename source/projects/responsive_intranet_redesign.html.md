@@ -23,6 +23,11 @@ We decided that the challenges in this case were so complex, and so specific to 
 
 We finished the Discovery Process with a short list of prioritized features, and a number of User Stories ready to be taken into the Design phase.
 
+<div class="image-wrapper large image-two-across box-shadow">
+    <img src="../images/lazone/user-research-1.png" />
+    <img src="../images/lazone/user-research-2.png" />
+</div>
+
 <div class="gray-bg-wrapper">
 
     <div class="image-wrapper extra-large image-two-across box-shadow">
@@ -135,6 +140,17 @@ Unfortunately I can't provide the working link while we maintain this project fo
     <a href="../images/lazone/mobile.live-style-guide.jpg"><img src="../images/lazone/mobile.style-guide-preview.jpg" /></a>
     <p class="caption">Desktop and Mobile Style Guide</p>
 </div>
+
+###UX Documentation
+
+Because we approached the design of this product from the bottom up, UX documentation like sitemaps came after-the-fact. They are still useful in communicating the core functionality of the site to those outside of the project team. 
+
+<div class="image-wrapper extra-large box-shadow gray-bg">
+    <img src="../images/lazone/sitemap.png" />
+    <img src="../images/lazone/core-features.jpg" />
+    <p class="caption">Basic sitemap and flow of basic features</p>
+</div>
+
 
 ##BUILD
 After design finished, I remained on the project part time throughout the Build phase. I worked with developers helping them set up Sharepoint so that it suits content-creator needs as much as possible. I'm happy to say that this intranet is live as of May 2016 and used every single day by thousands of employees across the world. I'm told that the Directory is above and beyond other tools they've had to use in the past, that reading through articles on the web is way better than email, and that people still aren't good at putting their expenses in on time.
