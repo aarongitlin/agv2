@@ -9,7 +9,6 @@
 
 # Ignore the build directory
 /build
-/design_files
 
 # Ignore cache
 /.sass-cache
