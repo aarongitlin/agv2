@@ -1,0 +1,65 @@
+@mixin top-page-margin {
+  padding-top: 6rem; //3 for header 3 for fun
+}
+
+@mixin bottom-page-margin {
+  padding-bottom: 6rem;
+}
+
+@mixin margin-medium-top {
+  margin-top: 3rem;
+}
+
+@mixin margin-medium-bottom {
+  margin-bottom: 3rem;
+}
+
+@mixin margin-small-top {
+  margin-top: 1rem;
+}
+
+@mixin margin-small-bottom {
+  margin-bottom: 1rem;
+}
+
+// New Styles
+
+@mixin padding-top--xlarge {
+  padding-top: 12rem;
+}
+
+@mixin padding-top--large {
+  padding-top: 4rem;
+}
+
+@mixin padding-top--medium {
+  padding-top: 2rem;
+}
+
+@mixin padding-top--small {
+  padding-top: 1rem;
+}
+
+@mixin padding-top--xsmall {
+  padding-top: 0.5rem;
+}
+
+@mixin margin-top--xlarge {
+  margin-top: 12rem;
+}
+
+@mixin margin-top--large {
+  margin-top: 4rem;
+}
+
+@mixin margin-top--medium {
+  margin-top: 2rem;
+}
+
+@mixin margin-top--small {
+  margin-top: 1rem;
+}
+
+@mixin margin-top--xsmall {
+  margin-top: 0.5rem;
+}

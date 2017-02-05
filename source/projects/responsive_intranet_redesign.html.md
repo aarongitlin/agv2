@@ -6,7 +6,7 @@ year: "2015"
 blog_name: projects  
 client: "Freres"  
 project_type: "Agile"  
-image_path: "../images/lazone/web_emoji.png"  
+image_path: ""  
 dash_intro: "A long term project to research and design a unified intranet service for a global investment firm"  
 article_intro: "After decades of disconnected intranets and ad-hoc content organization, financial services company 'Freres' commissioned us to begin the process of creating one service to help consolidate employee needs across the world"
 published: true
@@ -45,11 +45,11 @@ We finished the Discovery Process with a short list of prioritized features, and
 
 
 ##DEFINE
-Before we begin designing at Tigerspike, we have a distinct "Define" phase, where we decide on our approach to the project (Waterfall vs Agile), create a more refined set of requirements or user stories, choose the makeup of the team, and decide on a visual direction. 
+Before we begin designing at Tigerspike, we have a distinct "Define" phase, where we decide on our approach to the project (Waterfall vs Agile), create a more refined set of requirements or user stories, choose the makeup of the team, and decide on a visual direction.
 
 As lead UI/UX designer on this project I was in charge of choosing the visual direction and working with the project manager on choosing roles and responsibilities for the team members. In the end we decided on utilizing a *Research & Content Team* and a *Delivery Team*. I led the Delivery team while my peer [Jess](http://www.jessdale.com/) led the Research & Content team.
 
-Normally we define the visual direction through a series of design exercises that include moodboards and Style Tiles, but in this case we were directed by the client to reuse as many styles as possible from our previous project with them, which was to redesign their public facing site. 
+Normally we define the visual direction through a series of design exercises that include moodboards and Style Tiles, but in this case we were directed by the client to reuse as many styles as possible from our previous project with them, which was to redesign their public facing site.
 
 While the use cases of their public facing site and this new intranet were too different to directly borrow components, I was able to start with type choices and brand colors. From there, I created a baseline typographic scale, a small palette of colors, and a conservative grid using Bourbon Neat. We were ready to go.
 
@@ -127,11 +127,11 @@ While the Directory and Communiqué articles represented the primary content wit
     <img src="../images/lazone/perks-mobile.png" />
     <p class="caption">Mobile designs for Dashboard and Employee Services</p>
 </div>
-    
+
 
 ###Responsive Style Guide
 
-As part of any design delivery, we always include a style guide. Depending on the project and the client, this may be as basic as a small pdf that includes some cues on type, color, iconography, and a few global components. Thankfully with this project we were able to go a little further and actually build out a static responsive website with a selection of fully responsive components and a brief description of each one. 
+As part of any design delivery, we always include a style guide. Depending on the project and the client, this may be as basic as a small pdf that includes some cues on type, color, iconography, and a few global components. Thankfully with this project we were able to go a little further and actually build out a static responsive website with a selection of fully responsive components and a brief description of each one.
 
 Unfortunately I can't provide the working link while we maintain this project for the client, but below are some adapted screens with links to static mockups roughly similar to how the guide was coded.
 
@@ -143,7 +143,7 @@ Unfortunately I can't provide the working link while we maintain this project fo
 
 ###UX Documentation
 
-Because we approached the design of this product from the bottom up, UX documentation like sitemaps came after-the-fact. They are still useful in communicating the core functionality of the site to those outside of the project team. 
+Because we approached the design of this product from the bottom up, UX documentation like sitemaps came after-the-fact. They are still useful in communicating the core functionality of the site to those outside of the project team.
 
 <div class="image-wrapper extra-large box-shadow gray-bg">
     <img src="../images/lazone/sitemap.png" />

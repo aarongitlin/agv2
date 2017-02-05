@@ -3,29 +3,32 @@ title: Aaron Gitlin
 body_class: index-page
 ---
 
-.index-page-wrapper.wrapper
-  .personal-info-wrapper
-    %section.personal-info
-      .logo=image_tag "../images/home/logo.svg"
-      .personal-info-name
-        %h2 Aaron Gitlin
-      .personal-info-intro
-        %p New York City based Experience Designer currently working at global digital consultancy Tigerspike. Specializing in creating visual systems for complex projects, passionate about finding functional beauty.
-        = link_to 'View Bio', 'bio.html', :class=> "profile-link"
+.index-page-wrapper
 
-  %section.project-list
-    %label.case-studies-heading Case Studies
-    - blog('projects').articles.each do |project|
-      =link_to project.url do
-        %article.project.list-item
-          .project.list-item-image-wrapper
+  .introduction
+    .introduction__paragraph
+      Hi! I'm Aaron Gitlin, a New York City based Product Designer currently working as a Senior Product Designer at Paperless Post.  Previously, I was a Senior Designer at Tigerspike.
+    .introduction__contact
+      You can get in touch with me via email or find me on LinkedIn
+
+  .writing-section
+    .writing-section__label
+      Recent Writing
+    .writings
+      - blog('writings').articles.each do |writing|
+        = link_to writing.url do
+          .writing=writing.title
+
+
+  .project-section
+    .project-section__label
+      Recent Projects
+    .projects
+      - blog('projects').articles.each do |project|
+        .project
+          =link_to project.url, class: 'project__image' do
             = image_tag project.metadata[:page]['image_path']
-          %h3.project.list-item-title=project.title
-          %p.project.list-item-intro= project.metadata[:page]['dash_intro']
-
-  %section.writing-list
-    %label.case-studies-heading Writing
-    - blog('writings').articles.each do |writing|
-      %article.writing.list-item
-        %h3.writing.list-item-title= link_to writing.title, writing.url
-        %p.writing.list-item-intro= writing.metadata[:page]['intro']
+          =link_to project.url do
+            .project__title=project.title
+          .project__description= project.metadata[:page]['dash_intro']
+          .project__cta=link_to 'Read More', project.url

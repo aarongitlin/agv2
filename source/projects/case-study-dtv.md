@@ -6,16 +6,16 @@ year: "2015"
 date: 2015-05-01
 client: "DTV"
 project_type: "Retainer"
-image_path: "../images/DTV/pixel_wave.png"
+image_path: ""
 dash_intro: "A major media company hired us to create a concept for their new cross-platform digital streaming product"
 article_intro: "If it has a screen, DIRECTV wants their service to be on it. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."
 ---
 
 ##Discover
 
-Parallel to their regular output and updates, DTV began a separate project in late 2014 aimed at creating a design language that unifies native application and web experiences. TS was tagged to help ideate on how this next generation product might look and work. 
+Parallel to their regular output and updates, DTV began a separate project in late 2014 aimed at creating a design language that unifies native application and web experiences. TS was tagged to help ideate on how this next generation product might look and work.
 
-The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name. 
+The client provided some basic user personas, and from there we were able to create user-journeys. The requirements of the product were quite vague, but we knew they were looking for a core design model that would frame this product. Cards are a popular metaphor at the moment; one that they both hoped to use, but also push beyond. In a dream one day, our lead UX designer came up with something that stuck: *the Wave*. She imagined the user diving through the application, immersing themselves into the content. The metaphor has stuck, and even given the project a working name.
 
 <div class="image-wrapper image-full gray-bg">
 	<img src="../images/DTV/diagram-7pm.png" />
@@ -64,7 +64,7 @@ We sketched out some basic ideas and explored different patterns that would let 
 We put a few basic approaches into inVision to validate that we were moving in the right direction with the client before getting too bogged down in details  
 
 6. *High Fidelity Screens*  
-Now a designer creates a small number of key screens put together in high fidelity to make the idea start to feel real. 
+Now a designer creates a small number of key screens put together in high fidelity to make the idea start to feel real.
 
 7. *High fidelity prototype*  
 Now we bring it all together into a basic prototype so that the full flow can be visualized in high fidelity, and we can even begin exploring interaction details like hover states and transitions.
@@ -146,5 +146,4 @@ We wrap everything up in a presentation for the client, and walk them through ou
 
 ——
 
-This is only one small part of the product we examined through this framework. Other iterations called for coded prototypes, content modeling, and deeper feature mapping. But the above steps are a basic representation of how we work with this and other clients. 
-
+This is only one small part of the product we examined through this framework. Other iterations called for coded prototypes, content modeling, and deeper feature mapping. But the above steps are a basic representation of how we work with this and other clients.

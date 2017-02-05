@@ -5,57 +5,14 @@
 @import 'base/base';
 @import 'neat/neat';
 
+@import 'spacing';
+@import 'typography';
 
-@mixin top-page-margin {
-  padding-top: 6rem; //3 for header 3 for fun
-}
 
-@mixin bottom-page-margin {
-  padding-bottom: 6rem;
-}
-
-@mixin margin-medium-top {
-  margin-top: 3rem;
-}
-
-@mixin margin-medium-bottom {
-  margin-bottom: 3rem;
-}
-
-@mixin margin-small-top {
-  margin-top: 1rem;
-}
-
-@mixin margin-small-bottom {
-  margin-bottom: 1rem;
-}
-
-@mixin small-description-text {
-  font-size: 0.925rem;
-  font-family: $sans-serif;
-  line-height: 1.4;
-  color: $gray-5;
-}
 
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $action-color;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
 
 @import 'project_detail';
 
@@ -78,7 +35,6 @@ body {
 #main {
   min-height: 100%;
   margin-bottom: -6rem; //Size of footer
-  margin-top: -3rem;
   &:after {
   content: "";
   display: block;
@@ -100,356 +56,145 @@ body {
 
 ////// Header
 
-.main-nav {
-  background-color: $gray-6;
-  height: 3rem;
+nav {
+  @include outer-container;
 }
-
-.nav-logo {
-  @include span-columns(2);
-  a {
-    font-family: $heading-font-family;
-    font-size: 2.0rem;
-    letter-spacing: -0.05rem;
-    color: $gray-3;
-    &:hover {
-      color: $off-white;
-    }
-  }
+.nav__logo {
+  @include span-columns(3);
 }
-
-.nav-actions {
-  @include span-columns(6);
-}
-.nav-actions.right {
+.nav__menu {
   float: right;
-  a {
-    float:right;
-    margin-left: 2rem;
+  li {
+    display: inline-block;
   }
 }
-
-.header-link .svg-icon {
-  width: 2rem;
-  height: 2rem;
-  margin-top: 6px;
-  path {
-    fill: $gray-3;
-    transition: fill 0.1s linear;
-  }
-  &:hover path {
-    fill: $white;
-  }
-}
-.header-link .svg-icon.linkedin-icon {
-  width: 1.7rem;
-  height: 1.7rem;
-  margin-top: 8px;
-}
-
-
-// If I want to reintrouduce navigation
-
-// .main-nav-list {
-//   margin-left: -0.75rem;
-//   margin-right: -0.75rem;
-//   li a {
-//     font-family: $heading-font-family;
-//     font-size: 0.80rem;
-//     letter-spacing: -0.05rem;
-//     color: $gray-3;
-//     float:left;
-//     width: 33.3%;
-//     padding-top: 0.8rem;
-//     text-align: center;
-//     &:hover {
-//       color: $off-white;
-//     }
-//   }
-
-//   @include media($medium-screen-up) {
-//     @include span-columns(9 of 12);
-//     padding-left: 1rem;
-//     li {
-//       margin-left: 4rem;
-//       float: left;
-//       &:first-child {
-//         margin-left: 0;
-//       }
-//     }
-
-//     li a {
-//       font-size: 1.0rem;
-//       width: auto;
-//       font-weight: 200;
-//       list-style: none;
-//       text-align: left;
-//       &.activated {
-//         background-color: red;
-//         a {
-//           color: dark-red;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .index-page .main-nav-list li:first-child a {
-//   color: $off-white;
-// }
-// .profile-page .main-nav-list li:nth-child(2n) a {
-//   color: $off-white;
-// }
-
-// .blog-page .main-nav-list li:nth-child(3n) a {
-//   color: $off-white;
-// }
 
 //// Index page
 
 .index-page-wrapper {
-  @include top-page-margin();
+  @include outer-container;
 }
 
-// Personal Info
-.personal-info-wrapper {
-  @include media($small-screen-up) {
-    background-color: white;
-    text-align: center;
-    margin-top: -2rem; // I want this element closer to top than global default
+// Introduction
+
+.introduction {
+  @include row();
+  @include span-columns(8);
+  @include padding-top--xlarge;
+
+  &__paragraph {
+    @extend h2;
+  }
+  &__contact {
+    @extend h4;
+    @include padding-top--large;
   }
 }
 
-.logo {
-  @include span-columns(12);
-}
+// Writing list
 
-.logo img {
-  @include media($small-screen-up) {
-    width: 20%;
-    margin: auto;
-    max-width: 7rem;
+.writing-section {
+  @include padding-top--large;
+  @include span-columns(7);
+  @include row();
+  &__label {
+    @extend label;
   }
 }
-
-.personal-info-name {
-  @include span-columns(12);
-  h2 {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-  }
+.writings {
+  @include margin-top--small;
 }
-
-.personal-info-intro {
-  @include span-columns(12);
-  margin-top: 0.5rem;
-  p {
-    text-align: left;
-    @include small-description-text();
-    max-width: 30rem;
-    margin: auto;
+.writing {
+  @include span-columns(6 of 12);
+  &:nth-child(1n+3) { //Selecting all but first two items
+    @include padding-top--small;
   }
-}
-
-.profile-link {
-  @include span-columns(3 of 3);
-  margin-top: 0.5rem;
   font-family: $sans-serif;
-  text-transform: uppercase;
-  font-size: 1.0rem;
-  font-weight: 600;
-  &::after {
-    content: "»";
-    position: relative;
-    padding-left: 2px;
-    top: -1px;
+  font-weight: 700;
+  color: $base-font-color;
+  &:nth-child(2n) {
+    @include omega;
   }
-  @include media($large-screen-up) {
-    font-size: 0.90rem;
-  }
-}
-
-//Article List
-.project-list, .writing-list {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  @include span-columns(12);
-    @include media($large-screen-up) {
-    @include span-columns(10);
-    @include shift(1);
-  }
-}
-
-.case-studies-heading {
-  border-bottom: 1px solid $gray-4;
-  padding-bottom: 0.2rem;
-  font-size: 1.0rem;
-  color: $gray-4;
-}
-
-.project.list-item {
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  @include span-columns(12);
-  @include margin-small-top();
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-  background-color: $white;
-  transition: all 0.2s linear;
-  &:hover {
-      border: 1px solid $gray-2;
-
-  }
-}
-
-.list-item-image-wrapper {
-  @include span-columns(2 of 12);
-  @include media($medium-screen-up) {
-    @include span-columns(1.6 of 12);
-    padding: 0.5rem;
-  }
-}
-
-.list-item-title {
-  @include span-columns(9.8 of 12);
-  @include omega();
-  margin-top: 0;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  letter-spacing: -0.065rem;
-  font-weight: normal;
-  @include media($large-screen-up) {
-    @include span-columns(6 of 8);
-    padding-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0;
-  }
- }
-
-.list-item-intro {
-  font-family: $sans-serif;
-  color: $gray-5;
-  line-height: 1.4;
-  @include span-columns(10);
-  @include media($large-screen-up) {
-  }
-}
-
-.writing.list-item-title {
-  font-family: $serif;
-  text-transform: none;
-  font-weight: 600;
-  font-size: 1.4rem;
-  letter-spacing: 0;
-  a {
-    color: $gray-6;
-    &:hover {
-      color: $gray-5;
-    }
-  }
- }
-
-.writing.list-item-intro {
-  font-size: 1.0rem;
-  color: $gray-4;
 }
 
 .writing.list-item {
   @include margin-small-top();
 }
 
-// Writing Detail
-
-
-//// Bio Page
-
-.bio-page-wrapper {
-  @include top-page-margin();
-  @include bottom-page-margin();
-}
-.profile-image {
-  @include span-columns(10 of 12);
-  @include shift(1);
-  @include media($medium-screen-up) {
-    @include span-columns(4);
-    @include shift(4);
+//Article List
+.project-section {
+  @include padding-top--large;
+  @include span-columns(12);
+  @include row;
+  &__label {
+    @extend label;
   }
-  @include media($large-screen-up) {
-    @include span-columns(1);
-    @include shift(5.5);
-  }
-
 }
 
-.profile-header {
-  text-align: center;
+.project {
+  @include row;
+  @include padding-top--large;
+  &:nth-child(1) {
+    @include padding-top--small;
+  }
+  &__image {
+    @include span-columns(8.5 of 12);
+    max-width: 100%;
+    height: 40rem;
+    background-color: lightgray;
+  }
+  &__title {
+    @include padding-top--large;
+    @include span-columns(3 of 12);
+    @include shift(0.5);
+    @include omega;
+    @extend h3;
+    font-weight: 800;
+    &::after {
+      content: "";
+      width: 4rem;
+      height: 2px;
+      background-color: $gray-6;
+      display: block;
+      margin-top: 2rem;
+    }
+  }
+  &__description {
+    @include span-columns(3 of 12);
+    @include shift(0.5);
+    @include omega;
+    @include padding-top--large;
+  }
+  &__cta {
+    @include span-columns(3 of 12);
+    @include shift(0.5);
+    @include omega;
+    @include padding-top--large;
+  }
 }
 
 
 ///// Footer
 
-.footer, #main:after {
-  height: 6rem;
-  @include media($medium-screen-down) {
-    height: 12.4rem;
-  }
-}
-.footer {
-  background-color: $gray-2;
-  padding-bottom: 1rem;
-  @include small-description-text();
+.site-footer {
+  @include outer-container;
+  @include margin-top--xlarge;
+  @include padding(1rem 1rem 0 1rem);
 
-}
-.footer-text {
-  padding-top: 0.5rem;
-  @include media($large-screen-up) {
-    padding-top: 1rem;
-  }
-}
-
-.footer-links {
-  padding-top: 0.875rem;
-}
-
-.footer-link {
-  margin-left: 1rem;
-  &:first-child {
-    margin-left: 0;
-  }
-  @include media($medium-screen-down) {
-    @include row();
-    margin-left: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    &:first-child {
-      margin-top: 0;
+  &__link-list {
+    @include span-columns(12);
+    @include row;
+    & li {
+      display: inline-block;
+      padding: 1rem 0.5rem;
+      &:nth-child(1) {
+        padding-left: 0;
+      }
     }
   }
 
-}
-
-.footer-link .svg-icon {
-  position: relative;
-  top: -1px;
-  vertical-align: middle;
-  margin-right: 2px;
-}
-.svg-icon path {
-  fill: $action-color;
-  transition: fill 0.1s linear;
-}
-.svg-icon path {
-  fill: lighten($action-color, 10%);
-}
-
-
-//// Blog Index Page
-
-.blog-index-wrapper {
-  @include top-page-margin();
-}
-.blog-list-item {
-  margin-top: 0.875rem;
+  &__colophon {
+    @include span-columns(12);
+    @include row;
+  }
 }

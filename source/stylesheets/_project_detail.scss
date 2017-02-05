@@ -113,11 +113,6 @@ $four-col: 34.11922%;
 	}
 }
 
-h2 {
-	margin-top: 2.4rem;
-	text-transform: uppercase;
-}
-
 .article-intro {
 	font-size: 1.4rem;
 	margin-bottom: 4rem;
@@ -235,7 +230,7 @@ h2 {
 			@include span-columns(3);
 			@include omega();
 		}
-		
+
 	}
 }
 
