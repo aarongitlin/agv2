@@ -2,10 +2,11 @@
 title: CMF Redesign  
 role: "Lead Design"  
 year: "2015"  
-date: 2015-08-01  
+date: 2017-01-27  
 client: "CM&F"  
 project_type: "Waterfall"  
-image_path: ""   
+index_hero_image: "/images/home/cmf-desk-hero@2x.png"  
+detail_hero_image: ""   
 dash_intro: "A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs"
 article_intro: "CM&F is not such a big name compared to some of the other clients I worked with at Tigerspike, but they still had some complex challenges to solve. As a family business, they have a trusted client base and positive reputation, but pretty old school systems. A lot of phone calls, paper forms, and yes, even faxes."
 

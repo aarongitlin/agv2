@@ -1,18 +1,18 @@
 ---
 title: Responsive Intranet Redesign  
-date: 2016-02-07 22:11 UTC  
+date: 2017-01-30  
 role: "Lead UI Design"  
 year: "2015"  
 blog_name: projects  
 client: "Freres"  
 project_type: "Agile"  
-image_path: ""  
+index_hero_image: "/images/home/lazone-desk-hero@2x.png"  
+detail_hero_image: ""  
 dash_intro: "A long term project to research and design a unified intranet service for a global investment firm"  
-article_intro: "After decades of disconnected intranets and ad-hoc content organization, financial services company 'Freres' commissioned us to begin the process of creating one service to help consolidate employee needs across the world"
+article_intro_summary: "Freres is the name I will use to refer to the multinational financial firm that I extensively worked with while at Tigerspike. They came to us with a complicated problem in 2015: Begin the process of uniting and redesigning dozens of intranets scattered throughout departments around the world."  
+article_intro_role: "I was the lead UI designer and a core UX designer from project start to finish"  
 published: true
 ---
-
-The client for this project is a large financial institution with major presences in Paris, London, and New York. For this case study I will refer to them as "Freres". It is a made-up name I am using to respect the client's privacy.
 
 ##DISCOVER
 After completing a project with Freres over a year ago, they came back to us to begin a large-scale project: redesigning their intranet.
@@ -22,26 +22,6 @@ After a quick investigation of the current landscape, we found that the situatio
 We decided that the challenges in this case were so complex, and so specific to the company, that we needed an extended Discovery phase. We took extra care to interview a number of employees at different levels and in different offices. From that we were able to create a number of personas that served as an anchor throughout the design process.
 
 We finished the Discovery Process with a short list of prioritized features, and a number of User Stories ready to be taken into the Design phase.
-
-<div class="image-wrapper large image-two-across box-shadow">
-    <img src="../images/lazone/user-research-1.png" />
-    <img src="../images/lazone/user-research-2.png" />
-</div>
-
-<div class="gray-bg-wrapper">
-
-    <div class="image-wrapper extra-large image-two-across box-shadow">
-        <img src="../images/lazone/persona-1.png" />
-        <img src="../images/lazone/persona-2.png" />
-    </div>
-
-    <div class="image-wrapper extra-large image-two-across box-shadow">
-        <img src="../images/lazone/persona-3.png" />
-        <img src="../images/lazone/persona-4.png" />
-    </div>
-    <p class="caption">Our primary personas for the project</p>
-</div>
-
 
 
 ##DEFINE

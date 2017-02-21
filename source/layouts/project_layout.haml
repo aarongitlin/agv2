@@ -9,39 +9,39 @@
     #main(role="main")
       .article-detail-content.wrapper
         .project-heading
-          = image_tag current_article.metadata[:page]['image_path']
           %h1
             = current_article.title
-
-        .text-wrap
-          %secion.meta-list
-            .meta-item
-              %label Client
-              .value= current_article.metadata[:page]['client']
-            .meta-item
-              %label Role
-              .value= current_article.metadata[:page]['role']
-            .meta-item
-              %label Process
-              .value= current_article.metadata[:page]['project_type']
-            .meta-item
-              %label Year
-              .value= current_article.metadata[:page]['year']
-          
+        .article-top
           .article-intro
-            = current_article.metadata[:page]['article_intro']
-          .article-content
-            = yield
+            .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
 
-      - if current_article.previous_article || current_article.next_article
-        .article-footer.wrapper
-          %label Explore other case studies
-          .next-prev-article-links
-            - if current_article.previous_article
-              = link_to current_article.previous_article.title, current_article.previous_article.url, :class => 'prev-article-link'
+            .article-intro__role
+              .article-intro__role__label My Role
+              .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
 
-            - if current_article.next_article
-              = link_to current_article.next_article.title, current_article.next_article.url, :class => 'next-article-link'
+          .meta-list
+            .meta-list__item
+              .meta-list__item__label Year
+              .meta-list__item__value= current_article.metadata[:page]['year']
+            .meta-list__item
+              .meta-list__item__label Client
+              .meta-list__item__value= current_article.metadata[:page]['client']
+            .meta-list__item
+              .meta-list__item__label Project Type
+              .meta-list__item__value= current_article.metadata[:page]['project_type']
+
+        .article-content
+          = yield
+
+        - if current_article.previous_article || current_article.next_article
+          .article-footer.wrapper
+            %label Explore other case studies
+            .next-prev-article-links
+              - if current_article.previous_article
+                = link_to current_article.previous_article.title, current_article.previous_article.url, :class => 'prev-article-link'
+
+              - if current_article.next_article
+                = link_to current_article.next_article.title, current_article.next_article.url, :class => 'next-article-link'
 
     = partial 'partials/footer'
     = partial 'partials/scripts'

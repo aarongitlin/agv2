@@ -11,7 +11,7 @@ body_class: index-page
     .introduction__contact
       You can get in touch with me via email or find me on LinkedIn
 
-  .writing-section
+  #writing.writing-section
     .writing-section__label
       Recent Writing
     .writings
@@ -20,14 +20,14 @@ body_class: index-page
           .writing=writing.title
 
 
-  .project-section
+  #projects.project-section
     .project-section__label
       Recent Projects
     .projects
       - blog('projects').articles.each do |project|
         .project
           =link_to project.url, class: 'project__image' do
-            = image_tag project.metadata[:page]['image_path']
+            = image_tag project.metadata[:page]['index_hero_image']
           =link_to project.url do
             .project__title=project.title
           .project__description= project.metadata[:page]['dash_intro']

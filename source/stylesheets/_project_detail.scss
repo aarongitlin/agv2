@@ -6,119 +6,75 @@ $four-col: 34.11922%;
 
 .article-detail-content {
 	@include top-page-margin();
+	&.wrapper {
+		@include span-columns(12);
+		@include bottom-page-margin();
+		@include media($large-screen-up) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+	}
 }
 
+
 .project-heading, .article-heading {
-	text-align: center;
-	@include margin-medium-bottom;
+	@include margin-bottom--medium;
 	h1 {
 		font-size: 2.0rem;
 		@include media($medium-screen-up) {
-			font-size: 3.6rem;
-			display: inline;
-			vertical-align: middle;
-			padding-left: 0.50rem;
-		}
-	}
-	img {
-		display: block;
-		margin: auto;
-		margin-bottom: 1rem;
-		height: 3.6rem;
-		vertical-align: middle;
-		@include media($medium-screen-up) {
-			display: inline;
+			font-size: 2.4rem;
 		}
 	}
 }
-
-.article-heading {
-	h1 {
-		font-family: $serif;
-		font-weight: normal;
+.article-top {
+	@include row;
+}
+.article-intro {
+	@include span-columns(6 of 8);
+	&__summary {
+		@extend p.text--large;
 	}
-	img {
-		@include media($medium-screen-up) {
-			display: block;
-			@include margin-medium-bottom;
+	&__role {
+		@include margin-top--small;
+		&__label {
+			@extend label;
 		}
-	}
-}
-
-.text-wrap {
-	@include span-columns(12);
-	@include bottom-page-margin();
-	@include media($large-screen-up) {
-		@include span-columns(8);
-		@include shift(2);
-	}
-}
-
-.text-wrap p a {
-	font-weight: bold;
-}
-
-.text-wrap pre {
-	@include media($medium-screen-down) {
-		margin-left: 0;
-		white-space: pre-line;
+		&__text {
+			@extend p.text--large;
+		}
 	}
 }
 
 .meta-list {
-	@include row();
-	background-color: $off-white;
-	//border: 1px solid $gray-2;
-	padding: 1rem 0 0 1rem;
-	margin-bottom: 2rem;
-	@include media($large-screen-up) {
-		padding: 1rem 0 1rem 1rem;
-	}
-}
-//default-mobile meta
-.meta-item {
-	@include span-columns(6 of 12);
-
-	.value {
-		font-weight: 400;
-		margin-bottom: 1rem;
-		margin-top: 0.2rem;
-		color: $gray-5;
-		font-size: 1.0rem;
-	}
-	@include media($large-screen-down) {
-		&:nth-child(2n) {
-			@include omega();
-		}
-	}
-}
-//desktop meta
-.meta-item {
-	@include media($large-screen-up) {
-		@include span-columns(3 of 12);
-		border-right: 1px solid $gray-2;
-		&:last-child {
-			@include omega();
-			border: none;
-		}
-		&:first-child {
-			margin-left: 0;
-		}
-		label {
-			margin-bottom: 0;
-		}
-		.value {
-			margin-bottom: 0;
+	@include span-columns(1.5 of 8);
+	@include shift(0.5);
+	@include omega;
+	&__item {
+		@include margin-bottom--small;
+		&__label {
+			@extend label;
 		}
 	}
 }
 
-.article-intro {
-	font-size: 1.4rem;
-	margin-bottom: 4rem;
-	@include media($large-screen-up) {
-		@include shift(-1);
-		margin-right: (-$one-col);
+.article-content {
+	h2 {
+		font-family: $sans-serif;
+		font-size: 2.8rem;
+		letter-spacing: 2px;
+		font-weight: 200;
+		@include margin-top--large;
+		@include margin-bottom--medium;
+	}
+	h3 {
+		font-family: $sans-serif;
+		font-size: 1.4rem;
+		font-weight: 800;
+		@include margin-top--medium;
+		@include margin-bottom--small;
+	}
+	p {
+		@extend p.text--medium;
 	}
 }
 

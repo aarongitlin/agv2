@@ -6,22 +6,6 @@
   padding-bottom: 6rem;
 }
 
-@mixin margin-medium-top {
-  margin-top: 3rem;
-}
-
-@mixin margin-medium-bottom {
-  margin-bottom: 3rem;
-}
-
-@mixin margin-small-top {
-  margin-top: 1rem;
-}
-
-@mixin margin-small-bottom {
-  margin-bottom: 1rem;
-}
-
 // New Styles
 
 @mixin padding-top--xlarge {
@@ -62,4 +46,24 @@
 
 @mixin margin-top--xsmall {
   margin-top: 0.5rem;
+}
+
+@mixin margin-bottom--xlarge {
+  margin-bottom: 12rem;
+}
+
+@mixin margin-bottom--large {
+  margin-bottom: 4rem;
+}
+
+@mixin margin-bottom--medium {
+  margin-bottom: 2rem;
+}
+
+@mixin margin-bottom--small {
+  margin-bottom: 1rem;
+}
+
+@mixin margin-bottom--xsmall {
+  margin-bottom: 0.5rem;
 }

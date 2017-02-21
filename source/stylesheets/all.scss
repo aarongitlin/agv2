@@ -118,7 +118,7 @@ nav {
 }
 
 .writing.list-item {
-  @include margin-small-top();
+  @include margin-top--small;
 }
 
 //Article List
@@ -141,7 +141,6 @@ nav {
     @include span-columns(8.5 of 12);
     max-width: 100%;
     height: 40rem;
-    background-color: lightgray;
   }
   &__title {
     @include padding-top--large;
