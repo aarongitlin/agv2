@@ -1,5 +1,6 @@
 ---
-title: Responsive Intranet Redesign  
+title: Responsive Intranet Redesign
+body_class: "intranet-redesign"
 date: 2017-01-30  
 role: "Lead UI Design"  
 year: "2015"  
@@ -14,7 +15,7 @@ article_intro_role: "I was the lead UI designer and a core UX designer from proj
 published: true
 ---
 
-##DISCOVER
+##Discover
 After completing a project with Freres over a year ago, they came back to us to begin a large-scale project: redesigning their intranet.
 
 After a quick investigation of the current landscape, we found that the situation was even more complex than originally thought. The most clear challenge was that they desired one central intranet, but currently had dozens of (known) ones. Because many departments function quasi-independently, many different intranets had sprung up over the years. Many people had to use multiple sites for daily functions, and some tools on the current intranets were so limited that programs like Outlook and Lotus Notes had to be used alongside the mix of current sites.
@@ -24,7 +25,7 @@ We decided that the challenges in this case were so complex, and so specific to 
 We finished the Discovery Process with a short list of prioritized features, and a number of User Stories ready to be taken into the Design phase.
 
 
-##DEFINE
+##Define
 Before we begin designing at Tigerspike, we have a distinct "Define" phase, where we decide on our approach to the project (Waterfall vs Agile), create a more refined set of requirements or user stories, choose the makeup of the team, and decide on a visual direction.
 
 As lead UI/UX designer on this project I was in charge of choosing the visual direction and working with the project manager on choosing roles and responsibilities for the team members. In the end we decided on utilizing a *Research & Content Team* and a *Delivery Team*. I led the Delivery team while my peer [Jess](http://www.jessdale.com/) led the Research & Content team.
@@ -42,7 +43,7 @@ While the use cases of their public facing site and this new intranet were too d
     <p class="caption">Initial component sheet based on existing content</p>
 </div>
 
-##DESIGN
+##Design
 The primary output of the Design phase was a responsive front-end prototype and light documentation. We worked in 2-week sprints, with the content and research team roughly 1-2 sprints ahead of the delivery team.
 
 Over the course of 12 Sprints, we undertook the content-gathering and design of a small number of core features:
@@ -56,8 +57,8 @@ The most requested feature based on the output of the Discovery phase. This incl
         <img src="../images/lazone/codir-desk-1.png" />
         <img src="../images/lazone/codir-desk-2.png" />
         <img src="../images/lazone/codir-desk-3.png" />
+        <p class="caption">Desktop designs for the Company Directory</p>
     </div>
-    <p class="caption">Desktop designs for the Company Directory</p>
 </div>
 
 <div class="image-wrapper image-three-across box-shadow gray-bg">
@@ -75,8 +76,8 @@ The chosen name for the Company Communications section was "Communiqué". Here w
     <div class="image-wrapper extra-large image-two-across box-shadow">
         <img src="../images/lazone/comms-desk-1.png" />
         <img src="../images/lazone/comms-desk-2.png" />
+        <p class="caption">Desktop designs for Company Communications</p>
     </div>
-    <p class="caption">Desktop designs for Company Communications</p>
 </div>
 
 
@@ -96,8 +97,8 @@ While the Directory and Communiqué articles represented the primary content wit
         <img src="../images/lazone/dash-desk.png" />
         <img src="../images/lazone/travel-desk.png" />
         <img src="../images/lazone/perks-desk.png" />
+        <p class="caption">Desktop designs for the Dashboard and Employee Services</p>
     </div>
-    <p class="caption">Desktop designs for the Dashboard and Employee Services</p>
 </div>
 
 
@@ -132,7 +133,7 @@ Because we approached the design of this product from the bottom up, UX document
 </div>
 
 
-##BUILD
+##Build
 After design finished, I remained on the project part time throughout the Build phase. I worked with developers helping them set up Sharepoint so that it suits content-creator needs as much as possible. I'm happy to say that this intranet is live as of May 2016 and used every single day by thousands of employees across the world. I'm told that the Directory is above and beyond other tools they've had to use in the past, that reading through articles on the web is way better than email, and that people still aren't good at putting their expenses in on time.
 
 A v2 is scheduled for late 2016/early 2017, and I can't wait to start adding some fascinating tools like custom employee lists, bookmarking, and seat-mapping.

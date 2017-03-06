@@ -35,12 +35,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  letter-spacing: -0.2px;
 }
 
 .h3-alt {
   @extend h3;
   font-family: $sans-serif;
+  letter-spacing: normal;
 }
 
 h4 {

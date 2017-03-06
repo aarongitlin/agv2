@@ -4,23 +4,34 @@ $two-col: 17.09402%;
 $three-col: 25.58941%;
 $four-col: 34.11922%;
 
-.article-detail-content {
-	@include top-page-margin();
-	&.wrapper {
-		@include span-columns(12);
-		@include bottom-page-margin();
-		@include media($large-screen-up) {
-			@include span-columns(8);
-			@include shift(2);
-		}
+
+.article-header {
+	@include padding-top--large;
+	.intranet-redesign & {
+		background-color: $intranet-blue;
+	}
+	.dtv-concept & {
+		background-color: $dtv-gray;
+	}
+	.clinical-pharm & {
+		background-color: $els-orange;
+	}
+	.cmf-library & {
+		background-color: $cmf-green;
+	}
+	&__content-wrapper {
+		@include outer-container;
 	}
 }
 
 
-.project-heading, .article-heading {
+.project-heading, .article-top {
+	@include span-columns(8);
+	@include shift(2);
 	@include margin-bottom--medium;
 	h1 {
 		font-size: 2.0rem;
+		letter-spacing: -0.5px;
 		@include media($medium-screen-up) {
 			font-size: 2.4rem;
 		}
@@ -32,37 +43,43 @@ $four-col: 34.11922%;
 .article-intro {
 	@include span-columns(6 of 8);
 	&__summary {
-		@extend p.text--large;
+		@extend p.text--medium;
 	}
 	&__role {
 		@include margin-top--small;
 		&__label {
 			@extend label;
+			color: $gray-5;
 		}
 		&__text {
-			@extend p.text--large;
+			@extend p.text--medium;
 		}
 	}
 }
 
 .meta-list {
 	@include span-columns(1.5 of 8);
-	@include shift(0.5);
+	@include shift(0.5 of 8);
 	@include omega;
 	&__item {
 		@include margin-bottom--small;
 		&__label {
 			@extend label;
+			color: $gray-5;
 		}
 	}
 }
 
-.article-content {
+.article {
+	@include outer-container;
+	&__content-wrapper {
+		@include span-columns(8);
+		@include shift(2);
+	}
 	h2 {
 		font-family: $sans-serif;
-		font-size: 2.8rem;
-		letter-spacing: 2px;
-		font-weight: 200;
+		font-size: 2.2rem;
+		font-weight: bold;
 		@include margin-top--large;
 		@include margin-bottom--medium;
 	}
@@ -74,7 +91,13 @@ $four-col: 34.11922%;
 		@include margin-bottom--small;
 	}
 	p {
-		@extend p.text--medium;
+		@extend p.text--medium--long-form;
+		@include margin-bottom--small;
+	}
+	ol, ul {
+		@extend p.text--medium--long-form;
+		@include margin-bottom--small;
+		padding-left: 1rem;
 	}
 }
 
@@ -256,7 +279,7 @@ $four-col: 34.11922%;
 	margin: 1rem auto 0 auto;
 }
 
-.caption {
+p.caption {
 	@include small-description-text();
 	font-style: italic;
 	text-align: left;
@@ -266,7 +289,10 @@ $four-col: 34.11922%;
 }
 
 .article-footer {
-	@include bottom-page-margin();
+	@include margin-top--large;
+	@include padding-top--xsmall;
+	@include span-columns(8);
+	@include shift(2);
 	border-top: 1px solid $gray-3;
 }
 .article-footer label {

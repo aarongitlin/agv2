@@ -7,34 +7,36 @@
     = partial 'partials/header'
 
     #main(role="main")
-      .article-detail-content.wrapper
-        .project-heading
-          %h1
-            = current_article.title
-        .article-top
-          .article-intro
-            .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
+      .article-header
+        .article-header__content-wrapper
+          .project-heading
+            %h1
+              = current_article.title
+          .article-top
+            .article-intro
+              .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
 
-            .article-intro__role
-              .article-intro__role__label My Role
-              .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
+              .article-intro__role
+                .article-intro__role__label My Role
+                .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
 
-          .meta-list
-            .meta-list__item
-              .meta-list__item__label Year
-              .meta-list__item__value= current_article.metadata[:page]['year']
-            .meta-list__item
-              .meta-list__item__label Client
-              .meta-list__item__value= current_article.metadata[:page]['client']
-            .meta-list__item
-              .meta-list__item__label Project Type
-              .meta-list__item__value= current_article.metadata[:page]['project_type']
+            .meta-list
+              .meta-list__item
+                .meta-list__item__label Year
+                .meta-list__item__value= current_article.metadata[:page]['year']
+              .meta-list__item
+                .meta-list__item__label Client
+                .meta-list__item__value= current_article.metadata[:page]['client']
+              .meta-list__item
+                .meta-list__item__label Project Type
+                .meta-list__item__value= current_article.metadata[:page]['project_type']
 
-        .article-content
+      .article
+        .article__content-wrapper
           = yield
 
         - if current_article.previous_article || current_article.next_article
-          .article-footer.wrapper
+          .article-footer
             %label Explore other case studies
             .next-prev-article-links
               - if current_article.previous_article
@@ -43,5 +45,5 @@
               - if current_article.next_article
                 = link_to current_article.next_article.title, current_article.next_article.url, :class => 'next-article-link'
 
-    = partial 'partials/footer'
-    = partial 'partials/scripts'
+      = partial 'partials/footer'
+      = partial 'partials/scripts'

@@ -1,6 +1,6 @@
 ---
 title: DTV Concept Design
-
+body_class: dtv-concept
 role: "Lead UI Design"
 year: "2015"
 date: 2017-01-29
@@ -9,7 +9,9 @@ project_type: "Retainer"
 index_hero_image: "/images/home/dtv-desk-hero@2x.png"  
 detail_hero_image: ""
 dash_intro: "A major media company hired us to create a concept for their new cross-platform digital streaming product"
-article_intro: "If it has a screen, DIRECTV wants their service to be on it. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."
+article_intro_summary: "If it has a screen, DIRECTV wants their service to be on it. While this allows their products to accessible to a wide audience, it also makes their range difficult to maintain and occasionally inconsistent."  
+article_intro_role: "I was the lead designer and client contact for this project"
+
 ---
 
 ##Discover

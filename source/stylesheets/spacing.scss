@@ -28,6 +28,26 @@
   padding-top: 0.5rem;
 }
 
+@mixin padding-bottom--xlarge {
+  padding-bottom: 12rem;
+}
+
+@mixin padding-bottom--large {
+  padding-bottom: 4rem;
+}
+
+@mixin padding-bottom--medium {
+  padding-bottom: 2rem;
+}
+
+@mixin padding-bottom--small {
+  padding-bottom: 1rem;
+}
+
+@mixin padding-bottom--xsmall {
+  padding-bottom: 0.5rem;
+}
+
 @mixin margin-top--xlarge {
   margin-top: 12rem;
 }

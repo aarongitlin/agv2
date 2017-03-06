@@ -1,5 +1,6 @@
 ---
 title: Clinical Pharmacology  
+body_class: "clinical-pharm"
 role: "Lead UI Design"  
 year: "2014"  
 date: 2017-01-28  
@@ -8,7 +9,8 @@ project_type: "Waterfall"
 index_hero_image: "/images/home/els-desk-hero@2x.png"  
 detail_hero_image: ""   
 dash_intro: "One of the biggest names in Medical Data and Publishing came to us to help take their products into the mobile era"
-article_intro: "Elsevier is a name not well known among us common people, but likely known by anyone who went to Medical or Pharmaceutical school. They publish vast amounts of information around the world, and are a trusted and ubiquitous name in the professional medical community."
+article_intro_summary: "Elsevier is a name not well known among us common people, but likely known by anyone who went to Medical or Pharmaceutical school. They publish vast amounts of information around the world, and are a trusted and ubiquitous name in the professional medical community."
+article_intro_role: "I was the lead UI designer, working in tandem with a UX designer and Dev lead"
 
 ---
 

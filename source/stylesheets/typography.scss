@@ -1,16 +1,20 @@
 @mixin small-description-text {
-  font-size: 0.925rem;
+  font-size: 0.875rem;
   font-family: $sans-serif;
   line-height: 1.4;
   color: $gray-5;
 }
 
 p.text--medium {
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+p.text--medium--long-form {
+  @extend p.text--medium;
+  line-height: 2.1rem;
 }
 
 p.text--large {
-  font-size: 1.4rem;
-  line-height: 2.5rem;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
 }

@@ -16,8 +16,7 @@ body_class: index-page
       Recent Writing
     .writings
       - blog('writings').articles.each do |writing|
-        = link_to writing.url do
-          .writing=writing.title
+        = link_to writing.title, writing.url, class: 'writing'
 
 
   #projects.project-section
