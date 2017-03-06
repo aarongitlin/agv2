@@ -20,35 +20,28 @@
     <link href='favicon.ico' rel='icon' type='image/ico'>
     <script src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
     <link href="stylesheets/all.css" rel="stylesheet" />
-    <script src="https://use.typekit.net/mkb4xbm.js"></script>
+  
     <script>
       try{Typekit.load({ async: true });}catch(e){}
     </script>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
   </head>
   <body class='blog-page'>
-    <header>
-      <div class='main-nav'>
-        <div class='wrapper'>
-          <nav>
-            <div class='nav-logo'>
-              <a href="/">AG</a>
-            </div>
-            <div class='nav-actions right'>
-              <a class='header-link' href='mailto:aarongitlin@gmail.com'>
-                <svg class='mail-icon svg-icon' viewBox='0 0 382.1 382.1'>
-                  <path d='M336.8 45.9H45.4C20.3 45.9 0 65.5 0 89.5v203.1c0 24 20.3 43.6 45.4 43.6h291.4c25 0 45.4-19.5 45.4-43.6V89.5C382.1 65.5 361.8 45.9 336.8 45.9zM336.8 297.7H45.4c-3.7 0-6.9-2.4-6.9-5.1V116.4l131.8 111.3c2.7 2.3 6.1 3.5 9.7 3.5l22.3 0c3.5 0 7-1.3 9.7-3.5l131.8-111.3v176.3C343.7 295.3 340.4 297.7 336.8 297.7zM191.1 193L62.9 84.4h256.4L191.1 193z' fill='none'></path>
-                </svg>
-              </a>
-              <a class='header-link' href='https://www.linkedin.com/in/aarongitlin'>
-                <svg class='linkedin-icon svg-icon' viewBox='191 -191.1 430.1 430.1'>
-                  <path d='M589.4-191.1H222.8c-17.6 0-31.8 13.8-31.8 30.8v368.5c0 17 14.2 30.8 31.8 30.8h366.6c17.5 0 31.8-13.8 31.8-30.8v-368.5C621.1-177.3 606.9-191.1 589.4-191.1zM321.4 168.9h-65V-25.3h65V168.9zM288.9-51.8h-0.4c-21.8 0-35.9-14.9-35.9-33.6 0-19 14.5-33.5 36.8-33.5 22.2 0 35.9 14.5 36.3 33.5C325.7-66.7 311.6-51.8 288.9-51.8zM555.7 168.9h-65V65c0-26.1-9.4-43.9-32.9-43.9 -18 0-28.6 12-33.3 23.6 -1.7 4.1-2.2 9.9-2.2 15.7v108.5h-65c0 0 0.9-176 0-194.2h65V2.3c8.6-13.2 24-32.1 58.5-32.1 42.8 0 74.8 27.7 74.8 87.4L555.7 168.9 555.7 168.9zM421.9 2.9c0.1-0.2 0.3-0.4 0.4-0.6v0.6H421.9z' fill='none'></path>
-                </svg>
-              </a>
-            </div>
-          </nav>
+    <div class='nav'>
+      <div class='nav__container'>
+        <div class='nav__logo'>
+          <a href="/">AG</a>
         </div>
+        <ul class='nav__menu'>
+          <li>
+            <a href="/#writing">Writing</a>
+          </li>
+          <li>
+            <a href="/#projects">Projects</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
     <div id='main' role='main'>
       <div class='blog-index-wrapper wrapper'>
         <section class='blog-list'>
@@ -67,34 +60,19 @@
           </article>
         </section>
       </div>
-    </div>
-    <footer class='footer'>
-      <div class='footer-wrapper wrapper'>
-        <div class='footer-text'>
-          I built this site using <a href="http://middlemanapp.com/">Middleman</a>, and glued it together using <a href="http://bourbon.io/">Bourbon</a> and <a href="http://neat.bourbon.io/">Neat</a>. You can poke fun of (or steal!) my codez on <a href="github.com/aarongitlin/agv2">Github</a>.
-        </div>
-        <div class='footer-links'>
-          <a class='footer-link' href='mailto:aarongitlin@gmail.com'>
-            <svg class='svg-icon' viewBox='0 0 382.1 382.1'>
-              <path d='M336.8 45.9H45.4C20.3 45.9 0 65.5 0 89.5v203.1c0 24 20.3 43.6 45.4 43.6h291.4c25 0 45.4-19.5 45.4-43.6V89.5C382.1 65.5 361.8 45.9 336.8 45.9zM336.8 297.7H45.4c-3.7 0-6.9-2.4-6.9-5.1V116.4l131.8 111.3c2.7 2.3 6.1 3.5 9.7 3.5l22.3 0c3.5 0 7-1.3 9.7-3.5l131.8-111.3v176.3C343.7 295.3 340.4 297.7 336.8 297.7zM191.1 193L62.9 84.4h256.4L191.1 193z' fill='none'></path>
-            </svg>
-            aarongitlin@gmail.com
-          </a>
-          <a class='footer-link' href='https://www.instagram.com/aarongitlin/'>
-            <svg class='svg-icon' viewBox='25 -24.4 97.4 97.4'>
-              <path d='M37.5-24.4h72.4c6.9 0 12.5 5.1 12.5 12.5v72.4c0 7.4-5.6 12.5-12.5 12.5H37.5C30.6 73 25 67.9 25 60.5v-72.4C25-19.3 30.6-24.4 37.5-24.4L37.5-24.4zM95.9-13.6c-2.4 0-4.4 2-4.4 4.4V1.3c0 2.4 2 4.4 4.4 4.4h11c2.4 0 4.4-2 4.4-4.4V-9.2c0-2.4-2-4.4-4.4-4.4H95.9L95.9-13.6zM111.4 16.8h-8.6c0.8 2.6 1.2 5.5 1.2 8.4 0 16.2-13.6 29.3-30.3 29.3 -16.7 0-30.3-13.1-30.3-29.3 0-2.9 0.4-5.7 1.2-8.4h-8.9v41.1c0 2.1 1.7 3.9 3.9 3.9h67.8c2.1 0 3.9-1.7 3.9-3.9L111.4 16.8 111.4 16.8zM73.8 5.1c-10.8 0-19.6 8.5-19.6 19S63 43 73.8 43c10.8 0 19.6-8.5 19.6-19S84.6 5.1 73.8 5.1z' fill='none'></path>
-            </svg>
-            Instagram
-          </a>
-          <a class='footer-link' href='https://www.linkedin.com/in/aarongitlin'>
-            <svg class='svg-icon' viewBox='191 -191.1 430.1 430.1'>
-              <path d='M589.4-191.1H222.8c-17.6 0-31.8 13.8-31.8 30.8v368.5c0 17 14.2 30.8 31.8 30.8h366.6c17.5 0 31.8-13.8 31.8-30.8v-368.5C621.1-177.3 606.9-191.1 589.4-191.1zM321.4 168.9h-65V-25.3h65V168.9zM288.9-51.8h-0.4c-21.8 0-35.9-14.9-35.9-33.6 0-19 14.5-33.5 36.8-33.5 22.2 0 35.9 14.5 36.3 33.5C325.7-66.7 311.6-51.8 288.9-51.8zM555.7 168.9h-65V65c0-26.1-9.4-43.9-32.9-43.9 -18 0-28.6 12-33.3 23.6 -1.7 4.1-2.2 9.9-2.2 15.7v108.5h-65c0 0 0.9-176 0-194.2h65V2.3c8.6-13.2 24-32.1 58.5-32.1 42.8 0 74.8 27.7 74.8 87.4L555.7 168.9 555.7 168.9zM421.9 2.9c0.1-0.2 0.3-0.4 0.4-0.6v0.6H421.9z' fill='none'></path>
-            </svg>
-            LinkedIn
-          </a>
+      <div class='site-footer'>
+        <ul class='site-footer__link-list'>
+          <li>Email</li>
+          <li>LinkedIn</li>
+          <li>Github</li>
+          <li>Instagram</li>
+          <li>Pinterest</li>
+        </ul>
+        <div class='site-footer__colophon'>
+          I built this site using Middleman and is hosted using Github Pages
         </div>
       </div>
-    </footer>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
