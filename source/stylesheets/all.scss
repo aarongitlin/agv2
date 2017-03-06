@@ -65,6 +65,12 @@ body {
   .dtv-concept & {
     background-color: $dtv-gray;
   }
+  .clinical-pharm & {
+    background-color: $els-orange;
+  }
+  .cmf-library & {
+    background-color: $cmf-green;
+  }
   &__container {
     @include outer-container;
   }
