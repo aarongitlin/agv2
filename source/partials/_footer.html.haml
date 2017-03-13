@@ -1,9 +1,9 @@
 .site-footer
-  %ul.site-footer__link-list
-    %li Email
-    %li LinkedIn
-    %li Github
-    %li Instagram
-    %li Pinterest
-  .site-footer__colophon
+  %ul.link-list
+    %li.link-list__item=link_to "Email", "mailto:aarongitlin@gmail.com"
+    %li.link-list__item=link_to "LinkedIn", "http://www.linkedin.com/in/aarongitlin/", target: "_blank"
+    %li.link-list__item=link_to "Github", "http://www.github.com/aarongitlin/", target: "_blank"
+    %li.link-list__item=link_to "Instagram", "http://www.instagram.com/aarongitlin/", target: "_blank"
+    %li.link-list__item=link_to "Pinterest", "http://www.pinterest.com/aarongitlin/", target: "_blank"
+  .colophon
     I built this site using Middleman and is hosted using Github Pages

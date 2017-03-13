@@ -1,0 +1,40 @@
+.text-link-btn--medium {
+  font-family: $sans-serif;
+  position: relative;
+  color: $dark-gray;
+  font-size: 1.0rem;
+  line-height: 1.25rem;
+  display: inline-block;
+  &:hover {
+    color: rgba($dark-gray, 0.75);
+    &::after {
+      top: -5%;
+      left: -15%;
+      width: 135%;
+      height: 120%;
+      transition: all 125ms ease-in-out;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 130%;
+    height: 105%;
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: rgba($primary-color, 0.15);
+    transition: all 150ms ease-in-out;
+  }
+}
+
+.text-link-btn--small {
+  @extend .text-link-btn--medium;
+  font-size: inherit;
+  &::after {
+    background: none;
+  }
+  &:hover::after {
+    background-color: rgba($primary-color, 0.15);
+  }
+}

@@ -9,7 +9,10 @@ body_class: index-page
     .introduction__paragraph
       Hi, my name is Aaron Gitlin. I'm based in New York City currently working as a Senior Product Designer at Paperless Post.  Before that I worked at global consultancy called Tigerspike.
     .introduction__contact
-      You can get in touch with me via email or find me on LinkedIn
+      %ul.contact__list
+        %li.contact__list__item=link_to "email me", "mailto:aarongitlin@gmail.com"
+        %li.contact__list__item=link_to "linkedin", "http://www.linkedin.com/in/aarongitlin/", target: '_blank'
+        %li.contact__list__item=link_to "resumé", "/images/resume/agitlin_resume_2016.pdf", target: "_blank"
 
   #writing.writing-section
     .writing-section__label
@@ -30,4 +33,5 @@ body_class: index-page
           =link_to project.url do
             .project__title=project.title
           .project__description= project.metadata[:page]['dash_intro']
-          .project__cta=link_to 'Read More', project.url
+          .project__cta
+            =link_to 'Read More', project.url, class: project.slug

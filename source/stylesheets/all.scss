@@ -7,6 +7,7 @@
 
 @import 'spacing';
 @import 'typography';
+@import 'buttons';
 
 
 
@@ -123,6 +124,16 @@ body {
     @include padding-top--large;
   }
 }
+.contact__list {
+  &__item {
+    display: inline-block;
+    margin-right: 2.5rem;
+    a {
+      @extend .text-link-btn--medium;
+    }
+  }
+}
+
 
 // Writing list
 
@@ -202,7 +213,21 @@ body {
     @include span-columns(3 of 12);
     @include shift(0.5);
     @include omega;
-    @include padding-top--large;
+    @include margin-top--large;
+    a {
+      @extend .text-link-btn--medium;
+      &.responsive_intranet_redesign {
+        &::after {
+          background-color: rgba($intranet-blue, 0.75);
+        }
+      }
+      &.case-study-dtv::after {
+        background-color: rgba($dtv-gray, 0.75);
+      }
+      &.case-study-els::after {
+        background-color: rgba($els-orange, 0.75);
+      }
+    }
   }
 }
 
@@ -213,21 +238,25 @@ body {
   @include outer-container;
   @include margin-top--xlarge;
   @include padding(1rem 1rem 0 1rem);
+}
 
-  &__link-list {
-    @include span-columns(12);
-    @include row;
-    & li {
-      display: inline-block;
-      padding: 1rem 0.5rem;
-      &:nth-child(1) {
-        padding-left: 0;
-      }
+.link-list {
+  @include span-columns(12);
+  @include row;
+  &__item {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    a {
+      @extend .text-link-btn--small;
+    }
+    &:nth-child(1) {
+      padding-left: 0;
     }
   }
+}
 
-  &__colophon {
-    @include span-columns(12);
-    @include row;
-  }
+
+.colophon {
+  @include span-columns(12);
+  @include row;
 }
