@@ -150,13 +150,10 @@ body {
 }
 .writing {
   @include span-columns(6 of 12);
+  @extend p.heading--small;
   &:nth-child(1n+3) { //Selecting all but first two items
     @include margin-top--small;
   }
-  font-size: 1.15rem;
-  font-family: $sans-serif;
-  font-weight: 700;
-  color: $base-font-color;
   &:nth-child(2n) {
     @include omega;
   }
