@@ -15,7 +15,7 @@ article_intro_role: "I was the lead UI designer and a core UX designer from proj
 published: true
 ---
 
-##Discover
+## Discover
 After completing a project with Freres over a year ago, they came back to us to begin a large-scale project: redesigning their intranet.
 
 After a quick investigation of the current landscape, we found that the situation was even more complex than originally thought. The most clear challenge was that they desired one central intranet, but currently had dozens of (known) ones. Because many departments function quasi-independently, many different intranets had sprung up over the years. Many people had to use multiple sites for daily functions, and some tools on the current intranets were so limited that programs like Outlook and Lotus Notes had to be used alongside the mix of current sites.
@@ -25,7 +25,7 @@ We decided that the challenges in this case were so complex, and so specific to 
 We finished the Discovery Process with a short list of prioritized features, and a number of User Stories ready to be taken into the Design phase.
 
 
-##Define
+## Define
 Before we begin designing at Tigerspike, we have a distinct "Define" phase, where we decide on our approach to the project (Waterfall vs Agile), create a more refined set of requirements or user stories, choose the makeup of the team, and decide on a visual direction.
 
 As lead UI/UX designer on this project I was in charge of choosing the visual direction and working with the project manager on choosing roles and responsibilities for the team members. In the end we decided on utilizing a *Research & Content Team* and a *Delivery Team*. I led the Delivery team while my peer [Jess](http://www.jessdale.com/) led the Research & Content team.
