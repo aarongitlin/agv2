@@ -12,7 +12,7 @@ detail_hero_image: ""
 dash_intro: "The client needed a look and feel that connected to its corporate parent, while allowing for some independence. The real fun began as we unearthed the specific legal and marketing requirements from each global branch."  
 article_intro_summary: "We spent over one year working with Frere (a fictional name) to create a cohesive experience that merged international branches of the firm. Until now, each branch separately maintained their own site, leading to a quagmire of technical complexity and brand mismatching."  
 article_intro_role: "I was the lead UI designer and a core UX designer from project start to finish"  
-published: false
+published: true
 ---
 
 ## UX Research
