@@ -224,6 +224,9 @@ body {
       &.case-study-els::after {
         background-color: rgba($els-orange, 0.75);
       }
+      &.case-study-fam::after {
+        background-color: rgba($fam-blue, 0.75);
+      }
     }
   }
 }

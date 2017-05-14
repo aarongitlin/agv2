@@ -6,7 +6,8 @@ $four-col: 34.11922%;
 
 
 .article-header {
-	@include padding-top--large;
+	margin-top: -60px; //size of navbar
+	padding-top: 3.75rem + 3rem; //To continue bg color behind the transparent nav
 	.intranet-redesign & {
 		background-color: $intranet-blue;
 	}
@@ -19,6 +20,10 @@ $four-col: 34.11922%;
 	.cmf-library & {
 		background-color: $cmf-green;
 	}
+	.fam-design & {
+		background-color: $fam-blue;
+		background-image: linear-gradient(340deg, #76C4E7 0%, #D5E0ED 100%);
+	}
 	&__content-wrapper {
 		@include outer-container;
 	}
@@ -28,7 +33,7 @@ $four-col: 34.11922%;
 .project-heading, .article-top {
 	@include span-columns(8);
 	@include shift(2);
-	@include margin-bottom--medium;
+	@include margin-bottom--large;
 	h1 {
 		font-size: 2.0rem;
 		letter-spacing: -0.5px;

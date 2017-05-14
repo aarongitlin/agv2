@@ -1,6 +1,6 @@
 ---
 title: Global Financial Services Firm
-body_class: "lam-design"
+body_class: "fam-design"
 date: 2017-04-30  
 role: "Lead UI Design"  
 year: "2016"  
