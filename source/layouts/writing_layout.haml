@@ -3,7 +3,7 @@
   %head
     = partial "partials/document_head"
 
-  %body{:class => current_page.data.body_class || 'page'}
+  %body{:class => current_page.data.body_class || 'page writing-page'}
     = partial 'partials/header'
 
     #main(role="main")
