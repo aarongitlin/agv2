@@ -25,15 +25,21 @@ $four-col: 34.11922%;
 		background-image: linear-gradient(340deg, #76C4E7 0%, #D5E0ED 100%);
 	}
 	&__content-wrapper {
-		@include outer-container;
+		@extend .wrapper;
 	}
 }
 
-
 .project-heading, .article-top {
-	@include span-columns(8);
-	@include shift(2);
+	@include span-columns(12);
 	@include margin-bottom--large;
+	@include media($medium-screen-up) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+	@include media($large-screen-up) {
+		@include span-columns(8);
+		@include shift(2);
+	}
 	h1 {
 		font-size: 2.0rem;
 		letter-spacing: -0.5px;
@@ -44,42 +50,63 @@ $four-col: 34.11922%;
 }
 .article-top {
 	@include row;
-}
-.article-intro {
-	@include span-columns(6 of 8);
-	&__summary {
-		@extend p.text--medium;
-	}
-	&__role {
-		@include margin-top--small;
-		&__label {
-			@extend label;
-			color: $gray-5;
+	@include direction-context(right-to-left) {
+		.meta-list {
+			@include span-columns(8 of 8);
+			@include media($large-screen-up) {
+				@include span-columns(1.5 of 8);
+			}
+			&__item {
+				@include margin-bottom--small;
+				@include span-columns(3 of 9);
+				line-height: 1.5;
+				&:nth-child(3) {
+					@include omega;
+				}
+				@include media($large-screen-up) {
+					@include span-columns(9 of 9);
+				}
+				&__label {
+					@extend label;
+					color: $gray-5;
+				}
+			}
 		}
-		&__text {
-			@extend p.text--medium;
+		.article-intro {
+			@include span-columns(8 of 8);
+			@include media($large-screen-up) {
+				@include span-columns(6 of 8);
+				@include shift(0.5);
+			}
+			&__summary {
+				@extend p.text--medium;
+			}
+			&__role {
+				@include margin-top--small;
+				&__label {
+					@extend label;
+					color: $gray-5;
+				}
+				&__text {
+					@extend p.text--medium;
+				}
+			}
 		}
 	}
 }
 
-.meta-list {
-	@include span-columns(1.5 of 8);
-	@include shift(0.5 of 8);
-	@include omega;
-	&__item {
-		@include margin-bottom--small;
-		&__label {
-			@extend label;
-			color: $gray-5;
-		}
-	}
-}
 
 .article {
-	@include outer-container;
+	@extend .wrapper;
 	&__content-wrapper {
-		@include span-columns(8);
-		@include shift(2);
+		@include media($medium-screen-up) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		@include media($large-screen-up) {
+			@include span-columns(8);
+			@include shift(2);
+		}
 	}
 	h2 {
 		font-family: $sans-serif;
@@ -127,9 +154,12 @@ $four-col: 34.11922%;
 	}
 	&.gray-bg {
 		background-color: $gray-1;
-		padding: 2rem;
 		margin-left: -1rem;
 		margin-right: -1rem;
+		padding: 0.5rem;
+		@include media($large-screen-up) {
+			padding: 2rem;
+		}
 	}
 	&.box-shadow img {
 		box-shadow: $gray-2 0 0 1.6rem;
@@ -164,11 +194,12 @@ $four-col: 34.11922%;
 
 .gray-bg-wrapper {
 	background-color: $gray-1;
-	padding: 2rem;
+	padding: 0.5rem;
 	margin-left: -1rem;
 	margin-right: -1rem;
 	margin-bottom: 2rem;
 	@include media($large-screen-up) {
+		padding: 2rem;
 		@include shift(-3);
 		margin-right: (-$three-col);
 	}
@@ -280,8 +311,14 @@ $four-col: 34.11922%;
 	}
 }
 
-.prototype-wrapper .button {
-	margin: 1rem auto 0 auto;
+.button {
+	margin-top: 1rem;
+	@include media($medium-screen-up) {
+		margin-top: 0;
+	}
+	&.prototype-wrapper {
+		margin: 1rem auto 0 auto;
+	}
 }
 
 p.caption {
@@ -294,11 +331,18 @@ p.caption {
 }
 
 .article-footer {
+	border-top: 1px solid $gray-3;
 	@include margin-top--large;
 	@include padding-top--xsmall;
-	@include span-columns(8);
-	@include shift(2);
-	border-top: 1px solid $gray-3;
+	@include span-columns(12);
+	@include media($medium-screen-up) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+	@include media($large-screen-up) {
+		@include span-columns(8);
+		@include shift(2);
+	}
 }
 .article-footer label {
 	margin-top: 0.2rem;
@@ -309,6 +353,14 @@ p.caption {
 	font-size: 1rem;
 	font-family: $sans-serif;
 	font-weight: 600;
+	a {
+		display: block;
+		margin-top: 1rem;
+		@include media($medium-screen-up){
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
 }
 
 .prev-article-link::before {
@@ -318,14 +370,14 @@ p.caption {
 	padding-right: 2px;
 }
 
-
 .next-article-link {
-	float: right;
-
 	&::after {
-	content: "»";
-	position: relative;
-	top: -1px;
-	padding-left: 2px;
+		content: "»";
+		position: relative;
+		top: -1px;
+		padding-left: 2px;
+		}
+	@include media($medium-screen-up) {
+		float: right;
 	}
 }

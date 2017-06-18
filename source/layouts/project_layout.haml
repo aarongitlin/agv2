@@ -13,13 +13,6 @@
             %h1
               = current_article.title
           .article-top
-            .article-intro
-              .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
-
-              .article-intro__role
-                .article-intro__role__label My Role
-                .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
-
             .meta-list
               .meta-list__item
                 .meta-list__item__label Year
@@ -30,6 +23,13 @@
               .meta-list__item
                 .meta-list__item__label Project Type
                 .meta-list__item__value= current_article.metadata[:page]['project_type']
+                
+            .article-intro
+              .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
+
+              .article-intro__role
+                .article-intro__role__label My Role
+                .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
 
       .article
         .article__content-wrapper
