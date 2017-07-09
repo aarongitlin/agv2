@@ -151,7 +151,7 @@ body {
     @include span-columns(10);
   }
   @include media($large-screen-up) {
-    @include span-columns(7);
+    @include span-columns(8);
   }
   &__label {
     @extend label;
