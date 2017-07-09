@@ -48,14 +48,7 @@ $four-col: 34.11922%;
 		}
 	}
 }
-.writing-page .article-top { //for writing articles only
-	@include media($medium-screen-up) {
-		@include shift(1);
-	}
-	@include media($large-screen-up) {
-		@include shift(0.5);
-	}
-}
+
 .article-top {
 	@include row;
 	@include direction-context(right-to-left) {
@@ -387,5 +380,29 @@ p.caption {
 		}
 	@include media($medium-screen-up) {
 		float: right;
+	}
+}
+
+//for writing articles only
+.writing-page {
+
+	.article-top {
+		@include media($medium-screen-up) {
+			@include shift(1);
+		}
+		@include media($large-screen-up) {
+			@include shift(0.5);
+		}
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+	li {
+		@include margin-top--small;
+	}
+
+	.image-full img {
+		width: 100%;
 	}
 }

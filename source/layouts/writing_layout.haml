@@ -15,9 +15,10 @@
           -# - if current_article.metadata[:page]['image_path']
           -#   = image_tag current_article.metadata[:page]['image_path']
 
-          .article-top
-            .article-intro
-              .article-intro__summary= current_article.metadata[:page]['intro']
+          - if current_article.metadata[:page]['intro']
+            .article-top
+              .article-intro
+                .article-intro__summary= current_article.metadata[:page]['intro']
       .article
         .article__content-wrapper
           = yield
