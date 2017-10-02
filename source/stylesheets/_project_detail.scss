@@ -24,6 +24,10 @@ $four-col: 34.11922%;
 		background-color: $fam-blue;
 		background-image: linear-gradient(340deg, #76C4E7 0%, #D5E0ED 100%);
 	}
+	.pp-create & {
+		background-color: $pp-paloma;
+		background-image: linear-gradient(340deg, $pp-paloma 0%, lighten($pp-paloma, 10) 100%);
+	}
 	&__content-wrapper {
 		@extend .wrapper;
 	}
@@ -132,6 +136,19 @@ $four-col: 34.11922%;
 		@include margin-bottom--small;
 		padding-left: 1rem;
 	}
+	ul {
+		@include margin-top--medium;
+		@include margin-bottom--medium;
+		margin-left: 1rem;
+		@include media($medium-screen-up) {
+			margin-left: 4rem;
+			width: 85%;
+		}
+		li {
+		list-style-type: disc;
+		@include margin-top--small;
+	}
+}
 }
 
 .article-content {
@@ -395,9 +412,6 @@ p.caption {
 		}
 	}
 
-	ul {
-		list-style-type: disc;
-	}
 	li {
 		@include margin-top--small;
 	}
