@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="ie6 no-js"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie7 no-js"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8 no-js"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>A Middleman Template for Responsive Prototyping</title>
+    <meta content='' name='description'>
+    <meta content='' name='author'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
+    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+    <link href='favicon.png' rel='shortcut icon'>
+    <link href='favicon.ico' rel='icon' type='image/ico'>
+    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="../stylesheets/all.css" rel="stylesheet" />
+  
+    <script>
+      try{Typekit.load({ async: true });}catch(e){}
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
+  </head>
+  <body class='page writing-page'>
+    <div class='nav'>
+      <div class='nav__container'>
+        <div class='nav__logo'>
+          <a href="/">AG</a>
+        </div>
+        <ul class='nav__menu'>
+          <li>
+            <a href="/#writing">Writing</a>
+          </li>
+          <li>
+            <a href="/#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id='main' role='main'>
+      <div class='article-header'>
+        <div class='article-header__content-wrapper'>
+          <div class='project-heading'>
+            <h1>
+              A Middleman Template for Responsive Prototyping
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class='article'>
+        <div class='article__content-wrapper'>
+          <div class="image-wrapper medium">
+          		<img src="https://media.giphy.com/media/3mFx50PdkAqKQ/giphy.gif" />
+          </div>
+        
+          <p><strong>TL;DR</strong> Check out a starter kit for small responsive web projects or prototypes <a href="https://github.com/aarongitlin/middleman-starter">here</a>. Read below for why and how I put it together.</p>
+        
+          <hr />
+        
+          <p>As part of my job at Paperless, I often need to think of ways to prototype or document certain design ideas. Recently we've begun work on one of our product detail views, which contains large visuals of our product, controls, and information. The usual Sketch-Invision-Zeplin trifecta that is our normal product design workflow was coming up a little bit short in this case, largely due to an unconventional layout and responsive considerations.</p>
+        
+          <p>My colleague was speccing out designs for this particular project, and wanted to find an alternative to the usual annotations. I conducted a small review of some possible solutions, emphasizing skills that already exist within our team:
+          - Framer, which recently introduced a "design" view that works with the previous "code" view
+          - Static html/css files from a collection such as Bootstrap
+          - A static site generator. Our team has experience with both Jekyll and Middleman, and I found myself interested in Gatsby.js, a framework built with React, which is the current language of choice for our development team.</p>
+        
+          <p>I was able to rule out Framer relatively quickly. It's actually a great tool, but for this precise type of responsive work, it wasn't right. It's great for showcasing animations, transitions, small to medium flows, and almost any scenario involving native application design. While actually capable of some smart resizing and positioning logic, it was simply too abstracted from the language of the web for this purpose.</p>
+        
+          <p>Static files were and still are a viable choice. The ability to write and manipulate a page immediately with little to no overhead is compelling. However, it can be quick to hit a ceiling as well, and I have become so spoiled by preprocessors such as SASS that I'm normally hesitant to suggest this path.</p>
+        
+          <p>I've used Jekyll and Middleman before, but personally prefer Middleman. I find its connection with Ruby, the asset pipeline, and use of ERB makes it feel like part of a larger ecosystem of Ruby applications, and not just a standalone blog solution like Jekyll. In reality, anything I've ever done in Middleman could easily be done in Jekyll, and vice versa.</p>
+        
+          <p>Gatsby.js is actually extremely promising, despite having little to no background in React. Unfortunately, I just don't have the Javascript or React skills yet to recommend it to myself or colleagues.</p>
+        
+          <h2 id="middleman-prototyper-starter-kit">Middleman prototyper starter kit</h2>
+        
+          <p>Based on my colleague's experience, probably something like a static file collection would be best. However, I was worried that the loss of SASS and partials, and the lack of room to expand would be an unfortunate sacrifice. So I set out to try and make as straightforward a template as possible. I eventually included some notes about setting up a Ruby environment, and links to some basic resources to learn the fundamentals.</p>
+        
+          <p>The kit is <a href="https://github.com/aarongitlin/middleman-starter">available here</a>. It is a very straightforward Middleman 4 application with SASS, Bourbon, Neat, Bitters, Livereload, middleman-deploy, and not much else. The idea is to have something ready that will allow you to go in any number of directions. I personally love Bourbon/Neat, but because they operate more as libraries than as frameworks, you need not feel limited by them.</p>
+        
+          <p>Huge props to the guys at Thoughtbot for their <a href="https://github.com/thoughtbot/middleman-template">own template</a>, that served as inspiration for this.</p>
+        
+          <p>If you find this useful or can think of a way to make this more useful, let me know! Hopefully I can share an example of its use in the near future.</p>
+        </div>
+        <div class='article-footer'>
+          <label>Explore more of my writing</label>
+          <div class='next-prev-article-links'>
+            <a class="prev-article-link" href="product-design-dreams-2.html">An Agency Designer Comes to Terms with Being a Product Designer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='site-footer'>
+      <ul class='link-list'>
+        <li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
+        <li class='link-list__item'><a target="_blank" href="http://www.linkedin.com/in/aarongitlin/">LinkedIn</a></li>
+        <li class='link-list__item'><a target="_blank" href="http://www.github.com/aarongitlin/">Github</a></li>
+        <li class='link-list__item'><a target="_blank" href="http://www.instagram.com/aarongitlin/">Instagram</a></li>
+        <li class='link-list__item'><a target="_blank" href="http://www.pinterest.com/aarongitlin/">Pinterest</a></li>
+      </ul>
+      <div class='colophon'>
+        I built this site using Middleman and is hosted using Github Pages
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="../javascripts/application.js"></script>
+  </body>
+</html>
