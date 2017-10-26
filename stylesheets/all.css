@@ -885,18 +885,21 @@ p.caption {
   .next-article-link {
     float: right; } }
 
+/* line 406, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
+.writing-page .project-heading {
+  margin-bottom: 2rem; }
 @media screen and (min-width: 40rem) {
-  /* line 406, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 410, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
   .writing-page .article-top {
     margin-left: 8.51449%; } }
 @media screen and (min-width: 70rem) {
-  /* line 406, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
+  /* line 410, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
   .writing-page .article-top {
     margin-left: 4.25725%; } }
-/* line 415, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 419, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
 .writing-page li {
   margin-top: 1rem; }
-/* line 419, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
+/* line 423, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
 .writing-page .image-full img {
   width: 100%; }
 
