@@ -403,6 +403,10 @@ p.caption {
 //for writing articles only
 .writing-page {
 
+	.project-heading {
+		margin-bottom: 2rem;
+	}
+
 	.article-top {
 		@include media($medium-screen-up) {
 			@include shift(1);
