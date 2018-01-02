@@ -1,6 +1,7 @@
 
 .page-title {
   @extend h2;
+  @include margin-top--large;
 }
 .page-description {
   @extend p;

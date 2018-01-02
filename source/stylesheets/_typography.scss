@@ -31,18 +31,21 @@ p.heading--small {
   font-weight: 700;
   color: $base-font-color;
 }
-p {
-  @extend p.text--medium;
-  @include margin-bottom--small;
-}
-
-h2 {
+p.heading--large {
   font-family: $sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
   @include margin-top--large;
   @include margin-bottom--medium;
 }
+p {
+  @extend p.text--medium;
+  @include margin-bottom--small;
+}
+
+h2 {
+}
+
 h3 {
   font-family: $sans-serif;
   font-size: 1.4rem;

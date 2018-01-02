@@ -114,14 +114,13 @@ $four-col: 34.11922%;
 		}
 	}
 	h2 {
-		@extend h2;
+		@extend p.heading--large;
 	}
 	h3 {
 		@extend h3;
 	}
 	p {
-		@extend p.text--medium--long-form;
-		@include margin-bottom--small;
+		@extend p;
 	}
 	ol, ul {
 		@extend p.text--medium--long-form;
