@@ -1,0 +1,30 @@
+---
+title: Aaron's Library
+body_class: library-index
+---
+
+.wrapper
+  .page-title Library
+  .page-description
+    I decided to document a few thoughts on books I've read recently, especially those pertinent to my profession. While this is primarily for my own education and memory, I also thought it could maybe serve others in the future.
+  .book__grid
+    .book.book--hero
+      .book__image
+        = image_tag data.library.books[0]["image"]
+      .book__info
+        .book__title
+          = data.library.books[0]["title"]
+          -# =link_to data.library.books[0]["title"], "/books/#{data.library.books[0]['slug']}.html"
+
+        .book__author= data.library.books[0]["author"]
+        .book__short-description= data.library.books[0]["short_description"]
+
+    - data.library.books[1..-1].each do |book|
+      .book
+        .book__image
+          = image_tag book.image
+        .book__info
+          .book__title
+            = book.title
+            -#= link_to book.title, "/books/#{book.slug}.html"
+          .book__author= book.author

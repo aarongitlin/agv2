@@ -81,6 +81,14 @@ activate :blog do |blog|
   blog.paginate = true
 end
 
+# make my own data for a library
+data.library.books.each do |book|
+  proxy "/books/#{book.slug}.html", "/book.html", :locals => { :book => book }, :ignore => true
+  # state.cities.each do |city|
+  #   proxy "/#{state.name}/#{city.name}/index.html", "/templates/city.html", :locals => {state: state, city: city}
+  # end
+end
+
 # Build-specific configuration
 configure :build do
   #set baseurl for githubpages subdirectory deployment

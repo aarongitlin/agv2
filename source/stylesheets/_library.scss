@@ -1,0 +1,131 @@
+
+.page-title {
+  @extend h2;
+}
+.page-description {
+  @extend p;
+  width: 75%;
+  @include margin-bottom--medium;
+}
+.book {
+  &__grid {
+
+    @include media($small-screen-up) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    @include media($medium-screen-up) {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(8, 175px);
+      grid-auto-columns: minmax(100px, auto);
+      grid-column-gap: 2rem;
+      grid-row-gap: 1rem;
+      grid-gap: 2rem;
+      align-items: flex-start;
+    }
+  }
+  & {
+    @include media($small-screen-up) {
+      flex: 1;
+      max-width: 380px;
+      padding: 1rem;
+    }
+    @include media($medium-screen-up) {
+      max-width: none;
+    }
+  }
+  &__title {
+    @extend p.heading--small;
+    font-size: 1.0rem;
+    margin: auto;
+    a {
+      color: $gray-6;
+    }
+  }
+  &__author {
+    @extend p.text--small;
+    font-style: italic;
+    line-height: 1.2;
+  }
+  &--hero {
+    //border: 1px solid $gray-6;
+    background-color: $gray-1;
+    grid-row-end: span 2;
+    & .book__image  {
+      @include media($small-screen-up) {
+        padding: 1rem;
+      }
+      @include media($medium-screen-up) {
+        padding: 2.5rem 7rem 1rem 7rem;
+      }
+      img {
+
+      }
+    }
+    & .book__info {
+      padding: 0rem 2rem 1rem 1rem;
+    }
+    & .book__title {
+      @extend h3;
+      margin: auto;
+    }
+    & .book__short-description {
+      @extend p.text--small;
+    }
+  }
+  & img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  // responsive
+  @include media($medium-screen-up) {
+    &:nth-child(1) {
+      grid-column: 1 / 4;
+      grid-row: 1 / 5;
+    }
+    &:nth-child(2) {
+      grid-column: 4 / 6;
+      grid-row: 1 / span 3;
+      padding: 2rem 1rem;
+    }
+    &:nth-child(3) {
+      grid-column: 4 / 6;
+      grid-row: 4 / span 3;
+      padding: 2rem 3rem;
+    }
+
+    &:nth-child(4) {
+      grid-column: 6 / 7;
+      grid-row: 2 / 4;
+      padding: 2rem 0 0 0;
+    }
+    &:nth-child(5) {
+      grid-column: 6 / 7;
+      grid-row: 4 / 6;
+      padding: 0;
+      margin-top: 3rem;
+    }
+    &:nth-child(6) {
+      grid-row: 4 / 7;
+      grid-column: 2 / 3;
+      padding: 0;
+      margin-top: 0rem;
+      align-self: flex-end;
+    }
+    &:nth-child(n+7) {
+      grid-column-end: span 2;
+      grid-row-end: span 3;
+      padding: 0 4rem;
+    }
+  }
+  @include media($large-screen-up) {
+    &:nth-child(6) {
+      margin-top: 5rem;
+      align-self: flex-start;
+    }
+  }
+}

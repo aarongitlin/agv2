@@ -4,6 +4,7 @@
   line-height: 1.4;
   color: $gray-5;
 }
+
 p.text--small {
   font-size: 1.0rem;
   line-height: 1.5rem;
@@ -29,4 +30,23 @@ p.heading--small {
   font-family: $sans-serif;
   font-weight: 700;
   color: $base-font-color;
+}
+p {
+  @extend p.text--medium;
+  @include margin-bottom--small;
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  @include margin-top--large;
+  @include margin-bottom--medium;
+}
+h3 {
+  font-family: $sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  @include margin-top--medium;
+  @include margin-bottom--small;
 }

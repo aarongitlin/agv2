@@ -1,0 +1,74 @@
+books:
+  - just-enough-research:
+    slug: just_enough_research
+    title: Just Enough Research
+    author: Erika Hall
+    tags:
+      - UX
+      - Research
+    short_description: A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
+    image: "/images/books/just-enough-research.jpg"
+
+  - the-beginning-of-infinity:
+    slug: beginning_of_infinity
+    title: "The Beginning of Infinity: Explanations that transform the world"
+    author: David Deutsch
+    tags:
+      - Knowledge
+      - Science
+    short_description: An eye opening book that is not about UX at all, but rather the concepts of Knowledge and Explanations.
+    image: "/images/books/the-beginning-of-infinity.jpg"
+
+  - experience-required:
+    slug: experience_required
+    title: "Experience Required: How to become a UX leader regardless of your role"
+    author: Robert Hoekman Jr
+    tags:
+      - UX
+      - Leadership
+    short_description: Prima luce, cum quibus mons aliud  consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
+    image: "/images/books/experience-required.jpg"
+
+  - graphesis:
+    slug: graphesis
+    title: "Graphesis: Visual Forms of Knowledge Production"
+    author: Johanna Drucker
+    tags:
+      - Design
+      - Academic
+      - Knowledge
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/graphesis.jpg"
+
+  - ux-strategy:
+    slug: ux_strategy
+    title: "UX Strategy: How to Devise Innovative Digital Products that People Want"
+    author: Jaime Levy
+    tags:
+      - UX
+      - Research
+      - Design
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/ux-strategy.jpg"
+
+  - designing-with-data:
+    slug: designing_with_data
+    title: "Designing with Data: Improving the User Experience with A/B Testing"
+    author: "Rochelle King, Elizabeth Churchill, Caitlin Tan"
+    tags:
+      - Design
+      - AB Testing
+      - Data Science
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/designing-with-data.jpg"
+
+  - the-design-way:
+    slug: the_design_way
+    title: "The Design Way: Intentional Change in an Unpredictable World"
+    author: "Harold G. Nelson, Erik Stolterman"
+    tags:
+      - Design
+      - Academic
+      - Knowledge
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/the-design-way.jpg"
