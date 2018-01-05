@@ -8,6 +8,7 @@ books:
       - Research
     short_description: A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
     image: "/images/books/just-enough-research.jpg"
+    space: large
 
   - the-beginning-of-infinity:
     slug: beginning_of_infinity
@@ -18,6 +19,7 @@ books:
       - Science
     short_description: An eye opening book that is not about UX at all, but rather the concepts of Knowledge and Explanations.
     image: "/images/books/the-beginning-of-infinity.jpg"
+    space: medium
 
   - experience-required:
     slug: experience_required
@@ -28,6 +30,7 @@ books:
       - Leadership
     short_description: Prima luce, cum quibus mons aliud  consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
     image: "/images/books/experience-required.jpg"
+    space: small
 
   - graphesis:
     slug: graphesis
@@ -39,6 +42,7 @@ books:
       - Knowledge
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/graphesis.jpg"
+    space: small
 
   - ux-strategy:
     slug: ux_strategy
@@ -50,6 +54,7 @@ books:
       - Design
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/ux-strategy.jpg"
+    space: medium
 
   - designing-with-data:
     slug: designing_with_data
@@ -61,6 +66,7 @@ books:
       - Data Science
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/designing-with-data.jpg"
+    space: large
 
   - the-design-way:
     slug: the_design_way
@@ -72,3 +78,4 @@ books:
       - Knowledge
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/the-design-way.jpg"
+    space: large

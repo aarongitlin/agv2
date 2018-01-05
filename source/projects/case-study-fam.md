@@ -10,7 +10,7 @@ project_type: "Agile"
 index_hero_image: "/images/FAM/fam-desk-hero@2x.png"  
 detail_hero_image: ""  
 dash_intro: "The client needed a look and feel that connected to its corporate parent, while allowing for some independence. The real fun began as we unearthed the specific legal and marketing requirements from each global branch."  
-article_intro_summary: "We spent over one year working with Frere (a fictional name) to create a cohesive experience that merged international branches of the firm. Until now, each branch separately maintained their own site, leading to a quagmire of technical complexity and brand mismatching."  
+article_intro_summary: "We spent over a year working with Frere (a fictional name) to create a cohesive experience that merged international branches of the firm. Until now, each branch separately maintained their own site, leading to a quagmire of technical complexity and brand mismatching."  
 article_intro_role: "I was the lead UI designer and a core UX designer from project start to finish"  
 published: true
 ---
@@ -46,14 +46,30 @@ We presented two style tiles, a sort of refined mood-board adapted to suit proje
     <p class="caption">Two style tiles presented to the FAM board</p>
 </div>
 
+## Content & Architecture
+The biggest challenge for this project was understanding the language and content of the industry and client in particular. Through client workshops, serious research, and a colleague who previously spent a decade in finance, we built up our confidence in the material and were able to define a basic architecture of the content.
+
+<div class="image-wrapper extra-large gray-bg">
+    <img src="../images/FAM/fam_content-architecture.jpg" />
+    <p class="caption">Representation of a whiteboard doodle after an enlightening session</p>
+</div>
+
+Funds are the core product of FAM, and the foundation of any asset management firm's wealth and reputation. Funds have multiple share classes, which allow it to be distributed in different ways to different types of investors.
+
+Funds themselves are made up of higher level Investment Strategies, which are groups of funds based on industry standards and the managers' expert opinion. Strategies can be viewed by anyone, and for the most part are globally relevant. Specific fund information, however, in most countries may only be viewed by people who agree that they are financial professionals, and in a specific country. We referred to this as the "legal wall".
+
+While these rules were complex in and of themselves, they were also made more complex by exceptions to rules, and a considerable amount of variable data.
+
 ## Designs
 we worked iteratively in a sprint based approach to work through major parts of the site at a high level before deciding which parts required the most focus.
 
-In the end we found that **Funds** and **Investment Strategies** were the key products that made up the firm. They were also the most complex, because every country had varying quantities of funds and strategies, classified them differently, and had varying amounts of information available for each one.
+We found that **Funds** and **Investment Strategies** were the most complex and variable pages, and were therefore logical starting places for both UI templatization and UX thinking. Every country had varying quantities of funds and strategies, classified them differently, and had varying amounts of information available for each one. Some key funds contained vast quantities of information, documentation, key charts, tables, and external links. Some funds contained only a fraction of that content.
 
-It meant that the templates for these pages had to be more structured than we would have liked, but we were happy they could serve the needs of the client and felt they were a good starting point.
+This meant that the templates for these pages had to be incredibly structured and modular, while maintaining a critical hierarchy of information. No simple task, and I can't say we nailed it the first time. But I'm proud that we worked through it with FAM's fund managers, data team, marketers, and key executives until we worked through a system that we were all happy with.
 
 <div class="image-wrapper extra-large gray-bg">
+    <img src="../images/FAM/fam_fund-template.jpg" />
+    <p class="caption">A small sample of some of the documentation necessary to map out all of the data points on a Fund page. Note how many components are optional.</p>
     <img src="../images/FAM/fam_funds.png" />
     <img src="../images/FAM/fam_strategies.png" />
     <p class="caption">Responsive Fund and Strategy templates for use across all global branches</p>
