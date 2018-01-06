@@ -1,3 +1,5 @@
+page_description: "I decided to document a few thoughts on books I've read recently, especially those pertinent to my profession. While this is primarily for my own education and memory, I thought it could maybe be useful to others as well."
+
 books:
   - just-enough-research:
     slug: just_enough_research
@@ -66,7 +68,7 @@ books:
       - Data Science
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/designing-with-data.jpg"
-    space: large
+    space: medium
 
   - the-design-way:
     slug: the_design_way
