@@ -337,7 +337,7 @@ h3, .h3-alt, .article h3, .book--hero .book__title {
 h4, .h4-alt, .introduction__contact {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1.125rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   font-weight: 800; }
 
@@ -1377,7 +1377,7 @@ body {
   .writing__title {
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     letter-spacing: normal;
     font-weight: 800;
     color: #454846; }
@@ -1501,7 +1501,7 @@ body {
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     letter-spacing: normal;
     font-weight: 800;
     color: #454846; }
