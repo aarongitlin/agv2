@@ -28,9 +28,10 @@
   </head>
   <body class='index-page'>
     <div class='nav'>
-      <div class='nav__container'>
-        <div class='nav__logo'>
-          <a href="/">AG</a>
+      <div class='nav__container--home'>
+        <div class='nav__logo--home'>
+          <a href="/"><img src="images/logo/logo.svg" />
+          </a>
         </div>
         <ul class='nav__menu'>
           <li>
@@ -48,9 +49,13 @@
     <div id='main' role='main'>
       <div class='index-page-wrapper'>
         <div class='introduction'>
-          <div class='introduction__paragraph'>
-            Hi, my name is Aaron Gitlin. I live in New York City and am currently a Senior Product Designer at <a href="http://www.paperlesspost.com/" target="_blank">Paperless Post</a>.  Before that I worked at a global digital consultancy called <a href="http://www.tigerspike.com/" target="_blank">Tigerspike</a>.
-          </div>
+          <h1 class='introduction__paragraph'>
+            Hi, my name is Aaron.
+            <br>
+            I am currently Lead Product Designer at <a href="http://theblacktux.com/" target="_blank">The Black Tux</a>.
+            <br>
+            I previously worked at <a href="http://paperlesspost.com/" target="_blank">Paperless Post</a> and <a href="http://tigerspike.com/" target="_blank">Tigerspike</a>.
+          </h1>
           <div class='introduction__contact'>
             <ul class='contact__list'>
               <li class='contact__list__item'><a href="mailto:aarongitlin@gmail.com">email me</a></li>
@@ -64,13 +69,48 @@
             Recent Writing
           </div>
           <div class='writings'>
-            <a class="writing" href="writings/2017-10-24-design-ecologies.html">From Design Systems to Design Ecologies</a>
-            <a class="writing" href="writings/middleman-template-responsive-prototyping.html">A Middleman Template for Responsive Prototyping</a>
-            <a class="writing" href="writings/product-design-dreams-2.html">An Agency Designer Comes to Terms with Being a Product Designer</a>
-            <a class="writing" href="writings/product-design-dreams-1.html">An Agency Designer’s Dreams of being a Product Designer</a>
-            <a class="writing" href="writings/colleague-avatars.html">Colleague Avatars</a>
-            <a class="writing" href="writings/new-website.html">A New Website for a New Year</a>
-            <a class="writing" href="writings/systems.html">Design Systems in the Real World</a>
+            <div class='writing'>
+              <a class="writing__title" href="writings/2017-10-24-design-ecologies.html">From Design Systems to Design Ecologies</a>
+              <div class='writing__description'>
+                Growing organizations must accept growing complexity. When one "design system" is not enough, sometimes collections of systems are used, in what could be called a design ecology.
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/middleman-template-responsive-prototyping.html">A Middleman Template for Responsive Prototyping</a>
+              <div class='writing__description'>
+                I created a <a href="https://github.com/aarongitlin/middleman-starter">basic starter kit</a> to help designers build small responsive web projects or prototypes. Read below for why and how I put it together.
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/product-design-dreams-2.html">An Agency Designer Comes to Terms with Being a Product Designer</a>
+              <div class='writing__description'>
+                A Product Designer reflects on his experience after being humbled
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/product-design-dreams-1.html">An Agency Designer’s Dreams of being a Product Designer</a>
+              <div class='writing__description'>
+                How one little Agency Designer's dreams of being a big time Product Designer
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/colleague-avatars.html">Colleague Avatars</a>
+              <div class='writing__description'>
+                I don't think you can call yourself a designer if you don't draw cute little avatars at some point. Right?
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/new-website.html">A New Website for a New Year</a>
+              <div class='writing__description'>
+                As of January 2016 this site is purposefully bare. I’ve started my own new website for the first time since 2012 and I wanted to start over
+              </div>
+            </div>
+            <div class='writing'>
+              <a class="writing__title" href="writings/systems.html">Design Systems in the Real World</a>
+              <div class='writing__description'>
+                Everyone knows we should be designing systems, but are there other considerations before committing to this approach?
+              </div>
+            </div>
           </div>
         </div>
         <div class='project-section' id='projects'>
@@ -81,61 +121,73 @@
             <div class='project'>
               <a class="project__image" href="projects/case-study-pp-create.html"><img src="images/home/pp-create-desk-hero@2x.png" />
               </a>
-              <a href="projects/case-study-pp-create.html"><div class='project__title'>The Paperless Post Customization Tool</div>
-              </a>
-              <div class='project__description'>My first project as an in-house designer at Paperless Post</div>
-              <div class='project__cta'>
-                <a class="case-study-pp-create" href="projects/case-study-pp-create.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/case-study-pp-create.html">Redesigning the Paperless Post Customization Tool</a>
+                <div class='project__meta'>2017 @ Paperless Post</div>
+                <div class='project__description'>A redesign doesn't have to mean a year long slash and burn. After conducting brief but targeted user research I focused on a few key areas to improve while aligning a complex workflow into new branding.</div>
+                <div class='project__cta'>
+                  <a class="case-study-pp-create" href="projects/case-study-pp-create.html">Read More</a>
+                </div>
               </div>
             </div>
             <div class='project'>
               <a class="project__image" href="projects/case-study-fam.html"><img src="images/FAM/fam-desk-hero@2x.png" />
               </a>
-              <a href="projects/case-study-fam.html"><div class='project__title'>Global Financial Services Firm</div>
-              </a>
-              <div class='project__description'>The client needed a look and feel that connected to its corporate parent, while allowing for some independence. The real fun began as we unearthed the specific legal and marketing requirements from each global branch.</div>
-              <div class='project__cta'>
-                <a class="case-study-fam" href="projects/case-study-fam.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/case-study-fam.html">Global Financial Services Firm</a>
+                <div class='project__meta'>2016 @ Freres Asset Management</div>
+                <div class='project__description'>The client needed a look and feel that connected to its corporate parent, while allowing for some independence. The real fun began as we unearthed the specific legal and marketing requirements from each global branch.</div>
+                <div class='project__cta'>
+                  <a class="case-study-fam" href="projects/case-study-fam.html">Read More</a>
+                </div>
               </div>
             </div>
             <div class='project'>
               <a class="project__image" href="projects/responsive_intranet_redesign.html"><img src="images/home/lazone-desk-hero@2x.png" />
               </a>
-              <a href="projects/responsive_intranet_redesign.html"><div class='project__title'>Responsive Intranet Redesign</div>
-              </a>
-              <div class='project__description'>A long term project to research and design a unified intranet service for a global investment firm</div>
-              <div class='project__cta'>
-                <a class="responsive_intranet_redesign" href="projects/responsive_intranet_redesign.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/responsive_intranet_redesign.html">Responsive Intranet Redesign</a>
+                <div class='project__meta'>2015 @ Freres</div>
+                <div class='project__description'>A long term project to research and design a unified intranet service for a global investment firm</div>
+                <div class='project__cta'>
+                  <a class="responsive_intranet_redesign" href="projects/responsive_intranet_redesign.html">Read More</a>
+                </div>
               </div>
             </div>
             <div class='project'>
               <a class="project__image" href="projects/case-study-dtv.html"><img src="images/home/wave-desk-hero@2x.png" />
               </a>
-              <a href="projects/case-study-dtv.html"><div class='project__title'>DTV Concept Design</div>
-              </a>
-              <div class='project__description'>A major media company hired us to create a concept for their new cross-platform digital streaming product</div>
-              <div class='project__cta'>
-                <a class="case-study-dtv" href="projects/case-study-dtv.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/case-study-dtv.html">DTV Concept Design</a>
+                <div class='project__meta'>2015 @ DTV</div>
+                <div class='project__description'>A major media company hired us to create a concept for their new cross-platform digital streaming product</div>
+                <div class='project__cta'>
+                  <a class="case-study-dtv" href="projects/case-study-dtv.html">Read More</a>
+                </div>
               </div>
             </div>
             <div class='project'>
               <a class="project__image" href="projects/case-study-els.html"><img src="images/home/els-desk-hero@2x.png" />
               </a>
-              <a href="projects/case-study-els.html"><div class='project__title'>Clinical Pharmacology</div>
-              </a>
-              <div class='project__description'>One of the biggest names in Medical Data and Publishing came to us to help take their products into the mobile era</div>
-              <div class='project__cta'>
-                <a class="case-study-els" href="projects/case-study-els.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/case-study-els.html">Clinical Pharmacology</a>
+                <div class='project__meta'>2014 @ Elsevier</div>
+                <div class='project__description'>One of the biggest names in Medical Data and Publishing came to us to help take their products into the mobile era</div>
+                <div class='project__cta'>
+                  <a class="case-study-els" href="projects/case-study-els.html">Read More</a>
+                </div>
               </div>
             </div>
             <div class='project'>
               <a class="project__image" href="projects/case-study-cmf.html"><img src="images/home/cmf-desk-hero@2x.png" />
               </a>
-              <a href="projects/case-study-cmf.html"><div class='project__title'>CMF Redesign</div>
-              </a>
-              <div class='project__description'>A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs</div>
-              <div class='project__cta'>
-                <a class="case-study-cmf" href="projects/case-study-cmf.html">Read More</a>
+              <div class='project__info'>
+                <a class="project__title" href="projects/case-study-cmf.html">CMF Redesign</a>
+                <div class='project__meta'>2015 @ CM&F</div>
+                <div class='project__description'>A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs</div>
+                <div class='project__cta'>
+                  <a class="case-study-cmf" href="projects/case-study-cmf.html">Read More</a>
+                </div>
               </div>
             </div>
           </div>
