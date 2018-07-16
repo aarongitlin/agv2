@@ -163,7 +163,7 @@ body {
 // Writing list
 
 .writing-section {
-  padding-top: $l;
+  padding-top: $xl;
   @include span-columns(12);
   @include row();
   @include media($large-screen-up) {
