@@ -1,11 +1,15 @@
 
+.wrapper {
+  @include wrapper;
+}
+
 .page-title {
-  @extend h2;
+  @include sans-serif--xl;
   font-weight: 700;
   @include margin-top--large;
 }
 .page-description {
-  @extend p;
+  @include serif--m;
   width: 75%;
   @include margin-bottom--medium;
 }
