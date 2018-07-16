@@ -42,15 +42,7 @@ body {
   display: block;
   }
 }
-.wrapper {
-  @include outer-container;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include media($large-screen-up) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+
 
 .row {
   @include row();
@@ -59,68 +51,94 @@ body {
 ////// Header
 
 .nav {
-  @include padding-top--xsmall;
-  @include padding-bottom--xsmall;
   background-color: transparent; // to go over backgrounds in some detail pages
   &__container {
-    @extend .wrapper;
+    @include wrapper;
+    height: 64px;
   }
   &__logo {
-    @include span-columns(3);
-    a {
-      font-family: $sans-serif;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: $dark-gray;
+    @include span-columns(1.5);
+    min-width: 32px;
+    padding-top: $s;
+    img {
+      width: 100%;
+    }
+    @include media($medium-screen-up) {
+      @include span-columns(0.75);
     }
   }
   &__menu {
+    @include span-columns(10);
     float: right;
+    padding-top: $s;
+    text-align: right;
     li {
-      display: inline-block;
-      @include padding(0 1rem 0 1rem);
+      @include span-columns(4);
+      @include sans-serif--m;
+      @include media($medium-screen-up) {
+        display: inline-block;
+        float: right;
+        width: auto;
+        padding-left: $l;
+        margin-right: 0;
+        @include sans-serif--s;
+      }
       a {
-        font-family: $sans-serif;
-        font-size: 1rem;
-        font-weight: bold;
-        margin-right: 1rem;
-        color: $gray-5;
-        @include media($medium-screen-up) {
-          font-size: 0.875rem;
-        }
-        &:hover {
-          color: $gray-6;
-        }
+        @include alt-link-style;
       }
     }
+  }
+}
+
+.nav__container--home {
+  @extend .nav__container;
+  @include media($medium-screen-up) {
+    height: auto;
+  }
+}
+.nav__logo--home {
+  @extend .nav__logo;
+  @include media($medium-screen-up) {
+    min-width: 64px;
+    padding-top: $xxl;
   }
 }
 
 //// Index page
 
 .index-page-wrapper {
-  @extend .wrapper;
+  @include wrapper;
 }
 
 // Introduction
 
 .introduction {
   @include row();
-  @include span-columns(11.5);
-  @include padding-top--large;
-  @include media($medium-screen-up) {
-    @include span-columns(9);
-  }
+  @include span-columns(11);
+  padding-top: $xl;
   @include media($large-screen-up) {
-    @include padding-top--xlarge;
-    @include span-columns(8);
+    @include span-columns(10);
+    padding-top: $xl;
   }
-  &__paragraph {
-    @extend h2;
+  .introduction__paragraph {
+    font-size: 10vw;
+    line-height: 1.2;
+    & br {
+      display: none;
+    }
+    @include media($medium-screen-up) {
+      font-size: 2.625rem;
+    }
+    @include media($large-screen-up) {
+      & br {
+        display: block;
+      }
+    }
   }
+
   &__contact {
     @extend h4;
-    @include padding-top--large;
+    padding-top: $l;
   }
 }
 .contact__list {
@@ -145,113 +163,122 @@ body {
 // Writing list
 
 .writing-section {
-  @include padding-top--large;
+  padding-top: $l;
   @include span-columns(12);
   @include row();
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     @include span-columns(10);
   }
-  @include media($large-screen-up) {
-    @include span-columns(8);
-  }
   &__label {
-    @extend label;
+    @include sans-serif--s--tracked;
   }
 }
 .writings {
-  @include margin-top--small;
+  margin-top: $s;
 }
 .writing {
-  @extend p.heading--small;
   @include span-columns(12 of 12);
   &:nth-child(1n+2) { // Selecting all but first
-    @include margin-top--small;
+    margin-top: $l;
   }
   @include media($medium-screen-up) {
-    @include span-columns(6 of 12);
+    @include span-columns(5.5 of 12);
     &:nth-child(1), &:nth-child(2) { //Selecting first two
-      @include margin-top--none;
+      margin-top: 0;
     }
     &:nth-child(2n-1) { //select 1st, 3rd, etc
-      padding-right: 1rem;
+      @include omega;
+      clear: left;
     }
     &:nth-child(2n) { //select 2nd, 4th, etc
-      padding-left: 1rem;
+      @include shift(1);
       @include omega;
     }
   }
+
+  &__title {
+    @include sans-serif--l;
+    @include alt-link-style;
+  }
+  &__description {
+    @include serif--s;
+    color: $gray-5;
+    padding-top: $xs;
+  }
 }
 
-.writing.list-item {
-  @include margin-top--small;
-}
-
-//Article List
+//Project List
 .project-section {
-  @include padding-top--large;
+  padding-top: $xl;
   @include span-columns(12);
   @include row;
   &__label {
-    @extend label;
+    @include sans-serif--s--tracked;
   }
 }
 
 .project {
   @include row;
-  @include padding-top--large;
+  padding-top: $xl;
   &:nth-child(1) {
-    @include padding-top--small;
+    padding-top: $s;
   }
   &__image {
     max-width: 100%;
     @include span-columns(12 of 12);
     @include media($medium-screen-up) {
-      @include span-columns(9 of 12);
+      @include span-columns(10 of 12);
     }
     @include media($large-screen-up) {
       @include span-columns(8.5 of 12);
       height: 40rem;
     }
   }
-  &__title {
-    @extend h3;
-    font-weight: 800;
-    &::after {
-      content: "";
-      width: 4rem;
-      height: 2px;
-      background-color: $gray-6;
-      display: block;
-      margin-top: 2rem;
-    }
-    @include padding-top--small;
+  .project__info {
+    padding-top: $s;
     @include span-columns(12 of 12);
+    @include media($medium-screen-up) {
+      @include span-columns(10 of 12);
+    }
     @include media($large-screen-up) {
-      @include padding-top--large;
+      padding-top: $xl;
       @include span-columns(3 of 12);
       @include omega;
       @include shift(0.5);
+    }
+  }
+  &__title {
+    @include span-columns(12);
+    @include sans-serif--l;
+    @include alt-link-style;
+  }
+  &__meta {
+    padding-top: $m;
+    @include serif--s;
+    color: $gray-4;
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+    }
+    @include media($large-screen-up) {
+      @include span-columns(12);
+      padding-top: $s;
     }
   }
   &__description {
-    @extend p.text--medium;
-    @include span-columns(12 of 12);
-    @include padding-top--small;
+    padding-top: $m;
+    @include serif--s;
+    color: $gray-6;
     @include media($medium-screen-up) {
-      @include span-columns(9 of 12);
+      @include span-columns(8);
+      @include omega;
     }
     @include media($large-screen-up) {
-      font-size: 1.0rem;
-      line-height: 1.5;
-      @include span-columns(3 of 12);
-      @include shift(0.5);
-      @include omega;
-      @include padding-top--large;
+      padding-top: $xl;
+      @include span-columns(12 of 12);
     }
   }
   &__cta {
-    @include span-columns(12 of 12);
-    @include margin-top--small;
+    padding-top: $m;
     a {
       @extend .text-link-btn--medium;
       &.responsive_intranet_redesign {
@@ -272,11 +299,13 @@ body {
         background-color: rgba($pp-paloma, 0.75);
       }
     }
+    @include media($medium-screen-up) {
+      @include span-columns(3);
+      @include shift(4);
+    }
     @include media($large-screen-up) {
-      @include span-columns(3 of 12);
-      @include shift(0.5);
-      @include omega;
-      @include margin-top--large;
+      @include span-columns(12);
+      @include shift(0);
     }
   }
 }
@@ -285,7 +314,7 @@ body {
 ///// Footer
 
 .site-footer {
-  @extend .wrapper;
+  @include wrapper;
   @include margin-top--xlarge;
   @include padding(1rem 1rem 0 1rem);
 }

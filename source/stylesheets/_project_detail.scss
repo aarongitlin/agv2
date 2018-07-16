@@ -6,7 +6,7 @@ $four-col: 34.11922%;
 
 
 .article-header {
-	margin-top: -60px; //size of navbar
+	margin-top: -64px; //size of navbar
 	padding-top: 3.75rem + 3rem; //To continue bg color behind the transparent nav
 	.intranet-redesign & {
 		background-color: $intranet-blue;
@@ -29,7 +29,7 @@ $four-col: 34.11922%;
 		background-image: linear-gradient(340deg, $pp-paloma 0%, lighten($pp-paloma, 10) 100%);
 	}
 	&__content-wrapper {
-		@extend .wrapper;
+		@include wrapper;
 	}
 }
 // really need to refactor this section
@@ -102,7 +102,7 @@ $four-col: 34.11922%;
 
 
 .article {
-	@extend .wrapper;
+	@include wrapper;
 	&__content-wrapper {
 		@include media($medium-screen-up) {
 			@include span-columns(10);
@@ -407,8 +407,10 @@ p.caption {
 		}
 	}
 
-	li {
-		@include margin-top--small;
+	.article {
+		li {
+			@include margin-top--small;
+		}
 	}
 
 	.image-full img {

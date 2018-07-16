@@ -1,6 +1,7 @@
 ---
 title: "An Agency Designer Comes to Terms with Being a Product Designer"
 date: 1/7/2017  
+intro: A Product Designer reflects on his experience after being humbled
 
 ---
 <div class="image-wrapper image-full">

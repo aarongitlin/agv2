@@ -1,15 +1,15 @@
 ---  
-title: The Paperless Post Customization Tool
+title: Redesigning the Paperless Post Customization Tool
 body_class: "pp-create"
 date: 2017-09-30  
 role: "Lead/Sole Designer"  
-year: "2016-2017"  
+year: "2017"  
 blog_name: projects  
 client: "Paperless Post"  
 project_type: "Agile"  
 index_hero_image: "/images/home/pp-create-desk-hero@2x.png"  
 detail_hero_image: ""  
-dash_intro: "My first project as an in-house designer at Paperless Post"  
+dash_intro: "A redesign doesn't have to mean a year long slash and burn. After conducting brief but targeted user research I focused on a few key areas to improve while aligning a complex workflow into new branding."  
 article_intro_summary: "After years of working in consulting and freelance, in 2016 I took my first job as an in-house product designer. I wrote a bit about my <a href='http://aarongitlin.com/writings/product-design-dreams-1.html'>dreams</a> and then the <a href='http://aarongitlin.com/writings/product-design-dreams-2.html'>reality</a> of that move on my blog here."  
 article_intro_role: 'Shortly after starting at Paperless, I was asked to review what we call the "Create" tool. I led research and design on this team, and worked with a cross-disciplined team of Product Managers and developers.'
 published: true  

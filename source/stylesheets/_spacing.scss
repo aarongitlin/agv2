@@ -1,3 +1,15 @@
+// New spacing
+$xxl: 12rem;
+$xl: 6rem;
+$l: 2.625rem;
+$m: 2rem;
+$s: 1rem;
+$xs: 0.5rem;
+$xxs: 0.25rem;
+
+
+// Old spacing, to delete
+
 @mixin top-page-margin {
   padding-top: 6rem; //3 for header 3 for fun
 }

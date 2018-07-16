@@ -38,3 +38,10 @@
     background-color: rgba($primary-color, 0.15);
   }
 }
+
+@mixin alt-link-style {
+  color: $gray-6;
+  &:hover {
+    color: $action-color;
+  }
+}

@@ -1,3 +1,108 @@
+// New type system
+
+@mixin serif--xl {
+  font-family: $serif;
+  font-size: 2.625rem;
+  line-height: 3.0rem;
+  letter-spacing: -0.75px;
+  font-weight: 400;
+}
+
+@mixin serif--l {
+  font-family: $serif;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  letter-spacing: -0.5px;
+}
+
+@mixin serif--m {
+  font-family: $serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: normal;
+}
+
+@mixin serif--s {
+  font-family: $serif;
+  font-size: 1.0rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+@mixin serif--xs {
+  font-family: $serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+@mixin sans-serif--xxl {
+  font-family: $sans-serif;
+  font-size: 2.625rem;
+  line-height: 3.0rem;
+  letter-spacing: -0.75px;
+}
+
+@mixin sans-serif--xl {
+  font-family: $sans-serif;
+  font-size: 2.0rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.25px;
+  font-weight: 800;
+}
+
+@mixin sans-serif--l {
+  font-family: $sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  font-weight: 800;
+}
+
+@mixin sans-serif--m {
+  font-family: $sans-serif;
+  font-size: 1.0rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+@mixin sans-serif--s {
+  font-family: $sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+@mixin sans-serif--s--tracked {
+  @include sans-serif--s;
+  letter-spacing: 2px;
+}
+
+// Apply these to some normal html rules
+
+h1 { // only used for page lead
+  @include serif--xl;
+}
+
+h2 { // case study and blog headers
+  @include sans-serif--xxl;
+}
+
+h3 { // section dividers on blog/case study pages
+  @include sans-serif--xl;
+}
+
+h4 { // case study section headers
+  @include sans-serif--l;
+}
+
+p { // reserved for use on content managed pages
+  @include serif--l
+
+}
+
+// Old type, to delete
+
 @mixin small-description-text {
   font-size: 0.875rem;
   font-family: $sans-serif;
@@ -39,12 +144,9 @@ p.heading--large {
   @include margin-bottom--medium;
 }
 p {
-  @extend p.text--medium;
   @include margin-bottom--small;
 }
 
-h2 {
-}
 
 h3 {
   font-family: $sans-serif;

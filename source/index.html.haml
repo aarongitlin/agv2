@@ -6,8 +6,12 @@ body_class: index-page
 .index-page-wrapper
 
   .introduction
-    .introduction__paragraph
-      Hi, my name is Aaron Gitlin. I live in New York City and am currently a Senior Product Designer at <a href="http://www.paperlesspost.com/" target="_blank">Paperless Post</a>.  Before that I worked at a global digital consultancy called <a href="http://www.tigerspike.com/" target="_blank">Tigerspike</a>.
+    %h1.introduction__paragraph
+      Hi, my name is Aaron.
+      %br/
+      I am currently Lead Product Designer at <a href="http://theblacktux.com/" target="_blank">The Black Tux</a>.
+      %br/
+      I previously worked at <a href="http://paperlesspost.com/" target="_blank">Paperless Post</a> and <a href="http://tigerspike.com/" target="_blank">Tigerspike</a>.
     .introduction__contact
       %ul.contact__list
         %li.contact__list__item=link_to "email me", "mailto:aarongitlin@gmail.com"
@@ -19,7 +23,10 @@ body_class: index-page
       Recent Writing
     .writings
       - blog('writings').articles.each do |writing|
-        = link_to writing.title, writing.url, class: 'writing'
+        .writing
+          = link_to writing.title, writing.url, class: 'writing__title'
+          .writing__description
+            = writing.metadata[:page]['intro']
 
 
   #projects.project-section
@@ -30,8 +37,9 @@ body_class: index-page
         .project
           =link_to project.url, class: 'project__image' do
             = image_tag project.metadata[:page]['index_hero_image']
-          =link_to project.url do
-            .project__title=project.title
-          .project__description= project.metadata[:page]['dash_intro']
-          .project__cta
-            =link_to 'Read More', project.url, class: project.slug
+          .project__info
+            =link_to project.title, project.url, class: "project__title"
+            .project__meta= project.metadata[:page]['year'] + " @ " + project.metadata[:page]['client']
+            .project__description= project.metadata[:page]['dash_intro']
+            .project__cta
+              =link_to 'Read More', project.url, class: project.slug
