@@ -5,7 +5,6 @@
 @import 'base/base';
 @import 'neat/neat';
 
-
 @import '_spacing';
 @import '_typography';
 @import '_buttons';
@@ -311,8 +310,7 @@ body {
       @include shift(0);
     }
   }
- }
-
+}
 
 
 ///// Footer
