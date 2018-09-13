@@ -7,29 +7,26 @@
     = partial 'partials/header'
 
     #main(role="main")
-      .article-header
-        .article-header__content-wrapper
-          .project-heading
-            %h1
-              = current_article.title
-          .article-top
-            .meta-list
-              .meta-list__item
-                .meta-list__item__label Year
-                .meta-list__item__value= current_article.metadata[:page]['year']
-              .meta-list__item
-                .meta-list__item__label Client
-                .meta-list__item__value= current_article.metadata[:page]['client']
-              .meta-list__item
-                .meta-list__item__label Project Type
-                .meta-list__item__value= current_article.metadata[:page]['project_type']
-                
-            .article-intro
-              .article-intro__summary= current_article.metadata[:page]['article_intro_summary']
+      .project-header
+        .project-header__title
+          .project-header__title__text= current_article.title
 
-              .article-intro__role
-                .article-intro__role__label My Role
-                .article-intro__role__text=current_article.metadata[:page]['article_intro_role']
+        .project-header__summary
+          .project-header__summary__text= current_article.metadata[:page]['article_intro_summary']
+
+        .project-header__meta
+          .project-header__meta__group
+            .project-header__meta__group__label Year
+            .project-header__meta__group__value= current_article.metadata[:page]['year']
+          .project-header__meta__group
+            .project-header__meta__group__label Client
+            .project-header__meta__group__value= current_article.metadata[:page]['client']
+          .project-header__meta__group
+            .project-header__meta__group__label Role & Team
+            .project-header__meta__group__value= current_article.metadata[:page]['role']
+
+        .project-header__image
+          = image_tag current_article.metadata[:page]['index_hero_image']
 
       .article
         .article__content-wrapper

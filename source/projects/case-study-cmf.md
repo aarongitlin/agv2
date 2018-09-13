@@ -11,6 +11,7 @@ detail_hero_image: ""
 dash_intro: "A small but prominent insurance company based in New York City commissioned us to redesign their website and integrate a CMS to suit their needs"
 article_intro_summary: "CM&F is not such a big name compared to some of the other clients I worked with at Tigerspike, but they still had some complex challenges to solve. As a family business, they have a trusted client base and positive reputation, but pretty old school systems. A lot of phone calls, paper forms, and yes, even faxes."
 article_intro_role: "I was the lead designer and primary client contact. I directed two junior designers and led the handoff to development."
+published: false
 
 ---
 

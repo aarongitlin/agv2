@@ -7,7 +7,7 @@ year: "2015"
 blog_name: projects  
 client: "Freres"  
 project_type: "Agile"  
-index_hero_image: "/images/home/lazone-desk-hero@2x.png"  
+index_hero_image: "/images/lazone/lazone-desk-hero@2x.jpg"  
 detail_hero_image: ""  
 dash_intro: "A long term project to research and design a unified intranet service for a global investment firm"  
 article_intro_summary: "Freres is the name I will use to refer to the multinational financial firm that I extensively worked with while at Tigerspike. They came to us with a complicated problem in 2015: Begin the process of uniting and redesigning dozens of intranets scattered throughout departments around the world."  

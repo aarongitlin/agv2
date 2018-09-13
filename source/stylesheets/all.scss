@@ -231,7 +231,6 @@ body {
     }
     @include media($large-screen-up) {
       @include span-columns(8.5 of 12);
-      height: 40rem;
     }
   }
   .project__info {
@@ -297,6 +296,9 @@ body {
       }
       &.case-study-pp-create::after {
         background-color: rgba($pp-paloma, 0.75);
+      }
+      &.case-study-flyer::after {
+        background-color: rgba($pp-flyer-yellow, 0.75);
       }
     }
     @include media($medium-screen-up) {

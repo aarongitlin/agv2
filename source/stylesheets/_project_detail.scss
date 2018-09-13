@@ -32,72 +32,83 @@ $four-col: 34.11922%;
 		@include wrapper;
 	}
 }
-// really need to refactor this section
-.project-heading, .article-top {
-	@include span-columns(12);
-	@include margin-bottom--large;
-	@include media($medium-screen-up) {
-		@include span-columns(10);
-		@include shift(1);
-	}
-	@include media($large-screen-up) {
-		@include span-columns(8);
-		@include shift(2);
-	}
-	h1 {
-		font-size: 2.0rem;
-		letter-spacing: -0.5px;
-		@include media($medium-screen-up) {
-			font-size: 2.4rem;
-		}
-	}
-}
 
-.article-top {
-	@include row;
-	@include direction-context(right-to-left) {
-		.meta-list {
-			@include span-columns(8 of 8);
-			@include media($large-screen-up) {
-				@include span-columns(1.5 of 8);
-			}
-			&__item {
-				@include margin-bottom--small;
-				@include span-columns(3 of 9);
-				line-height: 1.5;
-				&:nth-child(3) {
-					@include omega;
-				}
-				@include media($large-screen-up) {
-					@include span-columns(9 of 9);
-				}
-				&__label {
-					@extend label;
-					color: $gray-5;
-				}
-			}
-		}
-		.article-intro {
-			@include span-columns(8 of 8);
-			@include media($large-screen-up) {
-				@include span-columns(6 of 8);
-				@include shift(0.5);
-			}
-			&__summary {
-				@extend p.text--medium;
-			}
-			&__role {
-				@include margin-top--small;
-				&__label {
-					@extend label;
-					color: $gray-5;
-				}
-				&__text {
-					@extend p.text--medium;
-				}
+// Case study header
+
+.project-header {
+	@include wrapper;
+
+	&__title {
+		@include row;
+		padding-top: $xl;
+		padding-bottom: $m;
+		&__text {
+			@include sans-serif--xl;
+			@include span-columns(12);
+			@include media($medium-screen-up) {
+				@include span-columns(10);
+				@include sans-serif--xxl;
 			}
 		}
 	}
+
+	&__summary {
+		@include row();
+		padding-bottom: $l;
+		&__text {
+			@include span-columns(12);
+			@include serif--l;
+			@include media($medium-screen-up) {
+				@include span-columns(10);
+			}
+			@include media($large-screen-up) {
+				@include span-columns(8);
+			}
+		}
+	}
+
+	&__meta {
+		@include row;
+		padding-bottom: $m;
+		@include media($medium-screen-up) {
+			@include span-columns(3);
+			padding-bottom: 0;
+		}
+		@include media($large-screen-up) {
+			@include span-columns(2);
+		}
+		&__group {
+			@include span-columns(6);
+			padding-bottom: $m;
+			&:nth-child(2) {
+				@include omega;
+			}
+			&:last-child {
+				@include span-columns(12);
+			  padding-bottom: 0;
+			}
+			@include media($medium-screen-up) {
+				@include span-columns(12);
+			}
+			&__label {
+				@include sans-serif--s--tracked;
+			}
+			&__value {
+				@include serif--s;
+			}
+		}
+	}
+
+	&__image {
+		@include row;
+		@include media($medium-screen-up) {
+			@include span-columns(9);
+		}
+		@include media($large-screen-up) {
+			@include span-columns(10);
+		}
+	}
+
 }
 
 
@@ -114,7 +125,9 @@ $four-col: 34.11922%;
 		}
 	}
 	h2 {
-		@extend p.heading--large;
+		@include sans-serif--xl;
+		padding-bottom: $s;
+		padding-top: $m;
 	}
 	h3 {
 		@extend h3;
@@ -156,7 +169,7 @@ $four-col: 34.11922%;
 		display: block;
 		margin: auto;
 		margin-top: 1rem;
-		margin-bottom: 1rem;
+		// margin-bottom: 1rem; // why did I add margins to bottom of images?
 		@include media($large-screen-up) {
 			margin-top: 0;
 		}
@@ -245,7 +258,7 @@ $four-col: 34.11922%;
 	}
 }
 
-.image-two-across--large-small a { //hacky, fix later
+.image-two-across--large-small a { //hacky, fix later used for one large image than one small one
 	@include media($medium-screen-up) {
 		&:nth-child(1n) {
 			@include span-columns(9);
@@ -334,9 +347,9 @@ p.caption {
 	@include small-description-text();
 	font-style: italic;
 	text-align: left;
-	margin-top: 0.25rem;
+	margin-top: 1rem;
 	margin-bottom: 0;
-	@include span-columns(12);
+	// @include span-columns(12); // don't think i need this
 }
 
 .article-footer {
@@ -415,5 +428,48 @@ p.caption {
 
 	.image-full img {
 		width: 100%;
+	}
+}
+
+// to create an arrow for the envelope emoji in the Flyer case study
+.envelope-emoji {
+	position: relative;
+	@include span-columns(12);
+	padding-bottom: $m;
+	@include media($medium-screen-up) {
+		@include span-columns(6);
+		padding-bottom: 0;
+	}
+
+	> img {
+		@include span-columns(12);
+	}
+	&::after {
+		background-image: url("../images/flyer/arrow-right.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: "";
+		position: absolute;
+		right: calc(50% - 40px / 2);
+		top: 78%;
+		width: 40px;
+		height: 0;
+		padding: 0;
+		padding-bottom: calc(40px / 1.7);
+		transform: rotate(90deg);
+		@include media($medium-screen-up) {
+			right: 2.5%;
+			width: 50px;
+			height: 0;
+			top: 45%;
+			padding-bottom: calc(50px / 1.7);
+			transform: rotate(0deg);
+		}
+		@include media($large-screen-up) {
+			right: 2.5%;
+			width: 80px;
+			height: 0;
+			padding-bottom: calc(80px / 1.7);
+		}
 	}
 }
