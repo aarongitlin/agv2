@@ -1,5 +1,5 @@
 ---
-title: Clinical Pharmacology  
+title: "Clinical Pharmacology"  
 body_class: "clinical-pharm"
 role: "Lead UI Design"  
 year: "2014"  
@@ -31,7 +31,11 @@ Workshops, surveys and interviews helped us understand the features offered by t
 
 ##Define
 
+<<<<<<< HEAD
 With the requirements that came out of Discovery we were able to start defining the overall approach for the project. We concluded that we needed to focus not on gimmicky graphics or creating a ‘branded experience’, but instead on providing a functional tool for medical professionals. We therefore agreed that UI & UX patterns defined by Apple and Android in their well-documented guides should form the foundation of the experience. Where necessary we could branch out, but our hypothesis was that starting with these guides would help make the complex application as easy to learn as possible.
+=======
+With the requirements that came out of Discovery we were able to start defining the overall approach for the project. We concluded that we needed to focus not on gimmicky graphics or creating a ‘branded experience’, but instead on providing a functional tool for medical professionals. We therefore agreed that UI & UX patterns defined by Apple and Android in their well-documented guides should form the foundation of the experience. Where necessary we could branch out, but our hypothesis was that starting with these guides would help make the complex application as easy to learn as possible.
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6
 
 Branding was of course still a part of the process, so we made sure to create a visual direction that the marketing team was happy with. As always in this phase we deliver a style tile to help establish design direction for the product.
 
@@ -43,7 +47,11 @@ Branding was of course still a part of the process, so we made sure to create a 
 
 **Design**  
 Our core team was made up of a superstar Project Manager, a Tech lead, my trusty design-partner [Jess](http://www.jessdale.com/), and myself. We worked in two week design sprints, quickly researching, sketching, and prototyping ideas to validate with the relevant professionals on the client’s side.
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6
 <div class="image-wrapper large image-two-across box-shadow">
 	<img src="../images/ELS/sketch-1.jpg" />
 	<img src="../images/ELS/sketch-3.jpg" />
@@ -77,9 +85,15 @@ We were happy to find that most participants completed the tasks with relevant e
 </div>
 
 **Document**  
+<<<<<<< HEAD
 
 The development team required specs, every designer’s favorite part of the job. I sat down with both iOS and Android guys to find out what information was most useful for them, and I tried to think of a way to make all of our jobs a bit easier. In my previous life I had done a fair amount of front-end development, and wanted to repeat some of the principles I worked with such as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Though I didn’t have the time to put together the documents as well as I would have liked, I did create what the team referred to as a “dictionary”, with a summary of tags and descriptions that I used throughout my spec document. I believed that this could work in a way similar to how SASS allows developers to use mixins to create a library of components that can be pulled in and modified as necessary.
 
+=======
+
+The development team required specs, every designer’s favorite part of the job. I sat down with both iOS and Android guys to find out what information was most useful for them, and I tried to think of a way to make all of our jobs a bit easier. In my previous life I had done a fair amount of front-end development, and wanted to repeat some of the principles I worked with such as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Though I didn’t have the time to put together the documents as well as I would have liked, I did create what the team referred to as a “dictionary”, with a summary of tags and descriptions that I used throughout my spec document. I believed that this could work in a way similar to how SASS allows developers to use mixins to create a library of components that can be pulled in and modified as necessary.
+
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6
 <div class="image-wrapper extra-large image-full gray-bg">
 	<img src="../images/ELS/els-components.png" />
 </div>
@@ -91,3 +105,9 @@ Basic analytics and surveys have revealed that a few more core features probably
 
 <a class="button tertiary" href="https://itunes.apple.com/us/app/elsevier-clinical-pharmacology/id923081157?mt=8">View on App Store</a>
 <a class="button tertiary" href="https://play.google.com/store/apps/details?id=com.elsevier.elseviercp&hl=en]">View on Google Play</a>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6

@@ -24,7 +24,11 @@ I wanted to keep the process of creating my new site informal, but I did write d
 6. A new and much simpler look, but with some continuity from the original site.
 
 
+<<<<<<< HEAD
 I experimented with Github’s [Jekyll](http://jekyllrb.com/), and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to [Middleman](https://middlemanapp.com/), a static site generator that I had already used in the past. I was concerned that it’s blog was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.
+=======
+I experimented with Github’s [Jekyll](http://jekyllrb.com/), and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to [Middleman](https://middlemanapp.com/), a static site generator that I had already used in the past. I was concerned that it’s blog was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6
 
 I created two blogs, which only requires a simple set up in your config.rb:
 
@@ -56,9 +60,15 @@ One of the reasons I love Middleman is that I can easily use front end developme
 
 Using Neat I find it best not to design layouts based on breakpoints, but components themselves. Using a mobile first approach I lay out the components more or less stacked on top of each other. As the browser stretches out, I decide what elements would benefit from a new treatment. Because the site is so simple, there's not _too_ much work that needs to be done in this regard.
 
+<<<<<<< HEAD
 So back to requirements. I've checked off 1 through 4 with my development environment, especially with the help of this [trusty little gem](https://github.com/edgecase/middleman-gh-pages) that lets me easily deploy my site to Github pages, where it is currently being hosted.
 
 The next two involved some design decisions. I started by writing two case studies up over a few weeks, no formatting, no images, just explanations of the project, my involvement, and the process. Later I started adding images that I felt backed up my narrative, and embedded a few invision prototypes, which have greatly informed my design process the last few years.
+=======
+So back to requirements. I've checked off 1 through 4 with my development environment, especially with the help of this [trusty little gem](https://github.com/edgecase/middleman-gh-pages) that lets me easily deploy my site to Github pages, where it is currently being hosted.
+
+The next two involved some design decisions. I started by writing two case studies up over a few weeks, no formatting, no images, just explanations of the project, my involvement, and the process. Later I started adding images that I felt backed up my narrative, and embedded a few invision prototypes, which have greatly informed my design process the last few years.
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6
 
 I worked with the type size, spacing, and alignment to encourage easy reading, and pushed out of the grid at times to let the imagery breathe. I settled on [Source Sans](https://typekit.com/fonts/source-sans-pro) and [Source Serif](https://typekit.com/fonts/source-serif-pro) hosted by Typekit, primarily because it is a highly legible and open source font, but also because I appreciate it's close historical reference and smart modern adaptation. I felt it fit with that whole "old & new" concept I briefly described at the beginning of this article.
 
@@ -67,3 +77,9 @@ I decided to keep the pixel font as a special header. It's not "pretty", but by 
 Three case studies, two blog posts, and a couple of emoji later I have my first new personal website in about four years. My goals for the next few months include continuing writing, adding one more case study, and introducing a few visual enhancements (animations, transitions, etc).
 
 As always, feel free to [write me](mailto:aarongitlin@gmail.com) with any questions or advice!
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 838c6f00539c3bb217f6ae868150c517bf4668c6

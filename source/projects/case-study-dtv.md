@@ -1,6 +1,6 @@
 ---
-title: DTV Concept Design
-body_class: dtv-concept
+title: "DTV Concept Design"
+body_class: "dtv-concept"
 role: "Lead UI Design"
 year: "2015"
 date: 2017-01-29

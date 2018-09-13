@@ -1,5 +1,5 @@
 ---
-title: CMF Redesign  
+title: "CMF Redesign"
 body_class: "cmf-library"
 role: "Lead Design"  
 year: "2015"  

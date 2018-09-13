@@ -1,5 +1,5 @@
 ---
-title: Responsive Intranet Redesign
+title: "Responsive Intranet Redesign"
 body_class: "intranet-redesign"
 date: 2017-01-30  
 role: "Lead UI Design"  

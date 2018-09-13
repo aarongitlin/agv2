@@ -3,7 +3,7 @@ title: An Agency Designer’s Dreams of being a Product Designer
 date: 1/3/2017  
 date_formatted: March 2017
 intro: How one little Agency Designer's dreams of being a big time Product Designer
-tags: "process, agencies, product"
+tags: "process, agencies, product, career"
 hero_image: "../images/blog/wiener-stilts.jpg"
 
 ---
