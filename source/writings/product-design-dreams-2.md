@@ -1,12 +1,12 @@
 ---
 title: "An Agency Designer Comes to Terms with Being a Product Designer"
 date: 1/7/2017  
+date_formatted: July 2017
 intro: A Product Designer reflects on his experience after being humbled
+tags: "agencies, product, career, process"
+hero_image: "../images/blog/shame.gif"
 
 ---
-<div class="image-wrapper image-full">
-		<img src="../images/blog/shame.gif" />
-</div>
 
 I wrote recently about my [dreams of being a Product Designer](http://aarongitlin.com/writings/product-design-dreams-1.html) after years of working at an agency. I felt that I had reached a ceiling in my work and had become unsure of how to grow as a designer. I rarely saw how my decisions were actually interpreted by users, since once we shipped a project, we rarely participated in or received meaningful analyses.
 

@@ -1,15 +1,18 @@
 ---
 title: Design Systems in the Real World  
 date: 3/10/2015  
+date_formatted: October 2015
 intro: Everyone knows we should be designing systems, but are there other considerations before committing to this approach?
+tags: design-systems, process
+hero_image: "../images/ELS/design-system.jpg"
 
 ---
 
-The concept of design systems has gained a lot of popularity recently in the fields of user experience and user interface design. Check out [this list](http://styleguides.io/) to see a large collection of articles and resources that discuss design systems and their common form of documentation: the style guide. This style guide is sometimes called a "living" style guide, implying that it is periodically updated and maintained, and not just a static tome. 
+The concept of design systems has gained a lot of popularity recently in the fields of user experience and user interface design. Check out [this list](http://styleguides.io/) to see a large collection of articles and resources that discuss design systems and their common form of documentation: the style guide. This style guide is sometimes called a "living" style guide, implying that it is periodically updated and maintained, and not just a static tome.
 
-The actual contents and terminology behind these guides is not uniform across the industry. For the sake of this post I would like to keep my definitions quite general and save some specific and semantic arguments for another time. For now I am assuming that the core of a style guide includes typography, color, logo and essential iconography and imagery. For a style guide to be functional as part of a robust designs system, it must also include global components like navigation, buttons, forms, tables, etc. It should also note any metaphor or structural approach used in the creation of the product (for instance, [Google’s use of cards](https://www.google.com/design/spec/material-design/introduction.html#introduction-principles)). 
+The actual contents and terminology behind these guides is not uniform across the industry. For the sake of this post I would like to keep my definitions quite general and save some specific and semantic arguments for another time. For now I am assuming that the core of a style guide includes typography, color, logo and essential iconography and imagery. For a style guide to be functional as part of a robust designs system, it must also include global components like navigation, buttons, forms, tables, etc. It should also note any metaphor or structural approach used in the creation of the product (for instance, [Google’s use of cards](https://www.google.com/design/spec/material-design/introduction.html#introduction-principles)).
 
-Other terms often used include Pattern Library, Design Guide, Interface Guidelines, and likely many others I’m unaware of. There are arguably important distinctions between these terms, but for now I am using the term Style Guide as a general collection of interface patterns and components. 
+Other terms often used include Pattern Library, Design Guide, Interface Guidelines, and likely many others I’m unaware of. There are arguably important distinctions between these terms, but for now I am using the term Style Guide as a general collection of interface patterns and components.
 
 —
 
@@ -21,6 +24,6 @@ So style guides are hard to maintain, and a poorly maintained one may actually _
 
 If the product is meant to grow and expand iteratively over time, or be part of a larger suite of products, then the case for creating systems and guides becomes stronger. If the product will be developed and expanded by people other than those who built it, the case becomes stronger again. If it is meant to be a long term solution (digitally speaking), then, well, you get the idea.
 
-At the very least we can create a simple guide that includes color, type, logos, icons, and imagery. Whether or not to go that extra mile of consolidating patterns and components into organized libraries and guides depends on some of the factors above. 
+At the very least we can create a simple guide that includes color, type, logos, icons, and imagery. Whether or not to go that extra mile of consolidating patterns and components into organized libraries and guides depends on some of the factors above.
 
-I used to push for systems and and guides on all projects, regardless of other constraints. After a few years of victories, failures, and question marks I’ve learned some valuable lessons and no longer think the process is quite so simple. As a designer I like to think that all of what I create matters and that it is part of something larger. Designing as part of a system made me feel that my work was the foundation for not just the product I was designing, but for future related products. In the context of pure design this approach makes sense, but design sits within a larger organizational network of people, money, and time. Good designers will take all of these factors into consideration, because if they are not aligned, then the project has failed and the quality of the design is inconsequential. 
+I used to push for systems and and guides on all projects, regardless of other constraints. After a few years of victories, failures, and question marks I’ve learned some valuable lessons and no longer think the process is quite so simple. As a designer I like to think that all of what I create matters and that it is part of something larger. Designing as part of a system made me feel that my work was the foundation for not just the product I was designing, but for future related products. In the context of pure design this approach makes sense, but design sits within a larger organizational network of people, money, and time. Good designers will take all of these factors into consideration, because if they are not aligned, then the project has failed and the quality of the design is inconsequential.

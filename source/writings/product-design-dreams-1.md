@@ -1,13 +1,12 @@
 ---
 title: An Agency Designer’s Dreams of being a Product Designer  
 date: 1/3/2017  
+date_formatted: March 2017
 intro: How one little Agency Designer's dreams of being a big time Product Designer
+tags: "process, agencies, product"
+hero_image: "../images/blog/wiener-stilts.jpg"
 
 ---
-
-<div class="image-wrapper image-full">
-		<img src="../images/blog/wiener-stilts.jpg" />
-</div>
 
 Like many designers out of school, my first work experiences were a combination of freelancing, and contract work. Eventually I got a job at an agency, my first official role as “UI Designer”. This seemed like a logical transition at the time, as the world of client management and requirements lists was familiar to me, and the thought of someone else actually managing the business end of things seemed like a relief. As I moved up the ladder I found myself slowly having greater responsibility than just filling in wireframes and adding dozens of Photoshop layers to give buttons textures and shadows (I miss you 2012!). I found myself having to discuss and justify my decisions with people who had little knowledge or interest in visual design thinking, and a collection of images sourced online for inspiration no longer counted as “research.”
 

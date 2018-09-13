@@ -19,21 +19,24 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$primary-color: #289976;
 $blue: #477dca;
-$dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
-$off-white: #f5f5f5;
 $dark-blue: #444857;
-//
+
+// grays
 $white: #fff;
-$primary-color: #289976;
-$gray-1: #F3F4F3;
-$gray-2: #E7EAE8;
-$gray-3: #CCD4CF;
-$gray-4: #A7ACA9;
-$gray-5: #7F8380;
-$gray-6: #454846;
+$off-white: #f5f5f5;
+
+$gray-1: #E8EBE9;
+$gray-2: #D9DBDA;
+$gray-3: #B6BAB8;
+$gray-4: #8B8F8C;
+$gray-5: #585C59;
+$gray-6: #3A3D3B;
+
+$dark-gray: #131413;
 
 $intranet-blue: #DBE6F1;
 $dtv-gray: #D3D4DD;

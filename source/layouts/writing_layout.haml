@@ -7,18 +7,26 @@
     = partial 'partials/header'
 
     #main(role="main")
-      .article-header
-        .article-header__content-wrapper
-          .project-heading
-            %h1
-              = current_article.title
-          -# - if current_article.metadata[:page]['image_path']
-          -#   = image_tag current_article.metadata[:page]['image_path']
+      .writing-header
+        .writing-header__title
+          .writing-header__title__text= current_article.title
 
-          - if current_article.metadata[:page]['intro']
-            .article-top
-              .article-intro
-                .article-intro__summary= current_article.metadata[:page]['intro']
+        .writing-header__meta
+          .writing-header__meta__group
+            .writing-header__meta__group__label Published
+            .writing-header__meta__group__value= current_article.metadata[:page]['date_formatted']
+          .writing-header__meta__group
+            .writing-header__meta__group__label Tagged
+            .writing-header__meta__group__value= current_article.metadata[:page]['tags']
+
+        - if current_article.metadata[:page]['hero_image']
+          .writing-header__image
+            = image_tag current_article.metadata[:page]['hero_image']
+
+          .writing-header__summary
+            .writing-header__summary__label summary
+            .writing-header__summary__text= current_article.metadata[:page]['intro']
+
       .article
         .article__content-wrapper
           = yield

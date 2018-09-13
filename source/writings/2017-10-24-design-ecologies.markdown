@@ -4,11 +4,11 @@ title: "From Design Systems to Design Ecologies"
 date: 2017-10-24 23:21   
 published: true
 intro: 'Growing organizations must accept growing complexity. When one "design system" is not enough, sometimes collections of systems are used, in what could be called a design ecology.'
----
-<div class="image-wrapper medium">
-		<img src="https://media.giphy.com/media/12fNxpgLxJDG0w/giphy.gif" />
-</div>
+tags: "design-systems, design-ecology, content-strategy"
+date_formatted: "October 2017"
+hero_image: "https://media.giphy.com/media/12fNxpgLxJDG0w/giphy.gif"
 
+---
 
 I wrote [nearly two years ago about Design Systems](http://aarongitlin.com/writings/systems.html), while I was at my peak obsession with the concept and the term. Since that time I worked on quite a few projects that all, to at least some extent, incorporated those ideals and the process. I simply cannot imagine that changing anytime soon.
 

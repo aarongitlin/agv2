@@ -133,7 +133,8 @@ $four-col: 34.11922%;
 		@extend h3;
 	}
 	p {
-		@extend p;
+		@include serif--m--longform;
+		color: $gray-5;
 	}
 	ol, ul {
 		@extend p.text--medium--long-form;
@@ -405,24 +406,92 @@ p.caption {
 }
 
 //for writing articles only
-.writing-page {
 
-	.project-heading {
-		margin-bottom: 2rem;
+.writing-header {
+	@include wrapper;
+	&__title {
+		@include row;
+		padding-top: $xl;
+		padding-bottom: $m;
+		&__text {
+			@include sans-serif--xl;
+			@include span-columns(12);
+			@include media($medium-screen-up) {
+				@include span-columns(10);
+				@include sans-serif--xxl;
+			}
+		}
 	}
 
-	.article-top {
+	&__meta {
+		@include row;
+		padding-bottom: $m;
 		@include media($medium-screen-up) {
-			@include shift(1);
+			@include span-columns(3);
+			padding-bottom: 0;
 		}
 		@include media($large-screen-up) {
-			@include shift(0.5);
+			@include span-columns(2);
+		}
+		&__group {
+			@include span-columns(6);
+			padding-bottom: $m;
+			&:nth-child(2) {
+				@include omega;
+			}
+			@include media($medium-screen-up) {
+				@include span-columns(12);
+			}
+			&__label {
+				@include sans-serif--s--tracked;
+			}
+			&__value {
+				@include serif--s;
+			}
+		}
+	}
+
+	&__image {
+		padding-bottom: $l;
+		@include media($medium-screen-up) {
+			@include span-columns(9);
+			@include omega;
+		}
+		@include media($large-screen-up) {
+			@include span-columns(10);
+			@include omega;
+		}
+	}
+
+	&__summary {
+		@include span-columns(12);
+		padding-bottom: $l;
+		&__label {
+			@include span-columns(12);
+			@include sans-serif--s--tracked;
+			@include media($medium-screen-up) {
+				@include span-columns(12);
+			}
+			@include media($large-screen-up) {
+				@include span-columns(2);
+				padding-top: 6px; // to help baseline alignment
+			}
+		}
+		&__text {
+			@include span-columns(12);
+			@include serif--l;
+			@include media($medium-screen-up) {
+				@include span-columns(9);
+			}
+			@include media($large-screen-up) {
+				@include span-columns(8);
+			}
 		}
 	}
 
 	.article {
 		li {
-			@include margin-top--small;
+			margin-top: $s;
 		}
 	}
 
@@ -460,7 +529,6 @@ p.caption {
 		@include media($medium-screen-up) {
 			right: 2.5%;
 			width: 50px;
-			height: 0;
 			top: 45%;
 			padding-bottom: calc(50px / 1.7);
 			transform: rotate(0deg);
@@ -468,7 +536,6 @@ p.caption {
 		@include media($large-screen-up) {
 			right: 2.5%;
 			width: 80px;
-			height: 0;
 			padding-bottom: calc(80px / 1.7);
 		}
 	}

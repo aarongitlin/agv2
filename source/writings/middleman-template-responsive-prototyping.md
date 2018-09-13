@@ -1,12 +1,11 @@
 ---
 title: "A Middleman Template for Responsive Prototyping"
 date: 1/8/2017  
+date_formatted: "January 2017"
+hero_image: "https://media.giphy.com/media/3mFx50PdkAqKQ/giphy.gif"
 intro: I created a <a href="https://github.com/aarongitlin/middleman-starter">basic starter kit</a> to help designers build small responsive web projects or prototypes. Read below for why and how I put it together.
-
+tags: "prototyping, design-and-code"
 ---
-<div class="image-wrapper medium">
-		<img src="https://media.giphy.com/media/3mFx50PdkAqKQ/giphy.gif" />
-</div>
 
 
 As part of my job at Paperless, I often need to think of ways to prototype or document certain design ideas. Recently we've begun work on one of our product detail views, which contains large visuals of our product, controls, and information. The usual Sketch-Invision-Zeplin trifecta that is our normal product design workflow was coming up a little bit short in this case, largely due to an unconventional layout and responsive considerations.

@@ -22,6 +22,11 @@
   letter-spacing: normal;
 }
 
+@mixin serif--m--longform {
+  @include serif--m;
+  line-height: 2.0rem;
+}
+
 @mixin serif--s {
   font-family: $serif;
   font-size: 1.0rem;
@@ -75,6 +80,7 @@
 
 @mixin sans-serif--s--tracked {
   @include sans-serif--s;
+  color: $gray-4;
   letter-spacing: 2px;
 }
 
