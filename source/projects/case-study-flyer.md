@@ -1,7 +1,7 @@
 ---
 title: "Paperless Post Flyer"
 body_class: "pp-flyer"
-date: 2018-09-15  
+date: 2018-09-12  
 role: "Lead designer, senior designer"  
 year: "2017-18"  
 blog_name: projects  
