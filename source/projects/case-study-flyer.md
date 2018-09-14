@@ -1,5 +1,5 @@
 ---
-title: Paperless Post Flyer
+title: "Paperless Post Flyer"
 body_class: "pp-flyer"
 date: 2018-09-15  
 role: "Lead designer, senior designer"  
@@ -12,7 +12,8 @@ detail_hero_image: ""
 dash_intro: "The next evolution of the Paperless Post product and brand. How do we bring the spirit of Paperless Post into a new digitally native context?"  
 article_intro_summary: "In 2017 I worked with Paperless Post leadership to help define a new product to help move past our literal paper metaphors. In 2018 I helped bring that product to life."  
 article_intro_role: ""  
-published: true
+published: true  
+
 ---
 
 ## Background
