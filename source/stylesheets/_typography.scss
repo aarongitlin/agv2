@@ -11,7 +11,7 @@
 @mixin serif--l {
   font-family: $serif;
   font-size: 1.5rem;
-  line-height: 2.0rem;
+  line-height: 2.25rem;
   letter-spacing: -0.5px;
 }
 
@@ -24,7 +24,7 @@
 
 @mixin serif--m--longform {
   @include serif--m;
-  line-height: 2.0rem;
+  line-height: 2.125rem;
 }
 
 @mixin serif--s {

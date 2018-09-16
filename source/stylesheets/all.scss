@@ -72,6 +72,8 @@ body {
     float: right;
     padding-top: $s;
     text-align: right;
+    margin-left: 0;
+    margin-top: 0;
     li {
       @include span-columns(4);
       @include sans-serif--m;
@@ -123,11 +125,11 @@ body {
   .introduction__paragraph {
     font-size: 10vw;
     line-height: 1.2;
-    & br {
-      display: none;
-    }
     @include media($medium-screen-up) {
       font-size: 2.625rem;
+      & br {
+        display: none;
+      }
     }
     @include media($large-screen-up) {
       & br {
@@ -142,6 +144,8 @@ body {
   }
 }
 .contact__list {
+  margin-left: 0;
+  padding-left: 0;
   &__item {
     a {
       @extend .text-link-btn--medium;
@@ -324,8 +328,11 @@ body {
 .link-list {
   @include span-columns(12);
   @include row;
+  margin: 0;
+  padding-left: 0;
   &__item {
     display: inline-block;
+    @include sans-serif--m;
     @include padding(0 2.5rem 1rem 0);
     a {
       @extend .text-link-btn--small;
@@ -343,4 +350,6 @@ body {
 .colophon {
   @include span-columns(12);
   @include row;
+  padding-bottom: $s;
+  color: $gray-4;
 }

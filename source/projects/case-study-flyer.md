@@ -107,19 +107,19 @@ From this research we found two basic models for editing: "live editing" and "fo
 
 Research helped facilitate decision-making, but we quickly decided to put theory to practice by moving quickly into low fidelity designs. How would our approaches hold up? What does that spot on my see-saw diagram actually look like? Below are captures of 3 basic prototypes that we evaluated as we explored how our editing model would take shape. The first version felt too formulaic and conventional, the second one overly complex for our first pass. The third one represents where we landed as a team, with agreement that the use of modals, while not terribly elegant, they allowed customers to stay in the creation experience while keeping our build costs down.
 
-<div class="image-wrapper medium">
+<div class="image-wrapper medium box-shadow">
     <img src="../images/flyer/prototype-2.gif" />
 </div>
 
 <br/>
 
-<div class="image-wrapper medium">
+<div class="image-wrapper medium box-shadow">
     <img src="../images/flyer/prototype-1.gif" />
 </div>
 
 <br/>
 
-<div class="image-wrapper medium">
+<div class="image-wrapper medium box-shadow">
     <img src="../images/flyer/prototype-3.gif" />
 </div>
 

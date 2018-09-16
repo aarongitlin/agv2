@@ -124,37 +124,72 @@ $four-col: 34.11922%;
 			@include shift(2);
 		}
 	}
-	h2 {
-		@include sans-serif--xl;
-		padding-bottom: $s;
-		padding-top: $m;
+}
+
+// Typography
+h2 {
+	@include sans-serif--xl;
+	padding-bottom: $s;
+	padding-top: $m;
+}
+h3 {
+	@extend h3;
+}
+p {
+	@include serif--m--longform;
+	color: $gray-5;
+}
+ol, ul {
+	@extend p.text--medium--long-form;
+	@include margin-bottom--small;
+	padding-left: 1rem;
+}
+ul {
+	@include margin-top--medium;
+	@include margin-bottom--medium;
+	margin-left: 1rem;
+	@include media($medium-screen-up) {
+		margin-left: 4rem;
+		width: 85%;
 	}
-	h3 {
-		@extend h3;
+	li {
+	list-style-type: disc;
+	@include margin-top--small;
 	}
+}
+
+//quotes
+
+blockquote {
+	position: relative;
+	color: $gray-4;
+	margin:$l 0 $l $l;
+	border-left: 6px solid $primary-color;
+	// In case you want quotation marque
+	// &:before {
+	// 	font-family: $serif;
+	// 	content: "\201C";
+	// 	color: rgba($primary-color, 0.2);
+	// 	font-size: 24rem;
+	// 	line-height: 24rem;
+	// 	position: absolute;
+	// 	left: 10px;
+	// 	top: -2rem;
+	// }
+	// &:after {
+	// 	content: '';
+	// }
 	p {
-		@include serif--m--longform;
+	  @include serif--l;
+	  font-style: italic;
+		padding-left: $m;
 		color: $gray-5;
-	}
-	ol, ul {
-		@extend p.text--medium--long-form;
-		@include margin-bottom--small;
-		padding-left: 1rem;
-	}
-	ul {
-		@include margin-top--medium;
-		@include margin-bottom--medium;
-		margin-left: 1rem;
-		@include media($medium-screen-up) {
-			margin-left: 4rem;
-			width: 85%;
+		&:last-child {
+			font-style: normal;
 		}
-		li {
-		list-style-type: disc;
-		@include margin-top--small;
 	}
 }
-}
+
 
 .article-content {
 	ol {
@@ -252,7 +287,7 @@ $four-col: 34.11922%;
 		}
 	}
 	&.gray-bg {
-		background-color: $gray-1;
+		background-color: $off-white;
 		margin-left: -1rem;
 		margin-right: -1rem;
 		padding: 0.5rem;
@@ -410,6 +445,9 @@ $four-col: 34.11922%;
 	}
 }
 
+
+
+
 .button {
 	margin-top: 1rem;
 	@include media($medium-screen-up) {
@@ -537,11 +575,21 @@ p.caption {
 			@include span-columns(10);
 			@include omega;
 		}
+		// styling specific to make some small gifs i use on articles to not be riduclously tiny
+		& img {
+			min-width: 75%;
+		}
 	}
 
 	&__summary {
 		@include span-columns(12);
 		padding-bottom: $l;
+		@include media($medium-screen-up) {
+			@include shift(1);
+		}
+		@include media($large-screen-up) {
+			@include shift(0);
+		}
 		&__label {
 			@include span-columns(12);
 			@include sans-serif--s--tracked;
