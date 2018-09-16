@@ -5,7 +5,7 @@ date: 2018-05-30
 published: true
 intro: "At Paperless Post I had the chance to work with a team dedicate to improving our site through testing and data collection. I learned to become a data-aware designer during that time, and believe any designer can do so as well."
 tags: ab-testing, data-design
-date_formatted: "May 2018"
+date_formatted: "September 2018"
 hero_image: "https://media1.tenor.com/images/f2f79ab9b8d8ce96116a82be6bf6ba8b/tenor.gif?itemid=6237717"
 
 ---
