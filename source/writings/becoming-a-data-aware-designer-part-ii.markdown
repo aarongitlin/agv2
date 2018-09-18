@@ -2,7 +2,7 @@
 layout: "writing_layout"
 title: "Becoming a Data Aware Designer - Part 2"
 date: 2018-06-30   
-published: false
+published: true
 intro: "I wrote an article last week summarizing a framework I learned on my path to becoming a data-aware designer. Here are some examples of what that actually looked like."
 tags: ab-testing, data-design
 date_formatted: "June 2018"
