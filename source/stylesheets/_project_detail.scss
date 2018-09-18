@@ -143,8 +143,6 @@ ol, ul {
 	@extend p.text--medium--long-form;
 	@include margin-bottom--small;
 	padding-left: 1rem;
-}
-ul {
 	@include margin-top--medium;
 	@include margin-bottom--medium;
 	margin-left: 1rem;
@@ -152,11 +150,12 @@ ul {
 		margin-left: 4rem;
 		width: 85%;
 	}
-	li {
+}
+ul li {
 	list-style-type: disc;
 	@include margin-top--small;
-	}
 }
+
 
 //quotes
 

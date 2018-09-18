@@ -1,16 +1,16 @@
 ---
 layout: "writing_layout"
-title: "Becoming a Data-Aware Designer - Part 1"
+title: "Becoming a Data Aware Designer - Part 1"
 date: 2018-05-30   
 published: true
-intro: "At Paperless Post I had the chance to work with a team dedicate to improving our site through testing and data collection. I learned to become a data-aware designer during that time, and believe any designer can do so as well."
+intro: "At Paperless Post I had the chance to work with a team dedicated to improving our site through testing and data collection. I learned to become a data-aware designer during that time, and believe any designer can do so as well."
 tags: ab-testing, data-design
 date_formatted: "September 2018"
 hero_image: "https://media1.tenor.com/images/f2f79ab9b8d8ce96116a82be6bf6ba8b/tenor.gif?itemid=6237717"
 
 ---
 
-While I had used analytics conducted A/B tests in the past, the vast majority of my experience collecting and working with data was qualitative, not quantitative. Like many designers, my primary methods of information collection were heuristic analyses, interviews, and usability tests. Thanks to my work on a newly formed team at Paperless and its incredibly smart members, I have expanded my repertoire and become more fluent in using data as a key part of my design process. The book, [Designing with Data by Rochelle King](https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830) also helped give me the language and structure to discuss this topic. I'll be borrowing and crediting them throughout this article.
+While I had used analytics conducted A/B tests in the past, the vast majority of my experience collecting and working with data was qualitative, not quantitative. Like many designers, my primary methods of information collection were heuristic analyses, interviews, and usability tests. Thanks to my work on a newly formed team at Paperless and its incredibly smart members, I have expanded my repertoire and become more fluent in using data as a key part of my design process. I also owe this book and its authors, [Designing with Data by Rochelle King, Elizabeth Churchill and Caitlin Tan](https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830) credit for giving me a foundation in this topic's practice and terminology. I'll be borrowing and referencing it throughout this article.
 
 At first I was skeptical of the process that our data and marketing departments outlined: endless A/B tests on relatively small tweaks seemed liked the most boring and ineffective way to improve our users' experience. Thanks to King's book I was eventually able to understand and articulate my concern with *data-driven* design, and contrast it with *data-informed* and *data-aware* design.
 
@@ -26,9 +26,9 @@ Being data-aware means you understand the wide range, and limitations, of data c
 
 ## OK, so what?
 
-While many businesses promote themselves as being data-driven, most designers are driven by instinct, collaboration, and qualitative research methods. So where do we fit in?
+While many businesses promote themselves as being data driven, most designers are driven by instinct, collaboration, and qualitative research methods. So where do we fit in?
 
-I still think a designer's greatest asset can be their intuition and willingness to move from theory to practice. Data does not tell us what the problem is, nor how to solve it.  It can expose problems, provide information about problems, and evaluate the effectiveness of solutions. Designers can use this additional information to evaluate problems from more angles, and then use the results to hone our instincts on how to solve them.
+I still think a designer's greatest asset can be their intuition and willingness to move from theory to practice. Data does not tell us what the problem is, nor how to solve it. However, it can help us expose problems, provide more information about them, and evaluate the effectiveness of solutions. Designers can use this additional information to evaluate problems from more angles, and then use the results to hone our instincts on how to solve them.
 
 I particularly loved this quote, which I found in King's book. It speaks to the value of data and the importance of it's integration with human instinct and decision-making:
 
@@ -44,7 +44,7 @@ Bringing it back to the 3-circle diagram above, I think it is critical for desig
     <img src="../images/blog/data-framework.png" />
 </div>
 
-King outlines a framework for running experiments with a data-aware mindset, which I have found helpful in framing my work. Remember that data here can mean any information point, qualitative or quantitative. It's only the result that should truly be objective.
+King outlines a framework for running experiments with a data-aware mindset, which I have found helpful in organizing my work. Remember that data here can mean any information point, qualitative or quantitative. It's only the result that should truly be objective.
 
 ## 1 – The goal
 
@@ -54,9 +54,9 @@ Establishing goals is outside the scope of this article, but it need not be hype
 
 There are likely many areas where you could try to achieve your goal. But we need to start somewhere. What information do we have to narrow down our options? Do you have data on where users drop out of the funnel? An idea of how "power users" use the site? Tagged customer support tickets? Surveys? User Research?
 
-Ideally, some combination of all of these, and more. There are countless resources out there dedicated to finding the right area to hone in on, from [more traditional sources like HBR](https://hbr.org/2012/10/the-five-cs-of-opportunity-identi) and those more targeted at design professionals like [this workshop outline from IDEO](http://www.designkit.org/methods/3) or [these activities](https://designsprintkit.withgoogle.com/methods/understand/) from the (in)famous [Google Design Sprint Toolkit](https://designsprintkit.withgoogle.com/).
+Ideally, some combination of all of these, and more. There are countless resources out there dedicated to finding the right area to hone in on, from [more traditional sources like HBR](https://hbr.org/2012/10/the-five-cs-of-opportunity-identi) and those more targeted at design professionals like [this workshop outline from IDEO](http://www.designkit.org/methods/3) or [these activities](https://designsprintkit.withgoogle.com/methods/understand/) from the now ubiquitous [Google Design Sprint Toolkit](https://designsprintkit.withgoogle.com/).
 
-At Paperless, my team had both qualitative (customer support tickets, anecdotal stories, personal instincts) and quantitative (high-volume surveys, conversion drop-off points) indicating that our pricing structure was a blocker for customers checking out. So we defined a problem/opportunity was around improving the user experience of our pricing mechanisms, with the goal of increasing revenue for the company.
+At Paperless, my team had both qualitative (customer support tickets, anecdotal stories, personal instincts) and quantitative (high-volume surveys, conversion drop-off points) indicating that our pricing structure was a blocker for customers checking out. So we defined a problem/opportunity area around improving the user experience of our pricing mechanisms, with the goal of increasing revenue for the company.
 
 ## 3 – The hypothesis
 
@@ -82,15 +82,20 @@ But even a well-structured hypothesis shouldn't be made in isolation. It should 
 - what we learn if we succeed and how that impacts next steps
 - how much work is it worth putting into this test
 
-The last point is an important one, and the below chart from King's book has helped me to frame it in my head. How big of problem are we trying to solve? The best possible checkout experience imaginable? A better version of the one we have now? Understanding the difference between those two approaches is important.
+The last point is an important and complicated one. How big of problem are we trying to solve? The best possible checkout experience imaginable? A better version of the one we have now? Understanding the implications between those two approaches is important.
 
-For example, my team knew that the complexity of our infrastructure meant in the short-term that we could not fundamentally alter our pricing models. Essentially we knew that, for now, we were looking to alter and improve the existing system (local maxima) and not change the system itself (global maxima). We should be careful [not to stay that course too long](https://conversionxl.com/blog/local-maximum/), but it's most important to acknowledge and agree as a team where we are right now, and what is the best use of our time.
+For example, my team knew that the complexity of our infrastructure meant in the short-term that we could not fundamentally alter our pricing models. Essentially we knew that, for now, we were looking to alter and improve the existing system and not change the system itself. In the diagram below we can see a visualization of what the difference between these two options implies:
+
+- Attempting to improve an existing system is to design against local maxima
+- Looking for a better system is to design against global maxima
+
+We should be careful [not to only chase local maxima](https://conversionxl.com/blog/local-maximum/), but it's most important to acknowledge and agree as a team where we are right now, and what is the best use of our time.
 
 <div class="image-wrapper medium">
     <img src="../images/blog/local-global-maxima.png" />
 </div>
 
-### How to decide?
+### Picking hypotheses
 
 So what information do we use to choose your hypothesis? In King's book and in my experience the best ideas come from taking information from multiple sources. Perhaps it's a marketing survey, an internal workshop, a high-volume survey, customer support requests, results from an A/B test, or all of the above. Data triangulation is the structured utilization of these different sources to help form new hypotheses and approaches.
 
@@ -121,7 +126,7 @@ Getting more information on more users over a longer period of time will help us
     <img src="../images/blog/ab-testing-confidence.png" />
 </div>
 
-At Paperless, we started with a p-value of 0.05, meaning we believed there to be a 5% chance of a false-positive. With that baselines we could then calculate how many user interactions we needed to record to get results we deemed valid. If it looked like a test would need to run for more than 2 weeks to get the required numbers, we might reconsider that hypothesis.
+At Paperless, we started with a p-value of 0.05, meaning we believed there to be only a 5% chance of a false-positive. With that baselines we could then calculate how many user interactions we needed to record to get results we deemed valid. If it looked like a test would need to run for more than 2–4 weeks to get the required numbers, we might reconsider that hypothesis.
 
 ## What's next?
 
