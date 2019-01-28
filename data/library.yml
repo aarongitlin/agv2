@@ -1,6 +1,17 @@
-page_description: "I decided to document a few thoughts on books I've read recently, especially those pertinent to my profession. While this is primarily for my own education and memory, I thought it could maybe be useful to others as well. I'm also experimenting with layouts that reflect content, in this case I've begun experimenting with CSS Grid to represent the phsyical and psychological proximity of books I'm reading or have read."
+page_description: "The layout is organized based on the proximity of the book to me at the current moment. The book I’m currently reading is given a special spot, books I regularly refer to are near the top, and books I generally remember and respect aren’t too far behind."
 
 books:
+  - thinking-fast-and-slow:
+    slug: thinking_fast_and_slow
+    title: Thinking Fast and Slow
+    author: Daniel Kahneman
+    tags:
+      - UX
+      - Psychology
+    short_description: Lorem ipsum ummm m
+    image: "images/books/thinking-fast-and-slow.jpg"
+    rank: zero
+
   - just-enough-research:
     slug: just_enough_research
     title: Just Enough Research
@@ -10,7 +21,7 @@ books:
       - Research
     short_description: A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
     image: "/images/books/just-enough-research.jpg"
-    space: large
+    rank: one
 
   - the-beginning-of-infinity:
     slug: beginning_of_infinity
@@ -21,7 +32,7 @@ books:
       - Science
     short_description: An eye opening book that is not about UX at all, but rather the concepts of Knowledge and Explanations.
     image: "/images/books/the-beginning-of-infinity.jpg"
-    space: medium
+    rank: one
 
   - experience-required:
     slug: experience_required
@@ -32,7 +43,7 @@ books:
       - Leadership
     short_description: Prima luce, cum quibus mons aliud  consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
     image: "/images/books/experience-required.jpg"
-    space: small
+    rank: two
 
   - graphesis:
     slug: graphesis
@@ -44,7 +55,7 @@ books:
       - Knowledge
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/graphesis.jpg"
-    space: small
+    rank: two
 
   - ux-strategy:
     slug: ux_strategy
@@ -56,7 +67,7 @@ books:
       - Design
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/ux-strategy.jpg"
-    space: medium
+    rank: two
 
   - designing-with-data:
     slug: designing_with_data
@@ -68,7 +79,7 @@ books:
       - Data Science
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/designing-with-data.jpg"
-    space: medium
+    rank: two
 
   - the-design-way:
     slug: the_design_way
@@ -80,4 +91,6 @@ books:
       - Knowledge
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/the-design-way.jpg"
-    space: large
+    rank: three
+
+

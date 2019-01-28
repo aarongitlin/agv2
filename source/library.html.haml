@@ -8,33 +8,54 @@ layout: library_layout
   .page-title My Library
   .page-description
     = data.library.page_description
-  .book__grid
-    .book.book--hero
-      .book__image
-        = image_tag data.library.books[0]["image"]
-      .book__info
-        .book__title
-          = data.library.books[0]["title"]
-          -# =link_to data.library.books[0]["title"], "/books/#{data.library.books[0]['slug']}.html"
 
-        .book__author= data.library.books[0]["author"]
-        .book__short-description= data.library.books[0]["short_description"]
+  .book__hero
+    - data.library.books.each do |book|
+      - if book.rank == 'zero'
+        .book-hero
+          .book-hero__image
+            = image_tag book.image
+          .book-hero__info
+            .book-hero__title
+              = book.title
+              -# =link_to data.library.books[0]["title"], "/books/#{data.library.books[0]['slug']}.html"
+            .book-hero__author= book.author
+            .book-hero__short-description= book.short_description
 
-    - data.library.books[1..3].each do |book|
-      %div{:class => "book"}
-        .book__image
-          = image_tag book.image
-        .book__info
-          .book__title
-            = book.title
-            -#= link_to book.title, "/books/#{book.slug}.html"
-          .book__author= book.author
-    - data.library.books[4..-1].each do |book|
-      %div{:class => "book #{book.space}"}
-        .book__image
-          = image_tag book.image
-        .book__info
-          .book__title
-            = book.title
-            -#= link_to book.title, "/books/#{book.slug}.html"
-          .book__author= book.author
+  .space-one
+    - data.library.books.each do |book|
+      - if book.rank == 'one'
+        .book-one
+          .book-one__image
+            = image_tag book.image
+          .book-one__info
+            .book-one__title
+              = book.title
+              -#= link_to book.title, "/books/#{book.slug}.html"
+            .book-one__author= book.author
+            .book-one__short-description= book.short_description
+  .space-two
+    - data.library.books.each do |book|
+      - if book.rank == 'two'
+        .book-two
+          .book-two__image
+            = image_tag book.image
+          .book-two__info
+            .book-two__title
+              = book.title
+              -#= link_to book.title, "/books/#{book.slug}.html"
+            .book-two__author= book.author
+            -# .book__short-description= book.short_description
+
+  .space-three
+    - data.library.books.each do |book|
+      - if book.rank == 'three'
+        .book-three
+          .book-three__image
+            = image_tag book.image
+          .book-three__info
+            .book-three__title
+              = book.title
+              -#= link_to book.title, "/books/#{book.slug}.html"
+            .book-three__author= book.author
+            -# .book__short-description= book.short_description

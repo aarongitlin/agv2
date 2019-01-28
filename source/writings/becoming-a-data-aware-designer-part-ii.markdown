@@ -11,7 +11,7 @@ hero_image: "https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif"
 ---
 ## Recap
 
-This is part two of my journey to becoming a more data aware designer. In that article I defined what it meant to be data aware, and contrasted that with being data driven. I also presented a brief summary of a framework to approach problem solving with a data aware mindset, much of which I borrowed from King, Churchill, & Tan in their book, [Designing with Data](https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830). I would now like to write more about my own experience using this framework during my time as designer at Paperless Post.
+This is part two of my journey to becoming a more data aware designer. In part one I defined what it meant to be data aware, and contrasted that with being data driven. I also presented a brief summary of a framework to approach problem-solving with a data aware mindset, much of which I borrowed from King, Churchill, & Tan in their book, [Designing with Data](https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830). I would now like to write more about my own experience using this framework during my time as designer at Paperless Post.
 
 To recap, the basic steps are:  
 
@@ -28,16 +28,16 @@ I left off in my previous article with my team having identified:
 
 ## Hypotheses
 
-Coins are the virtual currency Paperless uses. For example an invitation may cost 1 coin/recipient, so for 25 recipients you pay 25 coins.  We then ask customers to purchase a coin package, such as 20/40/80/150 coins, with the value increasing in higher volume purchases. Confusing, I know.
+Coins are the virtual currency Paperless uses. For example, an invitation may cost 1 coin/recipient, so for 25 recipients you pay 25 coins.  We then ask customers to purchase a coin package, such as 20/40/80/150 coins, with the value increasing in higher volume purchases. Confusing, I know.
 
-A few teammates and I spent some time researching on our own, and then held a few collaborative brainstorming sessions. We had a range of ideas including:
+A few teammates and I spent some time researching on our own and then held a few collaborative brainstorming sessions. We came up with a range of ideas including:
 
 - Reduce the number of pricing tiers
 - Provide more and better options to buy coins
-- Replace concept of "coins" with real dollars
-- Explain earlier how coins work
+- Replace the concept of "coins" with real dollars
+- Explain earlier in the funnel how coins work
 
-Remember, we're chasing a local maxima (improve the current system) here, not a global one (find a better system). That ruled out some of the options above, but we still had plenty to work with. One idea we came up with involved the second point above, providing better options to purchase coins. We came up with a hypothesis like along these lines:
+Remember, we're chasing local maxima (improving the current system) here, not a global one (find a better system). That ruled out some of the options above, but we still had plenty to work with. One idea we came up with involved the second point above, providing better options to purchase coins. We came up with a hypothesis like along these lines:
 
 > Users who are ready to send will purchase larger coin packages because of the perceived value of buying more coins at once.  This will result in an increase in Average Order Value, with little change in conversion, equaling overall higher revenue.
 
