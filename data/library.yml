@@ -8,7 +8,15 @@ books:
     tags:
       - UX
       - Psychology
-    short_description: Lorem ipsum ummm m
+    short_description: >-
+      Kahneman explains much of human behavior as a dialog between System 1 and System 2. System 1 represents our instincts and immediate (fast thinking) reactions, responses that have evolved over millenia. System 2 is our conscious and thoughtful behavior, our logic and reasoning (slow thinking). We think of ourselves as rational creatures, more System 2 than 1. However, not only is the inverse demonstrably true, our System 2 even serves to defend our automatic System 1 responses, rather than truly analyze them.
+
+
+      The bad news is that our fast-thinking instincts are full of bias and are generally easy to manipulate. What’s worse is that our slow-thinking mind often finds rational-sounding stories to justify biased conclusions.
+
+
+      The good news is that we can train System 2 to be more aware of these biases and learn to spot the difference between justifying a quick conclusion and truly analyzing a situation.
+
     image: "images/books/thinking-fast-and-slow.jpg"
     rank: zero
 
@@ -81,6 +89,17 @@ books:
     image: "/images/books/designing-with-data.jpg"
     rank: two
 
+  - how-to-make-sense-of-any-mess:
+    slug: how_to_make_sense_of_any_mess
+    title: "How to Make Sense of Any Mess"
+    author: "Abby Covert"
+    tags:
+      - Design
+      - Information Architecture
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/how-to-make-sense-of-any-mess.jpg"
+    rank: three
+
   - the-design-way:
     slug: the_design_way
     title: "The Design Way: Intentional Change in an Unpredictable World"
@@ -91,6 +110,53 @@ books:
       - Knowledge
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/the-design-way.jpg"
+    rank: three
+ 
+  - poster-museum:
+    slug: poster_museum
+    title: "Kazumasa Nagai Design Museum"
+    author: "Kazumasa Nagai"
+    tags:
+      - Graphic Design
+      - Posters
+      - Art
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/poster-museum.jpg"
+    rank: three
+ 
+  - managing-oneself:
+    slug: the_design_way
+    title: "Managing Oneself"
+    author: "Peter F Drucker"
+    tags:
+      - Design
+      - Academic
+      - Knowledge
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/managing-oneself.jpg"
+    rank: three
+
+  - everyday-things:
+    slug: everyday_things
+    title: "The Design of Everyday Things"
+    author: "Don Norman"
+    tags:
+      - Design
+      - Academic
+      - Knowledge
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/everyday-things.jpg"
+    rank: three
+
+  - about-face:
+    slug: about_face
+    title: "About Face: The Essentials of Interaction Design"
+    author: "Alan Cooper, Robert Reimann, David Cronin, Christopher Noessel"
+    tags:
+      - Design
+      - Reference
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/about-face.jpg"
     rank: three
 
 

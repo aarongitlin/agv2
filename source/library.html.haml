@@ -25,37 +25,30 @@ layout: library_layout
   .space-one
     - data.library.books.each do |book|
       - if book.rank == 'one'
-        .book-one
-          .book-one__image
-            = image_tag book.image
-          .book-one__info
-            .book-one__title
-              = book.title
-              -#= link_to book.title, "/books/#{book.slug}.html"
-            .book-one__author= book.author
-            .book-one__short-description= book.short_description
+        .space-one__book__image
+          = image_tag book.image
+        .space-one__book__info
+          .space-one__book__title
+            = book.title
+            -#= link_to book.title, "/books/#{book.slug}.html"
+          .space-one__book__author= book.author
+          .space-one__book__short-description= book.short_description
+  
   .space-two
     - data.library.books.each do |book|
       - if book.rank == 'two'
-        .book-two
-          .book-two__image
+        .space-two__book
+          .space-two__book__image
             = image_tag book.image
-          .book-two__info
-            .book-two__title
+          .space-two__book__info
+            .space-two__book__title
               = book.title
               -#= link_to book.title, "/books/#{book.slug}.html"
-            .book-two__author= book.author
+            .space-two__book__author= book.author
             -# .book__short-description= book.short_description
 
-  .space-three
-    - data.library.books.each do |book|
       - if book.rank == 'three'
-        .book-three
-          .book-three__image
+        .rank-three
+          .rank-three__image
             = image_tag book.image
-          .book-three__info
-            .book-three__title
-              = book.title
-              -#= link_to book.title, "/books/#{book.slug}.html"
-            .book-three__author= book.author
-            -# .book__short-description= book.short_description
+
