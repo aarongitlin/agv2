@@ -5,116 +5,120 @@
 <!--[if gt IE 8]><!-->
 <html class='no-js' lang='en'>
   <!--<![endif]-->
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>Design Systems in the Real World</title>
-    <meta content='' name='description'>
-    <meta content='' name='author'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
-    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
-    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
-    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
-    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
-    <link href='favicon.png' rel='shortcut icon'>
-    <link href='favicon.ico' rel='icon' type='image/ico'>
-    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
-    <link href="../stylesheets/all.css" rel="stylesheet" />
-  
-    <script>
-      try{Typekit.load({ async: true });}catch(e){}
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
-  </head>
-  <body class='page writing-page'>
-    <div class='nav'>
-      <div class='nav__container'>
-        <div class='nav__logo'>
-          <a href="/"><img src="../images/logo/logo.svg" />
-          </a>
-        </div>
-        <ul class='nav__menu'>
-          <li>
-            <a href="/#writing">Writing</a>
-          </li>
-          <li>
-            <a href="/#projects">Projects</a>
-          </li>
-          <li>
-            <a href="../library.html">Library</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id='main' role='main'>
-      <div class='writing-header'>
-        <div class='writing-header__title'>
-          <div class='writing-header__title__text'>Design Systems in the Real World</div>
-        </div>
-        <div class='writing-header__meta'>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Published</div>
-            <div class='writing-header__meta__group__value'>October 2015</div>
-          </div>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Tagged</div>
-            <div class='writing-header__meta__group__value'>design-systems, process</div>
-          </div>
-        </div>
-        <div class='writing-header__image'>
-          <img src="../images/ELS/design-system.jpg" />
-        </div>
-        <div class='writing-header__summary'>
-          <div class='writing-header__summary__label'>summary</div>
-          <div class='writing-header__summary__text'>Everyone knows we should be designing systems, but are there other considerations before committing to this approach?</div>
-        </div>
-      </div>
-      <div class='article'>
-        <div class='article__content-wrapper'>
-          <p>The concept of design systems has gained a lot of popularity recently in the fields of user experience and user interface design. Check out <a href="http://styleguides.io/">this list</a> to see a large collection of articles and resources that discuss design systems and their common form of documentation: the style guide. This style guide is sometimes called a "living" style guide, implying that it is periodically updated and maintained, and not just a static tome.</p>
-        
-          <p>The actual contents and terminology behind these guides is not uniform across the industry. For the sake of this post I would like to keep my definitions quite general and save some specific and semantic arguments for another time. For now I am assuming that the core of a style guide includes typography, color, logo and essential iconography and imagery. For a style guide to be functional as part of a robust designs system, it must also include global components like navigation, buttons, forms, tables, etc. It should also note any metaphor or structural approach used in the creation of the product (for instance, <a href="https://www.google.com/design/spec/material-design/introduction.html#introduction-principles">Google’s use of cards</a>).</p>
-        
-          <p>Other terms often used include Pattern Library, Design Guide, Interface Guidelines, and likely many others I’m unaware of. There are arguably important distinctions between these terms, but for now I am using the term Style Guide as a general collection of interface patterns and components.</p>
-        
-          <p>—</p>
-        
-          <p>I have yet to meet a design professional working in the space right now that rejects the value of a design system and a living style guide. Some very prominent companies have some really inspirational guides publicly accessible (I particularly love <a href="http://ux.mailchimp.com/patterns/about">Mailchimp’s</a>), and likely there are many more amazing ones behind closed doors. But anyone who has attempted such an undertaking knows that the cost is high. Designers design, coders code, clients or directors ask for changes, due dates loom. Changes go through that don't get completely documented. Sometimes a new text style is introduced, maybe on purpose, maybe by accident.</p>
-        
-          <p>A poorly maintained style guide is, obviously, of lesser value than a maintained one. But it can also be of <em>negative</em> value, directing designers or developers to work with patterns and code that are no longer valid. Imagine trying to put your Ikea furniture together using the instructions to a different, but not entirely dissimilar product. There may be some insights in those diagrams, but what seems useful at first may actually drag you down the completely wrong path.</p>
-        
-          <p>So style guides are hard to maintain, and a poorly maintained one may actually <em>hurt</em> the project/product. It might be logical to ask, “are they worth it"? And while it pains me to say this, I do not believe the answer is an unequivocal "yes". It really depends on the product being designed. Is it a sparsely featured and quickly developed website intended to test the market? A one-off iOS app meant to act as stop gap until a larger solution is implemented? Then maybe a living style guide and well-planned design system aren't actually all that necessary.</p>
-        
-          <p>If the product is meant to grow and expand iteratively over time, or be part of a larger suite of products, then the case for creating systems and guides becomes stronger. If the product will be developed and expanded by people other than those who built it, the case becomes stronger again. If it is meant to be a long term solution (digitally speaking), then, well, you get the idea.</p>
-        
-          <p>At the very least we can create a simple guide that includes color, type, logos, icons, and imagery. Whether or not to go that extra mile of consolidating patterns and components into organized libraries and guides depends on some of the factors above.</p>
-        
-          <p>I used to push for systems and and guides on all projects, regardless of other constraints. After a few years of victories, failures, and question marks I’ve learned some valuable lessons and no longer think the process is quite so simple. As a designer I like to think that all of what I create matters and that it is part of something larger. Designing as part of a system made me feel that my work was the foundation for not just the product I was designing, but for future related products. In the context of pure design this approach makes sense, but design sits within a larger organizational network of people, money, and time. Good designers will take all of these factors into consideration, because if they are not aligned, then the project has failed and the quality of the design is inconsequential.</p>
-        </div>
-        <div class='article-footer'>
-          <label>Explore more of my writing</label>
-          <div class='next-prev-article-links'>
-            <a class="next-article-link" href="new-website.html">A New Website for a New Year</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='site-footer'>
-      <ul class='link-list'>
-        <li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.linkedin.com/in/aarongitlin/">LinkedIn</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.github.com/aarongitlin/">Github</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.instagram.com/aarongitlin/">Instagram</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.pinterest.com/aarongitlin/">Pinterest</a></li>
-      </ul>
-      <div class='colophon'>
-        I built this site using Middleman and is hosted using Github Pages
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
-    </script>
-    <script src="../javascripts/application.js"></script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>Design Systems in the Real World</title>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
+<link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+<link href='favicon.png' rel='shortcut icon'>
+<link href='favicon.ico' rel='icon' type='image/ico'>
+<script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+<link href="../stylesheets/all.css" rel="stylesheet" />
+
+<script>
+  try{Typekit.load({ async: true });}catch(e){}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
+
+</head>
+<body class='page writing-page'>
+<div class='nav'>
+<div class='nav__container'>
+<div class='nav__logo'>
+<a href="/"><img src="../images/logo/logo.svg" alt="Logo" />
+</a></div>
+<ul class='nav__menu'>
+<li>
+<a href="/#writing">Writing</a>
+</li>
+<li>
+<a href="/#projects">Projects</a>
+</li>
+<li>
+<a href="../library.html">Library</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id='main' role='main'>
+<div class='writing-header'>
+<div class='writing-header__title'>
+<div class='writing-header__title__text'>Design Systems in the Real World</div>
+</div>
+<div class='writing-header__meta'>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Published</div>
+<div class='writing-header__meta__group__value'>October 2015</div>
+</div>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Tagged</div>
+<div class='writing-header__meta__group__value'>design-systems, process</div>
+</div>
+</div>
+<div class='writing-header__image'>
+<img src="../images/ELS/design-system.jpg" alt="Design system" />
+</div>
+<div class='writing-header__summary'>
+<div class='writing-header__summary__label'>summary</div>
+<div class='writing-header__summary__text'>Everyone knows we should be designing systems, but are there other considerations before committing to this approach?</div>
+</div>
+</div>
+<div class='article'>
+<div class='article__content-wrapper'>
+<p>The concept of design systems has gained a lot of popularity recently in the fields of user experience and user interface design. Check out <a href="http://styleguides.io/">this list</a> to see a large collection of articles and resources that discuss design systems and their common form of documentation: the style guide. This style guide is sometimes called a "living" style guide, implying that it is periodically updated and maintained, and not just a static tome.</p>
+
+<p>The actual contents and terminology behind these guides is not uniform across the industry. For the sake of this post I would like to keep my definitions quite general and save some specific and semantic arguments for another time. For now I am assuming that the core of a style guide includes typography, color, logo and essential iconography and imagery. For a style guide to be functional as part of a robust designs system, it must also include global components like navigation, buttons, forms, tables, etc. It should also note any metaphor or structural approach used in the creation of the product (for instance, <a href="https://www.google.com/design/spec/material-design/introduction.html#introduction-principles">Google’s use of cards</a>).</p>
+
+<p>Other terms often used include Pattern Library, Design Guide, Interface Guidelines, and likely many others I’m unaware of. There are arguably important distinctions between these terms, but for now I am using the term Style Guide as a general collection of interface patterns and components.</p>
+
+<p>—</p>
+
+<p>I have yet to meet a design professional working in the space right now that rejects the value of a design system and a living style guide. Some very prominent companies have some really inspirational guides publicly accessible (I particularly love <a href="http://ux.mailchimp.com/patterns/about">Mailchimp’s</a>), and likely there are many more amazing ones behind closed doors. But anyone who has attempted such an undertaking knows that the cost is high. Designers design, coders code, clients or directors ask for changes, due dates loom. Changes go through that don't get completely documented. Sometimes a new text style is introduced, maybe on purpose, maybe by accident.</p>
+
+<p>A poorly maintained style guide is, obviously, of lesser value than a maintained one. But it can also be of <em>negative</em> value, directing designers or developers to work with patterns and code that are no longer valid. Imagine trying to put your Ikea furniture together using the instructions to a different, but not entirely dissimilar product. There may be some insights in those diagrams, but what seems useful at first may actually drag you down the completely wrong path.</p>
+
+<p>So style guides are hard to maintain, and a poorly maintained one may actually <em>hurt</em> the project/product. It might be logical to ask, “are they worth it"? And while it pains me to say this, I do not believe the answer is an unequivocal "yes". It really depends on the product being designed. Is it a sparsely featured and quickly developed website intended to test the market? A one-off iOS app meant to act as stop gap until a larger solution is implemented? Then maybe a living style guide and well-planned design system aren't actually all that necessary.</p>
+
+<p>If the product is meant to grow and expand iteratively over time, or be part of a larger suite of products, then the case for creating systems and guides becomes stronger. If the product will be developed and expanded by people other than those who built it, the case becomes stronger again. If it is meant to be a long term solution (digitally speaking), then, well, you get the idea.</p>
+
+<p>At the very least we can create a simple guide that includes color, type, logos, icons, and imagery. Whether or not to go that extra mile of consolidating patterns and components into organized libraries and guides depends on some of the factors above.</p>
+
+<p>I used to push for systems and and guides on all projects, regardless of other constraints. After a few years of victories, failures, and question marks I’ve learned some valuable lessons and no longer think the process is quite so simple. As a designer I like to think that all of what I create matters and that it is part of something larger. Designing as part of a system made me feel that my work was the foundation for not just the product I was designing, but for future related products. In the context of pure design this approach makes sense, but design sits within a larger organizational network of people, money, and time. Good designers will take all of these factors into consideration, because if they are not aligned, then the project has failed and the quality of the design is inconsequential.</p>
+
+</div>
+<div class='article-footer'>
+<label>Explore more of my writing</label>
+<div class='next-prev-article-links'>
+<a href="new-website.html" class="next-article-link">A New Website for a New Year</a>
+</div>
+</div>
+</div>
+</div>
+<div class='site-footer'>
+<ul class='link-list'>
+<li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
+<li class='link-list__item'><a href="http://www.linkedin.com/in/aarongitlin/" target="_blank">LinkedIn</a></li>
+<li class='link-list__item'><a href="http://www.github.com/aarongitlin/" target="_blank">Github</a></li>
+<li class='link-list__item'><a href="http://www.instagram.com/aarongitlin/" target="_blank">Instagram</a></li>
+<li class='link-list__item'><a href="http://www.pinterest.com/aarongitlin/" target="_blank">Pinterest</a></li>
+</ul>
+<div class='colophon'>
+I built this site using Middleman and is hosted using Github Pages
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
+<script src="../javascripts/application.js"></script>
+
+</body>
 </html>

@@ -5,203 +5,207 @@
 <!--[if gt IE 8]><!-->
 <html class='no-js' lang='en'>
   <!--<![endif]-->
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>Becoming a Data Aware Designer - Part 2</title>
-    <meta content='' name='description'>
-    <meta content='' name='author'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
-    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
-    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
-    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
-    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
-    <link href='favicon.png' rel='shortcut icon'>
-    <link href='favicon.ico' rel='icon' type='image/ico'>
-    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
-    <link href="../stylesheets/all.css" rel="stylesheet" />
-  
-    <script>
-      try{Typekit.load({ async: true });}catch(e){}
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
-  </head>
-  <body class='page writing-page'>
-    <div class='nav'>
-      <div class='nav__container'>
-        <div class='nav__logo'>
-          <a href="/"><img src="../images/logo/logo.svg" />
-          </a>
-        </div>
-        <ul class='nav__menu'>
-          <li>
-            <a href="/#writing">Writing</a>
-          </li>
-          <li>
-            <a href="/#projects">Projects</a>
-          </li>
-          <li>
-            <a href="../library.html">Library</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id='main' role='main'>
-      <div class='writing-header'>
-        <div class='writing-header__title'>
-          <div class='writing-header__title__text'>Becoming a Data Aware Designer - Part 2</div>
-        </div>
-        <div class='writing-header__meta'>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Published</div>
-            <div class='writing-header__meta__group__value'>June 2018</div>
-          </div>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Tagged</div>
-            <div class='writing-header__meta__group__value'>ab-testing, data-design</div>
-          </div>
-        </div>
-        <div class='writing-header__image'>
-          <img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" />
-        </div>
-        <div class='writing-header__summary'>
-          <div class='writing-header__summary__label'>summary</div>
-          <div class='writing-header__summary__text'>I wrote an article last week summarizing a framework I learned on my path to becoming a data-aware designer. Here are some examples of what that actually looked like.</div>
-        </div>
-      </div>
-      <div class='article'>
-        <div class='article__content-wrapper'>
-          <h2 id="recap">Recap</h2>
-        
-          <p>This is part two of my journey to becoming a more data aware designer. In part one I defined what it meant to be data aware, and contrasted that with being data driven. I also presented a brief summary of a framework to approach problem-solving with a data aware mindset, much of which I borrowed from King, Churchill, &amp; Tan in their book, <a href="https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830">Designing with Data</a>. I would now like to write more about my own experience using this framework during my time as designer at Paperless Post.</p>
-        
-          <p>To recap, the basic steps are:</p>
-        
-          <ol>
-            <li>Start with a goal</li>
-            <li>Identify a problem/opportunity area</li>
-            <li>Create hypotheses</li>
-            <li>Test, and finally</li>
-            <li>Analyze results.</li>
-          </ol>
-        
-          <p>I left off in my previous article with my team having identified:</p>
-        
-          <ol>
-            <li><strong>Our goal</strong> - Increase revenue from the site using our existing feature set</li>
-            <li><strong>Our problem/opportunity area</strong> - Our pricing model and how to better communicate it to our customers</li>
-          </ol>
-        
-          <h2 id="hypotheses">Hypotheses</h2>
-        
-          <p>Coins are the virtual currency Paperless uses. For example, an invitation may cost 1 coin/recipient, so for 25 recipients you pay 25 coins.  We then ask customers to purchase a coin package, such as 20/40/80/150 coins, with the value increasing in higher volume purchases. Confusing, I know.</p>
-        
-          <p>A few teammates and I spent some time researching on our own and then held a few collaborative brainstorming sessions. We came up with a range of ideas including:</p>
-        
-          <ul>
-            <li>Reduce the number of pricing tiers</li>
-            <li>Provide more and better options to buy coins</li>
-            <li>Replace the concept of "coins" with real dollars</li>
-            <li>Explain earlier in the funnel how coins work</li>
-          </ul>
-        
-          <p>Remember, we're chasing local maxima (improving the current system) here, not a global one (find a better system). That ruled out some of the options above, but we still had plenty to work with. One idea we came up with involved the second point above, providing better options to purchase coins. We came up with a hypothesis like along these lines:</p>
-        
-          <blockquote>
-            <p>Users who are ready to send will purchase larger coin packages because of the perceived value of buying more coins at once.  This will result in an increase in Average Order Value, with little change in conversion, equaling overall higher revenue.</p>
-          </blockquote>
-        
-          <p>And here's what that looked like:</p>
-        
-          <div class="image-wrapper large image-two-across box-shadow">
-              <img src="../images/blog/ab-test-coins--before.png" />
-              <img src="../images/blog/ab-test-coins--after.png" />
-          </div>
-          <p class="caption">On the left you see the control variation, and on the right test variation.</p>
-        
-          <h2 id="results">Results</h2>
-        
-          <p>And the result? Well, the test was a "win", in that the hypothesis proved true, though not spectacularly. People chose higher packages, but very few. Surprisingly though, conversion increased at a very significant rate. So what does that mean? Our interpretation was that simply exposing users to options helped both inform them and convince them they were getting the best deal for them. This was meaningful information and results we were able to get from a test that took about 2 days to code and launch.</p>
-        
-          <p>This test is a great example of how we used an exploratory mindset to create a simple experiment, quantitative analysis to validate results both expected and unexpected, and then a qualitative analysis to interpret them. A few ideas we were able to come up with after this test included:</p>
-        
-          <ul>
-            <li>Improve the value increase between packages</li>
-            <li>Promote or default to certain packages</li>
-            <li>Explain more directly what you get with your coin purchase</li>
-          </ul>
-        
-          <h2 id="testing-strategy">Testing Strategy</h2>
-        
-          <p>I mentioned that before working on this team, my experience with A/B testing was somewhat limited. Well, I wasn't the only person at Paperless who was new to rigorous test analysis and data collection. From the outside, some people saw a number of small, seemingly unrelated tests rolling out from our team. Some were launched, some not. While our team believed we were making progress, others saw a lack of vision and overly dogmatic approach to statistics, not user experience improvement.</p>
-        
-          <p>In my previous article I stated that the best hypotheses came with a strategy involving success and failures, noting what we learn along the way. I realized that while internally we had some agreement on this, we had no formal way to share it with others. Spreadsheets and reports ≠ effective communications of a strategy.</p>
-        
-          <p>My PM and I eventually drew out this diagram to help communicate that strategy, which finally helped bring the whole organization on board.</p>
-        
-          <div class="image-wrapper extra-large gray-bg">
-               <img src="../images/blog/ab-test-diagram-wout-bg.png" />
-           </div>
-        
-          <p>On the left are 2 layers problem/opportunity areas, followed by a handful of specific hypotheses we had in mind. The different areas eventually overlap, which you can see on the right side of the diagram. The details are purposefully only 2 or so levels deep, since we are looking for information and ideas with each test. The final card on the right represents a preconceived idea of what we believed the best approach to be, but instead of jumping there, we made small steps, learning and adjusting along the way.</p>
-        
-          <h2 id="one-more-example">One more example</h2>
-        
-          <p>The reason for the two pronged approach in the diagram above is that we wanted to not just communicate how our pricing system worked, but to showcase the value of our product. We believed our beautifully designed products were worth it, and wanted customers to feel the same way. One area we did that is on the Card Detail view (often referred to as the PDP or Product Detail Page within many e-commerce organizations). The existing view consisted of a thumbnail list of items, but our hypothesis was that:</p>
-        
-          <blockquote>
-            <p>Users who choose a card with this new view will checkout with more add-ons because they will see how great the whole package looks together.  This will result in an increase in Average Order Value, with little change in conversion, leading to overall higher revenue.</p>
-          </blockquote>
-        
-          <p>And here's what we came up with:</p>
-        
-          <div class="image-wrapper extra-large image-two-across box-shadow">
-              <img src="../images/blog/card-detail--before.png" />
-              <img src="../images/blog/card-detail--after.png" />
-          </div>
-          <p class="caption">On the left is the control variation, and on the right test variation.</p>
-        
-          <p><br />
-          As per our hypothesis, Average Order Value did go up, but just like in the first test, not spectacularly (a few relative percentage points). But, again just like the first test, conversion increased more significantly. Users who saw this new view were significantly more likely to enter our customization flow, and eventually checkout. We tentatively concluded that presenting the full package was a great hook, but there were other factors informing customers decisions about what they would pay for.</p>
-        
-          <p>Back to that strategy I spoke of before: before we even launched this test we actually had a vision of an end result:</p>
-        
-          <div class="image-wrapper medium">
-              <img src="../images/blog/card-detail--future.png" />
-          </div>
-        
-          <p>We thought showing add-ons, allowing customization, and exposing pricing would all be valuable to customers. But instead of just throwing 3+ concepts into one big project, we decided to split them up and test into them. This way we could actually learn what works, what doesn't, and ship solutions that actually worked for our organization and our customers. This big shiny new dream design that we all agreed on never went live, but ideas from it did. Its mere existence and presence in decks and documents allowed our team move forward, confident in both our vision and our statistics.</p>
-        
-          <h2 id="now-what">Now what?</h2>
-        
-          <p>This was just tip of the iceberg as far as testing strategy and analysis go. I am grateful for the exposure I've had to this process, and to the PMs, data scientists, and my math-major design intern for helping me wrap my head around some of these concepts. I look forward to leveling up this knowledge even more and writing about it in the future.</p>
-        
-          <p>Read the book, ask me questions, or reach out to let me know how terribly inaccurate I am with any of the above.</p>
-        </div>
-        <div class='article-footer'>
-          <label>Explore more of my writing</label>
-          <div class='next-prev-article-links'>
-            <a class="prev-article-link" href="becoming-a-data-aware-designer-part-i.html">Becoming a Data Aware Designer - Part 1</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='site-footer'>
-      <ul class='link-list'>
-        <li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.linkedin.com/in/aarongitlin/">LinkedIn</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.github.com/aarongitlin/">Github</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.instagram.com/aarongitlin/">Instagram</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.pinterest.com/aarongitlin/">Pinterest</a></li>
-      </ul>
-      <div class='colophon'>
-        I built this site using Middleman and is hosted using Github Pages
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
-    </script>
-    <script src="../javascripts/application.js"></script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>Becoming a Data Aware Designer - Part 2</title>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
+<link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+<link href='favicon.png' rel='shortcut icon'>
+<link href='favicon.ico' rel='icon' type='image/ico'>
+<script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+<link href="../stylesheets/all.css" rel="stylesheet" />
+
+<script>
+  try{Typekit.load({ async: true });}catch(e){}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
+
+</head>
+<body class='page writing-page'>
+<div class='nav'>
+<div class='nav__container'>
+<div class='nav__logo'>
+<a href="/"><img src="../images/logo/logo.svg" alt="Logo" />
+</a></div>
+<ul class='nav__menu'>
+<li>
+<a href="/#writing">Writing</a>
+</li>
+<li>
+<a href="/#projects">Projects</a>
+</li>
+<li>
+<a href="../library.html">Library</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id='main' role='main'>
+<div class='writing-header'>
+<div class='writing-header__title'>
+<div class='writing-header__title__text'>Becoming a Data Aware Designer - Part 2</div>
+</div>
+<div class='writing-header__meta'>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Published</div>
+<div class='writing-header__meta__group__value'>June 2018</div>
+</div>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Tagged</div>
+<div class='writing-header__meta__group__value'>ab-testing, data-design</div>
+</div>
+</div>
+<div class='writing-header__image'>
+<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="Giphy" />
+</div>
+<div class='writing-header__summary'>
+<div class='writing-header__summary__label'>summary</div>
+<div class='writing-header__summary__text'>I wrote an article last week summarizing a framework I learned on my path to becoming a data-aware designer. Here are some examples of what that actually looked like.</div>
+</div>
+</div>
+<div class='article'>
+<div class='article__content-wrapper'>
+<h2 id="recap">Recap</h2>
+
+<p>This is part two of my journey to becoming a more data aware designer. In part one I defined what it meant to be data aware, and contrasted that with being data driven. I also presented a brief summary of a framework to approach problem-solving with a data aware mindset, much of which I borrowed from King, Churchill, &amp; Tan in their book, <a href="https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830">Designing with Data</a>. I would now like to write more about my own experience using this framework during my time as designer at Paperless Post.</p>
+
+<p>To recap, the basic steps are:</p>
+
+<ol>
+  <li>Start with a goal</li>
+  <li>Identify a problem/opportunity area</li>
+  <li>Create hypotheses</li>
+  <li>Test, and finally</li>
+  <li>Analyze results.</li>
+</ol>
+
+<p>I left off in my previous article with my team having identified:</p>
+
+<ol>
+  <li><strong>Our goal</strong> - Increase revenue from the site using our existing feature set</li>
+  <li><strong>Our problem/opportunity area</strong> - Our pricing model and how to better communicate it to our customers</li>
+</ol>
+
+<h2 id="hypotheses">Hypotheses</h2>
+
+<p>Coins are the virtual currency Paperless uses. For example, an invitation may cost 1 coin/recipient, so for 25 recipients you pay 25 coins.  We then ask customers to purchase a coin package, such as 20/40/80/150 coins, with the value increasing in higher volume purchases. Confusing, I know.</p>
+
+<p>A few teammates and I spent some time researching on our own and then held a few collaborative brainstorming sessions. We came up with a range of ideas including:</p>
+
+<ul>
+  <li>Reduce the number of pricing tiers</li>
+  <li>Provide more and better options to buy coins</li>
+  <li>Replace the concept of "coins" with real dollars</li>
+  <li>Explain earlier in the funnel how coins work</li>
+</ul>
+
+<p>Remember, we're chasing local maxima (improving the current system) here, not a global one (find a better system). That ruled out some of the options above, but we still had plenty to work with. One idea we came up with involved the second point above, providing better options to purchase coins. We came up with a hypothesis like along these lines:</p>
+
+<blockquote>
+  <p>Users who are ready to send will purchase larger coin packages because of the perceived value of buying more coins at once.  This will result in an increase in Average Order Value, with little change in conversion, equaling overall higher revenue.</p>
+</blockquote>
+
+<p>And here's what that looked like:</p>
+
+<div class="image-wrapper large image-two-across box-shadow">
+    <img src="../images/blog/ab-test-coins--before.png" />
+    <img src="../images/blog/ab-test-coins--after.png" />
+</div>
+<p class="caption">On the left you see the control variation, and on the right test variation.</p>
+
+<h2 id="results">Results</h2>
+
+<p>And the result? Well, the test was a "win", in that the hypothesis proved true, though not spectacularly. People chose higher packages, but very few. Surprisingly though, conversion increased at a very significant rate. So what does that mean? Our interpretation was that simply exposing users to options helped both inform them and convince them they were getting the best deal for them. This was meaningful information and results we were able to get from a test that took about 2 days to code and launch.</p>
+
+<p>This test is a great example of how we used an exploratory mindset to create a simple experiment, quantitative analysis to validate results both expected and unexpected, and then a qualitative analysis to interpret them. A few ideas we were able to come up with after this test included:</p>
+
+<ul>
+  <li>Improve the value increase between packages</li>
+  <li>Promote or default to certain packages</li>
+  <li>Explain more directly what you get with your coin purchase</li>
+</ul>
+
+<h2 id="testing-strategy">Testing Strategy</h2>
+
+<p>I mentioned that before working on this team, my experience with A/B testing was somewhat limited. Well, I wasn't the only person at Paperless who was new to rigorous test analysis and data collection. From the outside, some people saw a number of small, seemingly unrelated tests rolling out from our team. Some were launched, some not. While our team believed we were making progress, others saw a lack of vision and overly dogmatic approach to statistics, not user experience improvement.</p>
+
+<p>In my previous article I stated that the best hypotheses came with a strategy involving success and failures, noting what we learn along the way. I realized that while internally we had some agreement on this, we had no formal way to share it with others. Spreadsheets and reports ≠ effective communications of a strategy.</p>
+
+<p>My PM and I eventually drew out this diagram to help communicate that strategy, which finally helped bring the whole organization on board.</p>
+
+<div class="image-wrapper extra-large gray-bg">
+     <img src="../images/blog/ab-test-diagram-wout-bg.png" />
+ </div>
+
+<p>On the left are 2 layers problem/opportunity areas, followed by a handful of specific hypotheses we had in mind. The different areas eventually overlap, which you can see on the right side of the diagram. The details are purposefully only 2 or so levels deep, since we are looking for information and ideas with each test. The final card on the right represents a preconceived idea of what we believed the best approach to be, but instead of jumping there, we made small steps, learning and adjusting along the way.</p>
+
+<h2 id="one-more-example">One more example</h2>
+
+<p>The reason for the two pronged approach in the diagram above is that we wanted to not just communicate how our pricing system worked, but to showcase the value of our product. We believed our beautifully designed products were worth it, and wanted customers to feel the same way. One area we did that is on the Card Detail view (often referred to as the PDP or Product Detail Page within many e-commerce organizations). The existing view consisted of a thumbnail list of items, but our hypothesis was that:</p>
+
+<blockquote>
+  <p>Users who choose a card with this new view will checkout with more add-ons because they will see how great the whole package looks together.  This will result in an increase in Average Order Value, with little change in conversion, leading to overall higher revenue.</p>
+</blockquote>
+
+<p>And here's what we came up with:</p>
+
+<div class="image-wrapper extra-large image-two-across box-shadow">
+    <img src="../images/blog/card-detail--before.png" />
+    <img src="../images/blog/card-detail--after.png" />
+</div>
+<p class="caption">On the left is the control variation, and on the right test variation.</p>
+
+<p><br />
+As per our hypothesis, Average Order Value did go up, but just like in the first test, not spectacularly (a few relative percentage points). But, again just like the first test, conversion increased more significantly. Users who saw this new view were significantly more likely to enter our customization flow, and eventually checkout. We tentatively concluded that presenting the full package was a great hook, but there were other factors informing customers decisions about what they would pay for.</p>
+
+<p>Back to that strategy I spoke of before: before we even launched this test we actually had a vision of an end result:</p>
+
+<div class="image-wrapper medium">
+    <img src="../images/blog/card-detail--future.png" />
+</div>
+
+<p>We thought showing add-ons, allowing customization, and exposing pricing would all be valuable to customers. But instead of just throwing 3+ concepts into one big project, we decided to split them up and test into them. This way we could actually learn what works, what doesn't, and ship solutions that actually worked for our organization and our customers. This big shiny new dream design that we all agreed on never went live, but ideas from it did. Its mere existence and presence in decks and documents allowed our team move forward, confident in both our vision and our statistics.</p>
+
+<h2 id="now-what">Now what?</h2>
+
+<p>This was just tip of the iceberg as far as testing strategy and analysis go. I am grateful for the exposure I've had to this process, and to the PMs, data scientists, and my math-major design intern for helping me wrap my head around some of these concepts. I look forward to leveling up this knowledge even more and writing about it in the future.</p>
+
+<p>Read the book, ask me questions, or reach out to let me know how terribly inaccurate I am with any of the above.</p>
+
+</div>
+<div class='article-footer'>
+<label>Explore more of my writing</label>
+<div class='next-prev-article-links'>
+<a href="becoming-a-data-aware-designer-part-i.html" class="prev-article-link">Becoming a Data Aware Designer - Part 1</a>
+</div>
+</div>
+</div>
+</div>
+<div class='site-footer'>
+<ul class='link-list'>
+<li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
+<li class='link-list__item'><a href="http://www.linkedin.com/in/aarongitlin/" target="_blank">LinkedIn</a></li>
+<li class='link-list__item'><a href="http://www.github.com/aarongitlin/" target="_blank">Github</a></li>
+<li class='link-list__item'><a href="http://www.instagram.com/aarongitlin/" target="_blank">Instagram</a></li>
+<li class='link-list__item'><a href="http://www.pinterest.com/aarongitlin/" target="_blank">Pinterest</a></li>
+</ul>
+<div class='colophon'>
+I built this site using Middleman and is hosted using Github Pages
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
+<script src="../javascripts/application.js"></script>
+
+</body>
 </html>

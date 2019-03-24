@@ -5,159 +5,163 @@
 <!--[if gt IE 8]><!-->
 <html class='no-js' lang='en'>
   <!--<![endif]-->
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>A New Website for a New Year</title>
-    <meta content='' name='description'>
-    <meta content='' name='author'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
-    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
-    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
-    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
-    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
-    <link href='favicon.png' rel='shortcut icon'>
-    <link href='favicon.ico' rel='icon' type='image/ico'>
-    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
-    <link href="../stylesheets/all.css" rel="stylesheet" />
-  
-    <script>
-      try{Typekit.load({ async: true });}catch(e){}
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
-  </head>
-  <body class='page writing-page'>
-    <div class='nav'>
-      <div class='nav__container'>
-        <div class='nav__logo'>
-          <a href="/"><img src="../images/logo/logo.svg" />
-          </a>
-        </div>
-        <ul class='nav__menu'>
-          <li>
-            <a href="/#writing">Writing</a>
-          </li>
-          <li>
-            <a href="/#projects">Projects</a>
-          </li>
-          <li>
-            <a href="../library.html">Library</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id='main' role='main'>
-      <div class='writing-header'>
-        <div class='writing-header__title'>
-          <div class='writing-header__title__text'>A New Website for a New Year</div>
-        </div>
-        <div class='writing-header__meta'>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Published</div>
-            <div class='writing-header__meta__group__value'>January 2016</div>
-          </div>
-          <div class='writing-header__meta__group'>
-            <div class='writing-header__meta__group__label'>Tagged</div>
-            <div class='writing-header__meta__group__value'>prototyping, design-and-code, personal-site</div>
-          </div>
-        </div>
-        <div class='writing-header__image'>
-          <img src="../images/blog/beach-boys-loves-you.jpeg" />
-        </div>
-        <div class='writing-header__summary'>
-          <div class='writing-header__summary__label'>summary</div>
-          <div class='writing-header__summary__text'>As of January 2016 this site is purposefully bare. I’ve started my own new website for the first time since 2012 and I wanted to start over</div>
-        </div>
-      </div>
-      <div class='article'>
-        <div class='article__content-wrapper'>
-          <p>I built my first personal website in 2011-2012 using Wordpress, blood, sweat, and tears. For now I’ll keep it live at <a href="http://lovesyoudesign.com/">www.lovesyoudesign.com</a>, though perhaps I will archive it at some point. The site is called Loves You Design because that was the name I contracted my design services under for a time. I was inspired by a conversation with a friend after I mentioned I loved the design of something. She responded, “Aaron, the design loves you.” I also happen to be obsessed with the Beach Boys, who just happen to have an album titled “Loves You”, with an amazing album cover.</p>
-        
-          <p>The album cover seems inspired by cross-stitching embroidery patterns, and has a homey and old-fashioned feel to it. The music in the album was actually quite a departure for the band, using synthesizers and embracing Brian Wilson’s by-then terrible voice. I love the contrast of old and new, and wanted to bring that into my own visual identity. As a digital designer I felt the most appropriate analogy was for me to embrace the pixel. Funny enough cross-stitching and pixels look pretty similar, so there is actual visual continuity between my approach and the original inspiration.</p>
-        
-          <p>I built the site as a portfolio for my graphic design business. I now identify as an <strong>Experience Designer</strong> (or product designer, or UI designer, or UI/UX designer, or whatever your organization happens to call it). I also have the term “senior” in front of my job title at work, which means I have quite a lot of responsibility outside of design execution. I’ve hired and now manage new designers, I plan projects, review work, estimate, present to clients, and all that other fun stuff. I also tend to work on large and long-term projects with large teams. A short write-up and an image gallery were no longer the best way to show my work.</p>
-        
-          <p>I wanted to keep the process of creating my new site informal, but I did write down a few requirements:</p>
-        
-          <ol>
-            <li>No more wordpress (too complicated, insecure, hard to play with sometimes)</li>
-            <li>Prefer to write in markdown (easy to apply basic html styles without getting bogged down by a WYSWYG)</li>
-            <li>Simple administration and deployment with full control (Don’t want to use a lot of plugins, but occasionally try out a few code experiments on my own).</li>
-            <li>Responsive (duh)</li>
-            <li>Emphasize long-form content with accompanying visuals</li>
-            <li>A new and much simpler look, but with some continuity from the original site.</li>
-          </ol>
-        
-          <p>I experimented with Github’s <a href="http://jekyllrb.com/">Jekyll</a>, and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to <a href="https://middlemanapp.com/">Middleman</a>, a static site generator that I had already used in the past. I was concerned that its blog was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.</p>
-        
-          <p>I created two blogs, which only requires a simple set up in your config.rb:</p>
-        
-          <pre><code>          activate :blog do |blog|
-            #set options on blog
-            blog.name = “projects”
-            blog.prefix = “/projects”
-            blog.layout = “project_layout”
-            blog.permalink = “/{title}.html”
-            blog.sources = “/{title}.html”
-            blog.default_extension = “.md”
-            blog.paginate = true
-          end
-        
-          activate :blog do |blog|
-            # set options on blog
-            blog.name = “writings”
-            blog.prefix = “/writings”
-            blog.layout = “writing_layout”
-            blog.permalink = “/{title}.html”
-            blog.sources = “/{title}.html”
-            blog.default_extension = “.md”
-            blog.paginate = true
-          end
-          </code></pre>
-        
-          <p>And there you go! I now have two blogs that I can call on separately: one for writing and one for projects. All you have to do now is put some markdown files into the appropriately named folders, "projects" and "writings" in my case.</p>
-        
-          <p>One of the reasons I love Middleman is that I can easily use front end development tools like SASS and HAML, and two of my best friends: <a href="http://bourbon.io/">Bourbon</a> and <a href="http://neat.bourbon.io/">Neat</a> from the guys at Thoughtbot. I've long favored this toolkit over something like Bootstrap or Foundation (which are both amazing and inspirational), because I find it strikes a good balance between being flexible around my design/code decisions and being rigid enough to force me to keep my code tidy and logical.</p>
-        
-          <p>Using Neat I find it best not to design layouts based on breakpoints, but components themselves. Using a mobile first approach I lay out the components more or less stacked on top of each other. As the browser stretches out, I decide what elements would benefit from a new treatment. Because the site is so simple, there's not <em>too</em> much work that needs to be done in this regard.</p>
-        
-          <p>So back to requirements. I've checked off 1 through 4 with my development environment, especially with the help of this <a href="https://github.com/edgecase/middleman-gh-pages">trusty little gem</a> that lets me easily deploy my site to Github pages, where it is currently being hosted.</p>
-        
-          <p>The next two involved some design decisions. I started by writing two case studies up over a few weeks, no formatting, no images, just explanations of the project, my involvement, and the process. Later I started adding images that I felt backed up my narrative, and embedded a few invision prototypes, which have greatly informed my design process the last few years.</p>
-        
-          <p>I worked with the type size, spacing, and alignment to encourage easy reading, and pushed out of the grid at times to let the imagery breathe. I settled on <a href="https://typekit.com/fonts/source-sans-pro">Source Sans</a> and <a href="https://typekit.com/fonts/source-serif-pro">Source Serif</a> hosted by Typekit, primarily because it is a highly legible and open source font, but also because I appreciate it's close historical reference and smart modern adaptation. I felt it fit with that whole "old &amp; new" concept I briefly described at the beginning of this article.</p>
-        
-          <p>I decided to keep the pixel font as a special header. It's not "pretty", but by using it for my name and the case study titles, I help these items stand out and separate it from the other content on the site. It also allows for some continuity from my old site, which was important for me. I also paired the pixel type face with pixelated emojis that corresponded to the projects in some way. I felt this added some humor and interest to the home page, and encouraged engagement in a way that I felt logos or screenshots could not do.</p>
-        
-          <p>Three case studies, two blog posts, and a couple of emoji later I have my first new personal website in about four years. My goals for the next few months include continuing writing, adding one more case study, and introducing a few visual enhancements (animations, transitions, etc).</p>
-        
-          <p>As always, feel free to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#097;&#114;&#111;&#110;&#103;&#105;&#116;&#108;&#105;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">write me</a> with any questions or advice!</p>
-        </div>
-        <div class='article-footer'>
-          <label>Explore more of my writing</label>
-          <div class='next-prev-article-links'>
-            <a class="prev-article-link" href="systems.html">Design Systems in the Real World</a>
-            <a class="next-article-link" href="colleague-avatars.html">Colleague Avatars</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='site-footer'>
-      <ul class='link-list'>
-        <li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.linkedin.com/in/aarongitlin/">LinkedIn</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.github.com/aarongitlin/">Github</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.instagram.com/aarongitlin/">Instagram</a></li>
-        <li class='link-list__item'><a target="_blank" href="http://www.pinterest.com/aarongitlin/">Pinterest</a></li>
-      </ul>
-      <div class='colophon'>
-        I built this site using Middleman and is hosted using Github Pages
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
-    </script>
-    <script src="../javascripts/application.js"></script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>A New Website for a New Year</title>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
+<link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+<link href='favicon.png' rel='shortcut icon'>
+<link href='favicon.ico' rel='icon' type='image/ico'>
+<script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+<link href="../stylesheets/all.css" rel="stylesheet" />
+
+<script>
+  try{Typekit.load({ async: true });}catch(e){}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Lato:400,700' rel='stylesheet'>
+
+</head>
+<body class='page writing-page'>
+<div class='nav'>
+<div class='nav__container'>
+<div class='nav__logo'>
+<a href="/"><img src="../images/logo/logo.svg" alt="Logo" />
+</a></div>
+<ul class='nav__menu'>
+<li>
+<a href="/#writing">Writing</a>
+</li>
+<li>
+<a href="/#projects">Projects</a>
+</li>
+<li>
+<a href="../library.html">Library</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id='main' role='main'>
+<div class='writing-header'>
+<div class='writing-header__title'>
+<div class='writing-header__title__text'>A New Website for a New Year</div>
+</div>
+<div class='writing-header__meta'>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Published</div>
+<div class='writing-header__meta__group__value'>January 2016</div>
+</div>
+<div class='writing-header__meta__group'>
+<div class='writing-header__meta__group__label'>Tagged</div>
+<div class='writing-header__meta__group__value'>prototyping, design-and-code, personal-site</div>
+</div>
+</div>
+<div class='writing-header__image'>
+<img src="../images/blog/beach-boys-loves-you.jpeg" alt="Beach boys loves you" />
+</div>
+<div class='writing-header__summary'>
+<div class='writing-header__summary__label'>summary</div>
+<div class='writing-header__summary__text'>As of January 2016 this site is purposefully bare. I’ve started my own new website for the first time since 2012 and I wanted to start over</div>
+</div>
+</div>
+<div class='article'>
+<div class='article__content-wrapper'>
+<p>I built my first personal website in 2011-2012 using Wordpress, blood, sweat, and tears. For now I’ll keep it live at <a href="http://lovesyoudesign.com/">www.lovesyoudesign.com</a>, though perhaps I will archive it at some point. The site is called Loves You Design because that was the name I contracted my design services under for a time. I was inspired by a conversation with a friend after I mentioned I loved the design of something. She responded, “Aaron, the design loves you.” I also happen to be obsessed with the Beach Boys, who just happen to have an album titled “Loves You”, with an amazing album cover.</p>
+
+<p>The album cover seems inspired by cross-stitching embroidery patterns, and has a homey and old-fashioned feel to it. The music in the album was actually quite a departure for the band, using synthesizers and embracing Brian Wilson’s by-then terrible voice. I love the contrast of old and new, and wanted to bring that into my own visual identity. As a digital designer I felt the most appropriate analogy was for me to embrace the pixel. Funny enough cross-stitching and pixels look pretty similar, so there is actual visual continuity between my approach and the original inspiration.</p>
+
+<p>I built the site as a portfolio for my graphic design business. I now identify as an <strong>Experience Designer</strong> (or product designer, or UI designer, or UI/UX designer, or whatever your organization happens to call it). I also have the term “senior” in front of my job title at work, which means I have quite a lot of responsibility outside of design execution. I’ve hired and now manage new designers, I plan projects, review work, estimate, present to clients, and all that other fun stuff. I also tend to work on large and long-term projects with large teams. A short write-up and an image gallery were no longer the best way to show my work.</p>
+
+<p>I wanted to keep the process of creating my new site informal, but I did write down a few requirements:</p>
+
+<ol>
+  <li>No more wordpress (too complicated, insecure, hard to play with sometimes)</li>
+  <li>Prefer to write in markdown (easy to apply basic html styles without getting bogged down by a WYSWYG)</li>
+  <li>Simple administration and deployment with full control (Don’t want to use a lot of plugins, but occasionally try out a few code experiments on my own).</li>
+  <li>Responsive (duh)</li>
+  <li>Emphasize long-form content with accompanying visuals</li>
+  <li>A new and much simpler look, but with some continuity from the original site.</li>
+</ol>
+
+<p>I experimented with Github’s <a href="http://jekyllrb.com/">Jekyll</a>, and while I got up and running quickly, I found learning a new templating language and structure time consuming. So I switched over to <a href="https://middlemanapp.com/">Middleman</a>, a static site generator that I had already used in the past. I was concerned that its blog was under-featured compared to Jekyll’s, but that turned out not to be the case. The Middleman-blog extension did absolutely everything I needed, and took almost no time to set up.</p>
+
+<p>I created two blogs, which only requires a simple set up in your config.rb:</p>
+
+<pre><code>          activate :blog do |blog|
+  #set options on blog
+  blog.name = “projects”
+  blog.prefix = “/projects”
+  blog.layout = “project_layout”
+  blog.permalink = “/{title}.html”
+  blog.sources = “/{title}.html”
+  blog.default_extension = “.md”
+  blog.paginate = true
+end
+
+activate :blog do |blog|
+  # set options on blog
+  blog.name = “writings”
+  blog.prefix = “/writings”
+  blog.layout = “writing_layout”
+  blog.permalink = “/{title}.html”
+  blog.sources = “/{title}.html”
+  blog.default_extension = “.md”
+  blog.paginate = true
+end
+</code></pre>
+
+<p>And there you go! I now have two blogs that I can call on separately: one for writing and one for projects. All you have to do now is put some markdown files into the appropriately named folders, "projects" and "writings" in my case.</p>
+
+<p>One of the reasons I love Middleman is that I can easily use front end development tools like SASS and HAML, and two of my best friends: <a href="http://bourbon.io/">Bourbon</a> and <a href="http://neat.bourbon.io/">Neat</a> from the guys at Thoughtbot. I've long favored this toolkit over something like Bootstrap or Foundation (which are both amazing and inspirational), because I find it strikes a good balance between being flexible around my design/code decisions and being rigid enough to force me to keep my code tidy and logical.</p>
+
+<p>Using Neat I find it best not to design layouts based on breakpoints, but components themselves. Using a mobile first approach I lay out the components more or less stacked on top of each other. As the browser stretches out, I decide what elements would benefit from a new treatment. Because the site is so simple, there's not <em>too</em> much work that needs to be done in this regard.</p>
+
+<p>So back to requirements. I've checked off 1 through 4 with my development environment, especially with the help of this <a href="https://github.com/edgecase/middleman-gh-pages">trusty little gem</a> that lets me easily deploy my site to Github pages, where it is currently being hosted.</p>
+
+<p>The next two involved some design decisions. I started by writing two case studies up over a few weeks, no formatting, no images, just explanations of the project, my involvement, and the process. Later I started adding images that I felt backed up my narrative, and embedded a few invision prototypes, which have greatly informed my design process the last few years.</p>
+
+<p>I worked with the type size, spacing, and alignment to encourage easy reading, and pushed out of the grid at times to let the imagery breathe. I settled on <a href="https://typekit.com/fonts/source-sans-pro">Source Sans</a> and <a href="https://typekit.com/fonts/source-serif-pro">Source Serif</a> hosted by Typekit, primarily because it is a highly legible and open source font, but also because I appreciate it's close historical reference and smart modern adaptation. I felt it fit with that whole "old &amp; new" concept I briefly described at the beginning of this article.</p>
+
+<p>I decided to keep the pixel font as a special header. It's not "pretty", but by using it for my name and the case study titles, I help these items stand out and separate it from the other content on the site. It also allows for some continuity from my old site, which was important for me. I also paired the pixel type face with pixelated emojis that corresponded to the projects in some way. I felt this added some humor and interest to the home page, and encouraged engagement in a way that I felt logos or screenshots could not do.</p>
+
+<p>Three case studies, two blog posts, and a couple of emoji later I have my first new personal website in about four years. My goals for the next few months include continuing writing, adding one more case study, and introducing a few visual enhancements (animations, transitions, etc).</p>
+
+<p>As always, feel free to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#097;&#114;&#111;&#110;&#103;&#105;&#116;&#108;&#105;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">write me</a> with any questions or advice!</p>
+
+</div>
+<div class='article-footer'>
+<label>Explore more of my writing</label>
+<div class='next-prev-article-links'>
+<a href="systems.html" class="prev-article-link">Design Systems in the Real World</a>
+<a href="colleague-avatars.html" class="next-article-link">Colleague Avatars</a>
+</div>
+</div>
+</div>
+</div>
+<div class='site-footer'>
+<ul class='link-list'>
+<li class='link-list__item'><a href="mailto:aarongitlin@gmail.com">Email</a></li>
+<li class='link-list__item'><a href="http://www.linkedin.com/in/aarongitlin/" target="_blank">LinkedIn</a></li>
+<li class='link-list__item'><a href="http://www.github.com/aarongitlin/" target="_blank">Github</a></li>
+<li class='link-list__item'><a href="http://www.instagram.com/aarongitlin/" target="_blank">Instagram</a></li>
+<li class='link-list__item'><a href="http://www.pinterest.com/aarongitlin/" target="_blank">Pinterest</a></li>
+</ul>
+<div class='colophon'>
+I built this site using Middleman and is hosted using Github Pages
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
+<script src="../javascripts/application.js"></script>
+
+</body>
 </html>
