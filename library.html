@@ -50,85 +50,132 @@
       <div class='wrapper'>
         <div class='page-title'>My Library</div>
         <div class='page-description'>
-          I decided to document a few thoughts on books I've read recently, especially those pertinent to my profession. While this is primarily for my own education and memory, I thought it could maybe be useful to others as well. I'm also experimenting with layouts that reflect content, in this case I've begun experimenting with CSS Grid to represent the phsyical and psychological proximity of books I'm reading or have read.
+          The layout is organized based on the proximity of the book to me at the current moment. The book I’m currently reading is given a special spot, books I regularly refer to are near the top, and books I generally remember and respect aren’t too far behind.
         </div>
-        <div class='book__grid'>
-          <div class='book book--hero'>
-            <div class='book__image'>
-              <img src="images/books/just-enough-research.jpg" />
+        <div class='book-hero'>
+          <div class='book-hero__image'>
+            <img src="images/books/thinking-fast-and-slow.jpg" />
+          </div>
+          <div class='book-hero__info'>
+            <div class='book-hero__title'>
+              Thinking Fast and Slow
             </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                Just Enough Research
-              </div>
-              <div class='book__author'>Erika Hall</div>
-              <div class='book__short-description'>A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.</div>
+            <div class='book-hero__author'>Daniel Kahneman</div>
+            <div class='book-hero__short-description'>
+              Kahneman explains much of human behavior as a dialog between System 1 and System 2. System 1 represents our instincts and immediate (fast thinking) reactions, responses that have evolved over millenia. System 2 is our conscious and thoughtful behavior, our logic and reasoning (slow thinking). We think of ourselves as rational creatures, more System 2 than 1. However, not only is the inverse demonstrably true, our System 2 even serves to defend our automatic System 1 responses, rather than truly analyze them.
+            
+              The bad news is that our fast-thinking instincts are full of bias and are generally easy to manipulate. What’s worse is that our slow-thinking mind often finds rational-sounding stories to justify biased conclusions.
+            
+              The good news is that we can train System 2 to be more aware of these biases and learn to spot the difference between justifying a quick conclusion and truly analyzing a situation.
             </div>
           </div>
-          <div class='book'>
-            <div class='book__image'>
-              <img src="images/books/the-beginning-of-infinity.jpg" />
+        </div>
+        <!-- / My next two big books -->
+        <div class='space-one'>
+          <div class='space-one__book__image'>
+            <img src="images/books/just-enough-research.jpg" />
+          </div>
+          <div class='space-one__book__info'>
+            <div class='space-one__book__title'>
+              Just Enough Research
             </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                The Beginning of Infinity: Explanations that transform the world
+            <div class='space-one__book__author'>Erika Hall</div>
+            <div class='space-one__book__short-description'>A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.</div>
+          </div>
+          <div class='space-one__book__image'>
+            <img src="images/books/the-beginning-of-infinity.jpg" />
+          </div>
+          <div class='space-one__book__info'>
+            <div class='space-one__book__title'>
+              The Beginning of Infinity: Explanations that transform the world
+            </div>
+            <div class='space-one__book__author'>David Deutsch</div>
+            <div class='space-one__book__short-description'>An eye opening book that is not about UX at all, but rather the concepts of Knowledge and Explanations.</div>
+          </div>
+        </div>
+        <!-- / Final "space", split into rank two (bigger on left) and rank three (smaller on right) -->
+        <div class='space-two'>
+          <div class='rank-two'>
+            <div class='rank-two__book'>
+              <div class='rank-two__book__image'>
+                <img src="images/books/experience-required.jpg" />
               </div>
-              <div class='book__author'>David Deutsch</div>
+              <div class='rank-two__book__info'>
+                <div class='rank-two__book__title'>
+                  Experience Required: How to become a UX leader regardless of your role
+                </div>
+                <div class='rank-two__book__author'>Robert Hoekman Jr</div>
+              </div>
+            </div>
+            <div class='rank-two__book'>
+              <div class='rank-two__book__image'>
+                <img src="images/books/graphesis.jpg" />
+              </div>
+              <div class='rank-two__book__info'>
+                <div class='rank-two__book__title'>
+                  Graphesis: Visual Forms of Knowledge Production
+                </div>
+                <div class='rank-two__book__author'>Johanna Drucker</div>
+              </div>
+            </div>
+            <div class='rank-two__book'>
+              <div class='rank-two__book__image'>
+                <img src="images/books/ux-strategy.jpg" />
+              </div>
+              <div class='rank-two__book__info'>
+                <div class='rank-two__book__title'>
+                  UX Strategy: How to Devise Innovative Digital Products that People Want
+                </div>
+                <div class='rank-two__book__author'>Jaime Levy</div>
+              </div>
+            </div>
+            <div class='rank-two__book'>
+              <div class='rank-two__book__image'>
+                <img src="images/books/designing-with-data.jpg" />
+              </div>
+              <div class='rank-two__book__info'>
+                <div class='rank-two__book__title'>
+                  Designing with Data: Improving the User Experience with A/B Testing
+                </div>
+                <div class='rank-two__book__author'>Rochelle King, Elizabeth Churchill, Caitlin Tan</div>
+              </div>
             </div>
           </div>
-          <div class='book'>
-            <div class='book__image'>
-              <img src="images/books/experience-required.jpg" />
-            </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                Experience Required: How to become a UX leader regardless of your role
+          <div class='rank-three'>
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/how-to-make-sense-of-any-mess.jpg" />
               </div>
-              <div class='book__author'>Robert Hoekman Jr</div>
             </div>
-          </div>
-          <div class='book'>
-            <div class='book__image'>
-              <img src="images/books/graphesis.jpg" />
-            </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                Graphesis: Visual Forms of Knowledge Production
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/the-design-way.jpg" />
               </div>
-              <div class='book__author'>Johanna Drucker</div>
             </div>
-          </div>
-          <div class='book medium'>
-            <div class='book__image'>
-              <img src="images/books/ux-strategy.jpg" />
-            </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                UX Strategy: How to Devise Innovative Digital Products that People Want
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/poster-museum.jpg" />
               </div>
-              <div class='book__author'>Jaime Levy</div>
             </div>
-          </div>
-          <div class='book medium'>
-            <div class='book__image'>
-              <img src="images/books/designing-with-data.jpg" />
-            </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                Designing with Data: Improving the User Experience with A/B Testing
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/managing-oneself.jpg" />
               </div>
-              <div class='book__author'>Rochelle King, Elizabeth Churchill, Caitlin Tan</div>
             </div>
-          </div>
-          <div class='book large'>
-            <div class='book__image'>
-              <img src="images/books/the-design-way.jpg" />
-            </div>
-            <div class='book__info'>
-              <div class='book__title'>
-                The Design Way: Intentional Change in an Unpredictable World
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/everyday-things.jpg" />
               </div>
-              <div class='book__author'>Harold G. Nelson, Erik Stolterman</div>
+            </div>
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/about-face.jpg" />
+              </div>
+            </div>
+            <div class='rank-three__book'>
+              <div class='rank-three__image'>
+                <img src="images/books/information-architecture.jpg" />
+              </div>
             </div>
           </div>
         </div>
