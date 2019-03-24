@@ -35,15 +35,25 @@
   // grid
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
+  grid-template-areas:
+    "hero-image hero-image"
+    "hero-desc  hero-desc";
+  @include media($medium-screen-up) {
+    grid-template-areas:
+      "hero-image hero-desc";
+    grid-column-gap: $m;
+  }
 
   &__image {
-    grid-column: 1 / 2;
-    align-self: center;
-    justify-self: center;
+    grid-area: hero-image;
+    
+    img {
+      @include book-shadow;
+      width: 100%;
+    }
   }
   &__info {
-    grid-column: 2 / 3;
-    padding-left: $s;
+    grid-area: hero-desc;
   }
   &__title {
     @include sans-serif--xl;
@@ -55,76 +65,96 @@
   }
   &__short-description {
     @include serif--m;
-    white-space: pre-line;
+    white-space: pre-line; // added this to work with weird yaml formatting. I could probably understand this more than I do.
     color: $gray-6;
   }
   // margins and spacing
   margin-top: $l;
-
-  // style
-  background-color: $off-white;
-  padding: 2.5%;
   
-
-
 }
 
 
 .space-one {
   // grid - 6 columns, 8 rows
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto $l auto auto;
   grid-template-areas:
-    "img1  img1  info1 info1 info1 info1"
-    "img1  img1  info1 info1 info1 info1"
-    "img1  img1  .     .     img2  img2"
-    "img1  img1  .     .     img2  img2"
-    "info2 info2 info2 info2 img2  img2"
-    "info2 info2 info2 info2 img2  img2";
+    "img1  img1  img1  img1  .     ."
+    "info1 info1 info1 info1 info1 info1"
+    ".     .     .     .     .     ."
+    "img2  img2  img2  img2  .     ."
+    "info2 info2 info2 info2 info2 info2";
+  @include media($medium-screen-up) {
+    grid-template-rows: auto;
+    grid-template-areas:
+      "img1  img1  info1 info1 info1 info1"
+      "img1  img1  info1 info1 info1 info1"
+      "img1  img1  .     .     img2  img2"
+      "img1  img1  .     .     img2  img2"
+      ".     info2 info2 info2 img2  img2"
+      ".     info2 info2 info2 img2  img2";
+  }
 
   // Using nth child to assign the books and images to grid areas. not sure if this 
   // or assigning a class in markup is better
 
   // spacing
   margin-top: $xl;
+
   &__book {
 
     &__image {
-      img {
-        width: 100%;
-      }
+      display: grid;
+
       &:nth-child(1) {
         grid-area: img1;
+        img {
+          width: 100%;
+          @include book-shadow-2;
+          z-index: 1; //to make sure shadow goes over info BG
+        }
       }
       &:nth-child(3) {
         grid-area: img2;
+        img {
+          align-self: end;
+          @include book-shadow-2;
+        }
       }
     }
     &__info {
       &:nth-child(2) {
         grid-area: info1;
+        @include media($medium-screen-up) {
+          padding-left: $s;
+        }
       }
       &:nth-child(4) {
         grid-area: info2;
+        align-self: end;
+        @include media($medium-screen-up) {
+          text-align: right;
+          padding-right: $s;
+        }
       }
     }
 
     &__title {
       @include sans-serif--l;
       padding: $m 2.5% 0 2.5%;
-      background-color: $off-white;
+      //background-color: $off-white;
     }
     &__author {
       @include serif--m;
       color: $gray-4;
-      background-color: $off-white;
+      //background-color: $off-white;
       padding: $xs 2.5% 0 2.5%;
     }
     &__short-description {
       @include serif--s;
       line-height: 1.5;
-      background-color: $off-white;
+      //background-color: $off-white;
       padding: $m 2.5% $m 2.5%;
     }
   }
@@ -133,36 +163,32 @@
 .space-two {
   margin-top: $xl;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "img3 img3 img4 img4 .     ."
-    "img3 img3 img4 img4 img7  img8"
-    "img5 img5 img6 img6 img9  img10"
-    "img5 img5 img6 img6 img11 img12"
-    ".    .    .    .    img13 img14";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "rank-two   rank-two   rank-two"
+    "rank-three rank-three rank-three";
+  @include media($medium-screen-up) {
+    grid-template-areas:
+      "rank-two rank-two rank-three"
+      "rank-two rank-two rank-three"
+      "rank-two rank-two rank-three"
+      "rank-two rank-two rank-three";
+  }
+}
+.rank-two {
+  grid-area: rank-two;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   &__book {
-    display: grid;
-    padding: $m;
-
-    &:nth-child(1) {
-      grid-area: img3;
-    }
-    &:nth-child(2) {
-      grid-area: img4;
-    }
-    &:nth-child(3) {
-      grid-area: img5;
-    }
-    &:nth-child(4) {
-      grid-area: img6;
-    }
-
+    padding: $s;
 
     &__image {
       align-self: center;
       justify-self: center;
+        img {
+          @include book-shadow-2;
+        }
     }
     &__info {
       align-self: end;
@@ -178,33 +204,59 @@
       margin-top: $xs;
     }
   }
+}
 
-  .rank-three {
-    padding: $s;
-    display: grid;
-    align-content: start;
-    justify-content: center;
+.rank-three {
+  margin-top: $m;
+  grid-area: rank-three;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    &:nth-child(5) {
-      grid-area: img7;
-    }
-    &:nth-child(6) {
-      grid-area: img8;
-    }
-    &:nth-child(7) {
-      grid-area: img9;
-    }
-    &:nth-child(8) {
-      grid-area: img10;
-    }
-    &:nth-child(9) {
-      grid-area: img11;
-    }
-    &:nth-child(10) {
-      grid-area: img12;
-    }
+  @include media($medium-screen-up) {
+    margin-top: $xxl;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__book {
+    padding: $xs;
+    align-self: center;
   }
 }
+//   .rank-three {
+//     padding: $s;
+//     display: grid;
+//     align-content: start;
+//     justify-content: center;
+
+//     &__image img {
+//       @include book-shadow;
+//     }
+
+//     &:nth-child(5) {
+//       grid-area: img7;
+//     }
+//     &:nth-child(6) {
+//       grid-area: img8;
+//     }
+//     &:nth-child(7) {
+//       grid-area: img9;
+//     }
+//     &:nth-child(8) {
+//       grid-area: img10;
+//     }
+//     &:nth-child(9) {
+//       grid-area: img11;
+//     }
+//     &:nth-child(10) {
+//       grid-area: img12;
+//     }
+//     &:nth-child(11) {
+//       grid-area: img13;
+//     }
+//     &:nth-child(12) {
+//       grid-area: img14;
+//     }
+//   }
+// }
 
 
 // .book {
@@ -327,4 +379,3 @@
 //     &:nth-child(6) {
 //     }
 //   }
-// }

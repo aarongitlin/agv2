@@ -13,3 +13,4 @@ gem 'middleman-gh-pages'
 
 #blog
 gem "middleman-blog"
+

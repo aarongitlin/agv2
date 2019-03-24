@@ -27,7 +27,8 @@ books:
     tags:
       - UX
       - Research
-    short_description: A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
+    short_description: 
+      A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
     image: "/images/books/just-enough-research.jpg"
     rank: one
 
@@ -157,6 +158,18 @@ books:
       - Reference
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/about-face.jpg"
+    rank: three
+
+  - information-architecture:
+    slug: information_architecture
+    title: "Information Architecture for the Web & Beyond"
+    author: " Peter Morville, Louis Rosenfeld, Jorge Arango"
+    tags:
+      - UX
+      - IA
+      - Reference
+    short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
+    image: "/images/books/information-architecture.jpg"
     rank: three
 
 

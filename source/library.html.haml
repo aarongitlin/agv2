@@ -9,20 +9,19 @@ layout: library_layout
   .page-description
     = data.library.page_description
 
-  .book__hero
+  .book-hero
     - data.library.books.each do |book|
       - if book.rank == 'zero'
-        .book-hero
-          .book-hero__image
-            = image_tag book.image
-          .book-hero__info
-            .book-hero__title
-              = book.title
-              -# =link_to data.library.books[0]["title"], "/books/#{data.library.books[0]['slug']}.html"
-            .book-hero__author= book.author
-            .book-hero__short-description= book.short_description
-
-  .space-one
+        .book-hero__image
+          = image_tag book.image
+        .book-hero__info
+          .book-hero__title
+            = book.title
+            -# =link_to data.library.books[0]["title"], "/books/#{data.library.books[0]['slug']}.html"
+          .book-hero__author= book.author
+          .book-hero__short-description= book.short_description
+  // My next two big books
+  .space-one 
     - data.library.books.each do |book|
       - if book.rank == 'one'
         .space-one__book__image
@@ -33,22 +32,24 @@ layout: library_layout
             -#= link_to book.title, "/books/#{book.slug}.html"
           .space-one__book__author= book.author
           .space-one__book__short-description= book.short_description
-  
+  // Final "space", split into rank two (bigger on left) and rank three (smaller on right)
   .space-two
-    - data.library.books.each do |book|
-      - if book.rank == 'two'
-        .space-two__book
-          .space-two__book__image
-            = image_tag book.image
-          .space-two__book__info
-            .space-two__book__title
-              = book.title
-              -#= link_to book.title, "/books/#{book.slug}.html"
-            .space-two__book__author= book.author
-            -# .book__short-description= book.short_description
-
-      - if book.rank == 'three'
-        .rank-three
-          .rank-three__image
-            = image_tag book.image
+    .rank-two
+      - data.library.books.each do |book|
+        - if book.rank == 'two'
+          .rank-two__book
+            .rank-two__book__image
+              = image_tag book.image
+            .rank-two__book__info
+              .rank-two__book__title
+                = book.title
+                -#= link_to book.title, "/books/#{book.slug}.html"
+              .rank-two__book__author= book.author
+              -# .book__short-description= book.short_description
+    .rank-three
+      - data.library.books.each do |book|
+        - if book.rank == 'three'
+          .rank-three__book
+            .rank-three__image
+              = image_tag book.image
 
