@@ -5,8 +5,8 @@ ruby '2.3.3'
 
 gem "middleman", "~>3.4.0"
 
-# # Live-reloading plugin
-# gem "middleman-livereload", "~> 3.1.0"
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
 
 # To deply to gh-pages
 gem 'middleman-gh-pages'

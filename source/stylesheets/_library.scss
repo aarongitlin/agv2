@@ -9,7 +9,7 @@
   @include margin-top--large;
 }
 .page-description {
-  @include serif--s;
+  @include serif--m;
   width: 75%;
   margin-top: $m;
   color: $gray-5;
@@ -67,9 +67,10 @@
     @include serif--m;
     white-space: pre-line; // added this to work with weird yaml formatting. I could probably understand this more than I do.
     color: $gray-6;
+    margin-top: $l;
   }
   // margins and spacing
-  margin-top: $l;
+  margin-top: $xl;
   
 }
 
