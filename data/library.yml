@@ -28,7 +28,7 @@ books:
       - UX
       - Research
     short_description: 
-      A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
+      A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research. The book is such a short and easy read with so many good foundations, I easily recommend it to any novice to intermediate.
     image: "/images/books/just-enough-research.jpg"
     rank: one
 
@@ -171,5 +171,3 @@ books:
     short_description: Ab illo tempore, ab est sed immemorabili. Praeterea iter est quasdam res quas ex communi. Idque Caesaris facere voluntate liceret sese habere.
     image: "/images/books/information-architecture.jpg"
     rank: three
-
-
