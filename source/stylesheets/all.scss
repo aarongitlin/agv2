@@ -31,16 +31,22 @@ html {
 body {
   background: $base-background-color;
   height: 100%;
+
+  height: 100%; // added to prevent scrolling when modal is open
+  overflow: auto;
+  width: 100%;
 }
 
 //Some tricky stuff for sticky footer
 #main {
   min-height: 100%;
-  margin-bottom: -6rem; //Size of footer
+  //margin-bottom: -6rem; //Size of footer
   &:after {
-  content: "";
-  display: block;
+    content: "";
+    display: block;
   }
+
+
 }
 
 

@@ -1,4 +1,5 @@
 
+
 .wrapper {
   @include wrapper;
 }
@@ -93,8 +94,8 @@
       "img1  img1  info1 info1 info1 info1"
       "img1  img1  .     .     img2  img2"
       "img1  img1  .     .     img2  img2"
-      ".     info2 info2 info2 img2  img2"
-      ".     info2 info2 info2 img2  img2";
+      "info2 info2 info2 info2 img2  img2"
+      "info2 info2 info2 info2 img2  img2";
   }
 
   // Using nth child to assign the books and images to grid areas. not sure if this 
@@ -157,6 +158,7 @@
       line-height: 1.5;
       //background-color: $off-white;
       padding: $m 2.5% $m 2.5%;
+      white-space: pre-line; // added this to work with weird yaml formatting
     }
   }
 }
@@ -187,9 +189,9 @@
     &__image {
       align-self: center;
       justify-self: center;
-        img {
-          @include book-shadow-2;
-        }
+      img {
+        @include book-shadow-2;
+      }
     }
     &__info {
       align-self: end;
@@ -205,6 +207,75 @@
       margin-top: $xs;
     }
   }
+  // triggering description overlay
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 240ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+
+    &__close {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: default;
+    }
+
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__modal {
+      position: fixed;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-height: 85%;
+      width: 85%;
+      max-width: 48rem;
+      padding: 0 $m;
+      background-color: #fff;
+      transition: all ease-in 240ms;
+      white-space: pre-line;
+      overflow-y: scroll;
+      border-radius: 4px;
+      box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.4);
+
+      &__manual_close {
+        position: absolute;
+        top: $s;
+        right: $s;
+      }
+
+      &__title {
+        @include sans-serif--l;
+      }
+
+      &__book-description {
+        @include serif--m;
+      }
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 8px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.25);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.25);
+      }
+    }
+  }
+
 }
 
 .rank-three {

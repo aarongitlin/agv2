@@ -32,22 +32,28 @@ layout: library_layout
             -#= link_to book.title, "/books/#{book.slug}.html"
           .space-one__book__author= book.author
           .space-one__book__short-description= book.short_description
+  
   // Final "space", split into rank two (bigger on left) and rank three (smaller on right)
   .space-two
     .rank-two
-      - data.library.books.each do |book|
+      - data.library.books.each_with_index do |book, i|
         - if book.rank == 'two'
           .rank-two__book
-            .rank-two__book__image
+            %a{:href => "#rank_two_modal_#{i}", :class => "rank-two__book__image"}
               = image_tag book.image
+            %div{:id => "rank_two_modal_#{i}", :class => "overlay"}
+              %a{:href => "#_", :class => "overlay__close"}
+              .overlay__modal
+                %a{:href => "#_", :class => "overlay__modal__manual_close"} close
+                .overlay__modal__title= book.title
+                .overlay__modal__book-description= book.short_description
             .rank-two__book__info
               .rank-two__book__title
                 = book.title
                 -#= link_to book.title, "/books/#{book.slug}.html"
               .rank-two__book__author= book.author
-              -# .book__short-description= book.short_description
     .rank-three
-      - data.library.books.each do |book|
+      - data.library.books.each_with_index do |book, i|
         - if book.rank == 'three'
           .rank-three__book
             .rank-three__image

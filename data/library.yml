@@ -27,8 +27,20 @@ books:
     tags:
       - UX
       - Research
-    short_description: 
-      A short, simple summary of some basic UX research principles. Its main argument is that "research" is really just critical thinking by another name, and that projects of any size benefit from at least some research.
+    short_description: >-
+      A short, simple summary of some basic UX research principles. Its main argument is that 'research' is really just critical thinking by another name, and that projects of any size benefit from its practice. Some of the main challenges standing in our way aren't necessarily time or resources, since some research does not require much of these at all. Rather it is our own human foibles that are usually holding us back:
+
+      
+      Politics - your boss or the board has chosen a direction, strategy or approach. Who are you to question it? Do you feel comfortable sharing differing results?
+
+
+      Insecurity - I'm a designer with years of experience. Shouldn't I know what is the best approach? Why do you need a survey and usability test?
+
+
+      Laziness - To be blunt, it is easier to work with the above currents, rather than against them. Solutions from above or those available on blogs or popular websties represent easy outs.
+
+
+      I still reference this book at times for short and informative reasoning on what kind of research is appropriate for what kind of problems. This should for sure be on every UX Designer's shelf, and even for professional researchers it can help provide language to commuinicate with your peers
     image: "/images/books/just-enough-research.jpg"
     rank: one
 
@@ -39,7 +51,14 @@ books:
     tags:
       - Knowledge
       - Science
-    short_description: An eye opening book that is not about UX at all, but rather the concepts of Knowledge and Explanations.
+    short_description: >-
+      "The quest for good explanations is, I believe, the basic regulating principle not only of science, but of the Enlightenment generally." Deutsch spends some time defining science and progress beyond the tenents of experimentation and observation. Stringent experimentation may help us evaluate the strength of an explanation, but more casual tests may actually reinforce bad explanations by providing "evidence." A good explanation reaches well beyond our own experience, and the better it is the more universally it holds true.
+      
+
+      Science without explanations – reporting numbers and variations without attributing any possible causes, is "science in form only." The more unexpected the numbers, the more exciting the results. But without an explanation, this form of "bad philosophy" allows no room for growth, failure, even true discussion. But good philosophy, science with explanations, allows others to continue the conversation, to stretch or break it to the limits of our current ability. The formulation of these explanations and our willingness to test, amend, accept, or replace them is the beginning of infinity.
+
+
+      There is a lot to this book, but I'd suggest that everyone working in tech would benefit from a critical analysis of our own forms of testing and knowledge production.
     image: "/images/books/the-beginning-of-infinity.jpg"
     rank: one
 
@@ -50,7 +69,16 @@ books:
     tags:
       - UX
       - Leadership
-    short_description: Prima luce, cum quibus mons aliud  consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
+    short_description: >-
+      Hoekman has a range of platitudes that speak to leadership within organizations generally, and to UX practitioners specifically. He also provides some helpful definitions for terms that we use and missuse everyday. Some I noted – 
+
+      "UX is the application of psychology to the design of technology." (I liked thinking about how this could translate to other disciplines. Is Product Management the application of business to techology?) "Design is the application of psychology." "Process is crap." "The result of design is communication." You get the idea.
+
+
+      One of a things that stuck with me is the range of competency we can experience in a skill. Unconscious Incompetence -> Conscious Incompetence -> Conscious Competence -> Mastery. He attributes this to Harry Max, one his UX leader peers. We start off not knowing what is good or bad, then developing enough taste to realize our own flaws. We then understand how, with conscious thought, to create good work until the point when we are skilled and experienced enough to create good work with barely any conscious thought given to the practice. 
+
+
+      This book felt like a collection of well written Medium articles on a subject that not enough UX professionals right about – how to be real leaders within an organization.
     image: "/images/books/experience-required.jpg"
     rank: two
 
