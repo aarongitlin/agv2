@@ -35,7 +35,7 @@
 .book-hero {
   // grid
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-columns: 0.45fr 0.55fr;
   grid-template-areas:
     "hero-image hero-image"
     "hero-desc  hero-desc";
@@ -129,7 +129,7 @@
       &:nth-child(2) {
         grid-area: info1;
         @include media($medium-screen-up) {
-          padding-left: $s;
+          padding-left: $m;
         }
       }
       &:nth-child(4) {
@@ -137,28 +137,33 @@
         align-self: end;
         @include media($medium-screen-up) {
           text-align: right;
-          padding-right: $s;
+          padding-right: $m;
         }
       }
     }
 
     &__title {
-      @include sans-serif--l;
-      padding: $m 2.5% 0 2.5%;
+      @include sans-serif--xl;
+      padding-top: $m;
       //background-color: $off-white;
     }
     &__author {
       @include serif--m;
       color: $gray-4;
       //background-color: $off-white;
-      padding: $xs 2.5% 0 2.5%;
+      padding-top: $xs;
     }
     &__short-description {
-      @include serif--s;
+      @include serif--m;
       line-height: 1.5;
       //background-color: $off-white;
-      padding: $m 2.5% $m 2.5%;
+      padding-top: $m;
       white-space: pre-line; // added this to work with weird yaml formatting
+    }
+    &__read-more {
+      margin-top: $m;
+      @include sans-serif--l;
+      display: inline-block;
     }
   }
 }
@@ -207,74 +212,6 @@
       margin-top: $xs;
     }
   }
-  // triggering description overlay
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: opacity 240ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 3;
-
-    &__close {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      cursor: default;
-    }
-
-    &:target {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    &__modal {
-      position: fixed;
-      z-index: 2;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-height: 85%;
-      width: 85%;
-      max-width: 48rem;
-      padding: 0 $m;
-      background-color: #fff;
-      transition: all ease-in 240ms;
-      white-space: pre-line;
-      overflow-y: scroll;
-      border-radius: 4px;
-      box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.4);
-
-      &__manual_close {
-        position: absolute;
-        top: $s;
-        right: $s;
-      }
-
-      &__title {
-        @include sans-serif--l;
-      }
-
-      &__book-description {
-        @include serif--m;
-      }
-
-      &::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 8px;
-      }
-      
-      &::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background-color: rgba(0,0,0,.25);
-        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.25);
-      }
-    }
-  }
 
 }
 
@@ -287,167 +224,108 @@
   @include media($medium-screen-up) {
     margin-top: $xxl;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: $m;
   }
   &__book {
     padding: $xs;
     align-self: center;
   }
 }
-//   .rank-three {
-//     padding: $s;
-//     display: grid;
-//     align-content: start;
-//     justify-content: center;
 
-//     &__image img {
-//       @include book-shadow;
-//     }
+// triggering description overlay
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 240ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
 
-//     &:nth-child(5) {
-//       grid-area: img7;
-//     }
-//     &:nth-child(6) {
-//       grid-area: img8;
-//     }
-//     &:nth-child(7) {
-//       grid-area: img9;
-//     }
-//     &:nth-child(8) {
-//       grid-area: img10;
-//     }
-//     &:nth-child(9) {
-//       grid-area: img11;
-//     }
-//     &:nth-child(10) {
-//       grid-area: img12;
-//     }
-//     &:nth-child(11) {
-//       grid-area: img13;
-//     }
-//     &:nth-child(12) {
-//       grid-area: img14;
-//     }
-//   }
-// }
+  &__close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: default;
+  }
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__modal {
+    position: fixed;
+    z-index: 2;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48rem;
+    max-width: 95%;
+    background-color: #fff;
+    transition: all ease-in 240ms;
+    border-radius: 4px;
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.4);
 
 
-// .book {
-//   @include media($small-screen-up) {
-//     // all books are the same size on mobile
-//     flex: 1;
-//     max-width: 380px;
-//     padding: 2rem;
-//   }
-//   @include media($medium-screen-up) {
-//     // reset mobile logic and assign sizes for books on larger screens
-//       max-width: none;
-//       padding: 0;
-//       &.large {
-//         width: 83.33%;
-//         max-width: 18rem;
-//       }
-//       &.medium {
-//         max-width: 66.67%;
-//       }
-//       &.small {
-//         max-width: 50%;
-//       }
-//     }
+    @include media($medium-screen-up) {
+      top: 50%;
+    }
 
-//   & img {
-//     // might want this to be universal, it's because otherwise images seem to be treated as inline elements and therefore follow line-height logic
-//     display: block;
-//   }
+    &__manual_close {
+      top: $xs;
+      right: $s;
+      position: absolute;
+      z-index: 3;
+      background-color: rgba(255,255,255,0.85);
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 16px;
+      box-shadow: 0px 0px 2px rgba(0,0,0,0.25);
+      @include sans-serif--m;
+      padding: 4px $s;
+      @include media($medium-screen-up) {
+        top: $m;
+      }
+    }
 
-//   &__title {
-//     @extend p.heading--small;
-//     font-size: 1.0rem;
-//     margin-top: 0.2rem;
-//     a {
-//       color: $gray-6;
-//     }
-//   }
+    &__title {
+      @include sans-serif--l;
+      text-align: left;
+      padding: $l $s $s $s;
 
-//   &__author {
-//     @extend p.text--small;
-//     font-style: italic;
-//     line-height: 1.2;
-//   }
+      @include media($medium-screen-up) {
+        padding: $m $xl $m $l;
+      }
+    }
 
-//   &--hero {
-//     // design for the first "hero" item
-//     background-color: $off-white;
-//     @include media($small-screen-up) {
-//       padding: 0;
-//     }
-//     & .book__image  {
-//       @include media($small-screen-up) {
-//         padding: 1rem;
-//       }
-//       @include media($medium-screen-up) {
-//         width: 66.67%;
-//         margin: auto;
-//       }
-//     }
-//     & .book__info {
-//       padding: 0rem 2rem 1rem 1rem;
-//     }
-//     & .book__title {
-//       @extend h3;
-//     }
-//     & .book__short-description {
-//       @extend p.text--small;
-//     }
-//   }
-//   // establishing grid rules for the books
-//   @include media($medium-screen-up) {
-//     // First book - starting in 1st col 1st row, 3x5 (5 row max, flex start)
-//     &:nth-child(1) {
-//       grid-column: 1 / 4;
-//       grid-row: 1 / 8;
-//       align-self: start;
-//     }
-//     // Top bookshelf - next 4 items
-//     // 2nd book starts in the 4th column and 3rd row, and is 2x3 (3 row max)
-//     &:nth-child(2) {
-//       grid-column: 4 / 6;
-//       grid-row: 4 / 8;
-//       @extend .book.large;
-//       align-self: start;
-//       justify-self: center;
-//     }
-//     // 3rd book starts in 4th col and 1st row, and is 2x3 (3 row max)
-//     &:nth-child(3) {
-//       grid-column: 5 / 7;
-//       grid-row: 1 / 4;
-//       @extend .book.large;
-//       align-self: start;
-//       justify-self: center;
-//     }
-//     // 4th book starts in 6th column and 5th row, and is 1x2 (2 row max)
-//     &:nth-child(4) {
-//       grid-column: 6 / 7;
-//       grid-row: 6 / 8;
-//       align-self: start;
-//     }
-//     // All remaining books sit on the implicit grid
-//     // They are 2 columns wide, and 3 rows long.
-//     // The left items are left justified, the middle ones center, and right ones right justified
-//     &:nth-child(n+5) {
-//       grid-column-start: span 2;
-//       grid-row-start: span 3;
-//     }
-//     &:nth-child(3n+5) {
-//       justify-self: left;
-//     }
-//     &:nth-child(3n+6) {
-//       justify-self: center;
-//     }
-//     &:nth-child(3n+7) {
-//       justify-self: right;
-//     }
-//   }
-//   @include media($large-screen-up) {
-//     &:nth-child(6) {
-//     }
-//   }
+    &__book-description {
+      @include serif--m;
+      text-align: left;
+      overflow-y: auto;
+      max-height: 70vh;
+      width: 100%;
+      white-space: pre-line;
+      padding: $s $s $m $s;
+      @include media($medium-screen-up) {
+        padding: $s $l $m $l;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0,0,0,.25);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.25);
+    }
+  }
+}

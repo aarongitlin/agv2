@@ -22,7 +22,7 @@ layout: library_layout
           .book-hero__short-description= book.short_description
   // My next two big books
   .space-one 
-    - data.library.books.each do |book|
+    - data.library.books.each_with_index do |book, i|
       - if book.rank == 'one'
         .space-one__book__image
           = image_tag book.image
@@ -31,7 +31,16 @@ layout: library_layout
             = book.title
             -#= link_to book.title, "/books/#{book.slug}.html"
           .space-one__book__author= book.author
-          .space-one__book__short-description= book.short_description
+          .space-one__book__short-description= truncate_words(book.short_description, :length => 96)
+          %a{:href => "#space-one__modal-#{i}", :class => "space-one__book__read-more"} Read More
+          
+          %div{:id => "space-one__modal-#{i}", :class => "overlay"}
+            %a{:href => "#_", :class => "overlay__close"}
+            .overlay__modal
+              .overlay__modal__header
+                .overlay__modal__title= book.title
+                %a{:href => "#_", :class => "overlay__modal__manual_close"} close
+              .overlay__modal__book-description= book.short_description  
   
   // Final "space", split into rank two (bigger on left) and rank three (smaller on right)
   .space-two
@@ -39,13 +48,14 @@ layout: library_layout
       - data.library.books.each_with_index do |book, i|
         - if book.rank == 'two'
           .rank-two__book
-            %a{:href => "#rank_two_modal_#{i}", :class => "rank-two__book__image"}
+            %a{:href => "#rank-two__modal-#{i}", :class => "rank-two__book__image"}
               = image_tag book.image
-            %div{:id => "rank_two_modal_#{i}", :class => "overlay"}
+            %div{:id => "rank-two__modal-#{i}", :class => "overlay"}
               %a{:href => "#_", :class => "overlay__close"}
               .overlay__modal
-                %a{:href => "#_", :class => "overlay__modal__manual_close"} close
-                .overlay__modal__title= book.title
+                .overlay__modal__header
+                  .overlay__modal__title= book.title
+                  %a{:href => "#_", :class => "overlay__modal__manual_close"} close
                 .overlay__modal__book-description= book.short_description
             .rank-two__book__info
               .rank-two__book__title
