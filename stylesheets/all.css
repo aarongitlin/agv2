@@ -844,7 +844,7 @@ blockquote {
     display: block;
     margin-right: 2.17391%;
     width: 23.36957%;
-    border-right: 1px solid #D9DBDA; }
+    border-right: 1px solid #E1E3E1; }
     /* line 89, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/neat/grid/_span-columns.scss */
     .meta-item:last-child {
       margin-right: 0; }
@@ -907,7 +907,7 @@ blockquote {
         padding: 2rem; } }
   /* line 297, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
   .image-wrapper.box-shadow img {
-    box-shadow: #D9DBDA 0 0 1.6rem; }
+    box-shadow: #E1E3E1 0 0 1.6rem; }
   @media screen and (min-width: 1164px) {
     /* line 300, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
     .image-wrapper.extra-large {
@@ -933,7 +933,7 @@ blockquote {
 
 /* line 328, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_project_detail.scss */
 .gray-bg-wrapper {
-  background-color: #E8EBE9;
+  background-color: #F0F2F1;
   padding: 0.5rem;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -1505,39 +1505,61 @@ p.caption {
   margin-top: 2rem;
   color: #585C59; }
 
-/* line 35, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 20, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .book-hero {
   display: grid;
   grid-template-columns: 0.45fr 0.55fr;
   grid-template-areas: "hero-image hero-image" "hero-desc  hero-desc";
-  margin-top: 6rem; }
+  margin-top: 2.625rem; }
   @media screen and (min-width: 40rem) {
-    /* line 35, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 20, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .book-hero {
-      grid-template-areas: "hero-image hero-desc";
-      grid-column-gap: 2rem; } }
-  /* line 48, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      grid-template-areas: "hero-image hero-desc"; } }
+  /* line 33, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .book-hero__image {
-    grid-area: hero-image; }
-    /* line 51, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    grid-area: hero-image;
+    padding: 2rem;
+    background-color: #E1E3E1;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+    /* line 40, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .book-hero__image img {
       box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
       transition: box-shadow ease-out 240ms;
-      width: 100%; }
+      max-width: 22rem; }
       /* line 69, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/base/_variables.scss */
       .book-hero__image img:hover {
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15); }
-  /* line 56, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    @media screen and (min-width: 40rem) {
+      /* line 45, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .book-hero__image img {
+        width: 100%;
+        max-width: 32rem; } }
+  /* line 51, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .book-hero__info {
-    grid-area: hero-desc; }
-  /* line 59, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    grid-area: hero-desc;
+    padding: 2rem 1rem;
+    background-color: #F0F2F1; }
+    @media screen and (min-width: 40rem) {
+      /* line 51, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .book-hero__info {
+        display: grid;
+        align-content: center;
+        padding: 2rem 2rem; } }
+    @media screen and (min-width: 1164px) {
+      /* line 51, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .book-hero__info {
+        padding-left: 6rem; } }
+  /* line 64, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .book-hero__title {
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 2.0rem;
     line-height: 2.625rem;
     letter-spacing: -0.25px;
-    font-weight: 800; }
-  /* line 62, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    font-weight: 800;
+    max-width: 42rem; }
+  /* line 68, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .book-hero__author {
     font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
     font-size: 1.0rem;
@@ -1545,7 +1567,7 @@ p.caption {
     letter-spacing: normal;
     color: #8B8F8C;
     margin-top: 1rem; }
-  /* line 67, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 73, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .book-hero__short-description {
     font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
     font-size: 1.2rem;
@@ -1553,9 +1575,10 @@ p.caption {
     letter-spacing: normal;
     white-space: pre-line;
     color: #3A3D3B;
-    margin-top: 2.625rem; }
+    margin-top: 2.625rem;
+    max-width: 42rem; }
 
-/* line 79, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 84, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .space-one {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1563,17 +1586,17 @@ p.caption {
   grid-template-areas: "img1  img1  img1  img1  .     ." "info1 info1 info1 info1 info1 info1" ".     .     .     .     .     ." "img2  img2  img2  img2  .     ." "info2 info2 info2 info2 info2 info2";
   margin-top: 6rem; }
   @media screen and (min-width: 40rem) {
-    /* line 79, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 84, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .space-one {
       grid-template-rows: auto;
       grid-template-areas: "img1  img1  info1 info1 info1 info1" "img1  img1  info1 info1 info1 info1" "img1  img1  .     .     img2  img2" "img1  img1  .     .     img2  img2" "info2 info2 info2 info2 img2  img2" "info2 info2 info2 info2 img2  img2"; } }
-  /* line 109, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 114, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__image {
     display: grid; }
-    /* line 112, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 117, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .space-one__book__image:nth-child(1) {
       grid-area: img1; }
-      /* line 114, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 119, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .space-one__book__image:nth-child(1) img {
         width: 100%;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.25);
@@ -1582,10 +1605,10 @@ p.caption {
         /* line 77, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/base/_variables.scss */
         .space-one__book__image:nth-child(1) img:hover {
           box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.25); }
-    /* line 120, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 125, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .space-one__book__image:nth-child(3) {
       grid-area: img2; }
-      /* line 122, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 127, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .space-one__book__image:nth-child(3) img {
         align-self: end;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.25);
@@ -1593,23 +1616,24 @@ p.caption {
         /* line 77, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/base/_variables.scss */
         .space-one__book__image:nth-child(3) img:hover {
           box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.25); }
-  /* line 129, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 134, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__info:nth-child(2) {
     grid-area: info1; }
     @media screen and (min-width: 40rem) {
-      /* line 129, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 134, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .space-one__book__info:nth-child(2) {
         padding-left: 2rem; } }
-  /* line 135, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 140, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__info:nth-child(4) {
     grid-area: info2;
     align-self: end; }
     @media screen and (min-width: 40rem) {
-      /* line 135, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 140, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .space-one__book__info:nth-child(4) {
         text-align: right;
-        padding-right: 2rem; } }
-  /* line 145, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+        padding-right: 2rem;
+        padding-top: 2rem; } }
+  /* line 151, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__title {
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 2.0rem;
@@ -1617,7 +1641,7 @@ p.caption {
     letter-spacing: -0.25px;
     font-weight: 800;
     padding-top: 2rem; }
-  /* line 150, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 156, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__author {
     font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
     font-size: 1.2rem;
@@ -1625,7 +1649,7 @@ p.caption {
     letter-spacing: normal;
     color: #8B8F8C;
     padding-top: 0.5rem; }
-  /* line 156, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 162, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__short-description {
     font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
     font-size: 1.2rem;
@@ -1634,7 +1658,7 @@ p.caption {
     line-height: 1.5;
     padding-top: 2rem;
     white-space: pre-line; }
-  /* line 163, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 169, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .space-one__book__read-more {
     margin-top: 2rem;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -1644,40 +1668,53 @@ p.caption {
     font-weight: 800;
     display: inline-block; }
 
-/* line 171, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 177, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .space-two {
   margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "rank-two   rank-two   rank-two" "rank-three rank-three rank-three"; }
   @media screen and (min-width: 40rem) {
-    /* line 171, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 177, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .space-two {
       grid-template-areas: "rank-two rank-two rank-three" "rank-two rank-two rank-three" "rank-two rank-two rank-three" "rank-two rank-two rank-three"; } }
 
-/* line 186, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 192, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .rank-two {
   grid-area: rank-two;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-  /* line 191, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 0; }
+  @media screen and (min-width: 40rem) {
+    /* line 192, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    .rank-two {
+      margin-right: 2rem; } }
+  /* line 202, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .rank-two__book {
     padding: 1rem; }
-    /* line 194, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    @media screen and (min-width: 40rem) {
+      /* line 202, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .rank-two__book {
+        padding: 2rem; } }
+    /* line 208, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .rank-two__book__image {
       align-self: center;
       justify-self: center; }
-      /* line 197, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 211, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .rank-two__book__image img {
-        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.25);
-        transition: box-shadow ease-out 240ms; }
-        /* line 77, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/base/_variables.scss */
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.35);
+        transition: all ease-out 200ms;
+        transform: scale(1) translateY(0); }
+        /* line 86, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/base/_variables.scss */
         .rank-two__book__image img:hover {
-          box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.25); }
-    /* line 201, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+          transform: scale(1.02) translateY(-1%);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); }
+    /* line 215, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .rank-two__book__info {
-      align-self: end; }
-    /* line 204, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      align-self: end;
+      padding-top: 2rem;
+      padding-bottom: 2.625rem; }
+    /* line 220, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .rank-two__book__title {
       font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       font-size: 1.0rem;
@@ -1685,7 +1722,7 @@ p.caption {
       letter-spacing: normal;
       font-weight: 700;
       margin-top: 0.5rem; }
-    /* line 209, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 225, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .rank-two__book__author {
       font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
       font-size: 1.0rem;
@@ -1694,24 +1731,28 @@ p.caption {
       color: #8B8F8C;
       margin-top: 0.5rem; }
 
-/* line 218, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 234, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .rank-three {
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: #F0F2F1;
   grid-area: rank-three;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
   @media screen and (min-width: 40rem) {
-    /* line 218, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 234, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .rank-three {
-      margin-top: 12rem;
       grid-template-columns: repeat(2, 1fr);
-      margin-left: 2rem; } }
-  /* line 229, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      padding: 2.625rem 2rem 6rem 2rem;
+      margin: 12rem 0; } }
+  /* line 246, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .rank-three__book {
     padding: 0.5rem;
     align-self: center; }
+    /* line 249, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    .rank-three__book img {
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
 
-/* line 236, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+/* line 256, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -1723,7 +1764,7 @@ p.caption {
   visibility: hidden;
   opacity: 0;
   z-index: 3; }
-  /* line 248, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 268, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .overlay__close {
     position: absolute;
     width: 100%;
@@ -1731,11 +1772,11 @@ p.caption {
     top: 0;
     left: 0;
     cursor: default; }
-  /* line 257, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 277, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .overlay:target {
     visibility: visible;
     opacity: 1; }
-  /* line 262, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+  /* line 282, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
   .overlay__modal {
     position: fixed;
     z-index: 2;
@@ -1748,11 +1789,16 @@ p.caption {
     transition: all ease-in 240ms;
     border-radius: 4px;
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.4); }
+    /* line 295, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    .overlay__modal blockquote {
+      border-left: 2px solid #B6BAB8;
+      margin: 2rem 6rem 2rem 0;
+      padding-left: 2rem; }
     @media screen and (min-width: 40rem) {
-      /* line 262, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      /* line 282, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
       .overlay__modal {
         top: 50%; } }
-    /* line 280, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 306, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .overlay__modal__manual_close {
       top: 0.5rem;
       right: 1rem;
@@ -1769,10 +1815,10 @@ p.caption {
       letter-spacing: normal;
       padding: 4px 1rem; }
       @media screen and (min-width: 40rem) {
-        /* line 280, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+        /* line 306, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
         .overlay__modal__manual_close {
           top: 2rem; } }
-    /* line 297, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 323, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .overlay__modal__title {
       font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       font-size: 1.125rem;
@@ -1782,10 +1828,10 @@ p.caption {
       text-align: left;
       padding: 2.625rem 1rem 1rem 1rem; }
       @media screen and (min-width: 40rem) {
-        /* line 297, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+        /* line 323, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
         .overlay__modal__title {
           padding: 2rem 6rem 2rem 2.625rem; } }
-    /* line 307, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+    /* line 333, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
     .overlay__modal__book-description {
       font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
       font-size: 1.2rem;
@@ -1798,18 +1844,18 @@ p.caption {
       white-space: pre-line;
       padding: 1rem 1rem 2rem 1rem; }
       @media screen and (min-width: 40rem) {
-        /* line 307, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+        /* line 333, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
         .overlay__modal__book-description {
           padding: 1rem 2.625rem 2rem 2.625rem; } }
-    /* line 320, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
-    .overlay__modal::-webkit-scrollbar {
-      -webkit-appearance: none;
-      width: 8px; }
-    /* line 325, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
-    .overlay__modal::-webkit-scrollbar-thumb {
-      border-radius: 4px;
-      background-color: rgba(0, 0, 0, 0.25);
-      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); }
+      /* line 344, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .overlay__modal__book-description::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 8px; }
+      /* line 349, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/_library.scss */
+      .overlay__modal__book-description::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); }
 
 /* line 22, /Users/aarongitlin/Documents/aarongitlin/agv2.1/source/stylesheets/all.scss */
 * {
